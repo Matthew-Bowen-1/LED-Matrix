@@ -225,17 +225,6 @@ F 3 "~" H 2150 4200 50  0001 C CNN
 	1    2150 4200
 	0    1    1    0   
 $EndComp
-$Comp
-L MCU_Microchip_ATmega:ATmega8-16PU U1
-U 1 1 650E955F
-P 3050 5000
-F 0 "U1" H 3050 5000 50  0000 C CNN
-F 1 "ATmega8-16PU" H 3000 4850 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W7.62mm_Socket" H 3050 5000 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2486-8-bit-avr-microcontroller-atmega8_l_datasheet.pdf" H 3050 5000 50  0001 C CNN
-	1    3050 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2150 4050 2300 4050
 Wire Wire Line
