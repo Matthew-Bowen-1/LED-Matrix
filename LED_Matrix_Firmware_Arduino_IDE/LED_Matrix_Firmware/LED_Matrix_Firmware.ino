@@ -93,21 +93,21 @@ void loop() {
   Display *displayPointer = &display;
   initializeDisplay(displayPointer);
 
+  delay(200);
+  updateLEDRegister(4, PATTERN_1);
+  delay(200);
+  updateLEDRegister(4, PATTERN_2);
+  delay(200);
+  updateLEDRegister(4, PATTERN_3);
   delay(2);
-  updateLEDRegister(1, PATTERN_1);
-  delay(2);
-  updateLEDRegister(1, PATTERN_2);
-  delay(2);
-  updateLEDRegister(1, PATTERN_3);
-  delay(2);
-  updateLEDRegister(1, PATTERN_4);
-  delay(2);
-  updateLEDRegister(1, PATTERN_5);
-  delay(2);
-  updateLEDRegister(1, PATTERN_6);
-  delay(2);
-  updateLEDRegister(1, PATTERN_7);
-  delay(2);
-  updateLEDRegister(1, PATTERN_8);
+  updateLEDRegister(4, PATTERN_4);
+  delay(200);
+  updateLEDRegister(4, PATTERN_5);
+  delay(200);
+  updateLEDRegister(4, PATTERN_6);
+  delay(200);
+  updateLEDRegister(4, PATTERN_7);
+  delay(200);
+  updateLEDRegister(4, PATTERN_8);
 
 }
