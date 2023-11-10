@@ -16,63 +16,67 @@
 #define PATTERN_7 0b0000000000000000000000010111101
 #define PATTERN_8 0b0000000000000000000000011111111
 
+uint32_t image[8];
 
-
-
-inline void setPinHigh() __attribute__ ((always_inline)); 
-inline void setPinHigh(int pin){
-  GPIO.out_w1ts |= ((uint32_t) 1 << pin);
-}
-
-inline void setPinLow() __attribute__ ((always_inline)); 
-inline void setPinLow(int pin){
-  GPIO.out_w1tc |= ((uint32_t) 1 << pin);
+inline void setPin() __attribute__ ((always_inline));
+inline void setPin(int pin, bool val){
+  if(val){
+    GPIO.out_w1ts |= ((uint32_t) 1 << pin);
+  }else{
+    GPIO.out_w1tc |= ((uint32_t) 1 << pin);
+  }
 }
 
 inline void updateRowBus() __attribute__ ((always_inline));
 inline void updateRowBus(int rowVal){
-  setPinLow(STR);
+  setPin(STR, 0);
   uint32_t newRowVal = (GPIO.out & ~(7 << rowBus)) | (((uint32_t) rowVal) << rowBus);
   newRowVal = (newRowVal & ~(1 << STR)) | (1 << STR);
   GPIO.out = newRowVal;
-  setPinLow(STR);
+  setPin(STR, 0);
 }
 
 
 void initializeImage(){
   for(int i=0; i<8; i++){
     for(int j=0; j<32; j++){
-      image[i][j] = 0;
+      image[i] = 0;
     }
   }
 }
 
 void updateLEDRegisters(uint32_t value, int row){
   uint32_t tempValue = value;
-  setPinLow(CLK);
+  setPin(CLK, 0);
   for(int i=0; i<32; i++){
     if((tempValue & 1) == 1){
-      setPinHigh(DATA);
+      setPin(DATA, 1);
     } else {
-      setPinLow(DATA);
+      setPin(DATA, 0);
     }
-    setPinHigh(CLK);
+    setPin(CLK, 1);
     tempValue = tempValue >> 1;
-    setPinLow(CLK);
+    setPin(CLK, 0);
   }
   updateRowBus(row);
 }
 
+void drawFrame(){
+  for(int i=0; i<8; i++){
+    updateLEDRegisters(image[i], i);
+  }
+}
+
 void shift(int dx, int dy){
-  char newImage[8][32];
+  uint32_t newImage[8];
   for(int i=0; i<8; i++){
     for(int j=0; j<32; j++){
-      newImage[i][(j + dy) % 32] = image[i][j];
+      newImage[(i + dx) % 8][(j + dy) % 32] = image[i];
     }
   }
   for(int i=0; i<8; i++){
     for(int j=0; j<32; j++){
-      image[i][j] = newImage[i][j];
+      image[i] = newImage[i];
     }
   }
 
@@ -86,43 +90,44 @@ void setup() {
   pinMode(rowBus, OUTPUT);
   pinMode(rowBus + 1, OUTPUT);
   pinMode(rowBus + 2, OUTPUT);
-  setPinHigh(EO);
+  setPin(EO, 1);
 
   initializeImage();
 
-  image[0][0] = PATTERN_1;
-  image[1][0] = PATTERN_2;
-  image[2][0] = PATTERN_3;
-  image[3][0] = PATTERN_4;
-  image[4][0] = PATTERN_5;
-  image[5][0] = PATTERN_6;
-  image[6][0] = PATTERN_7;
-  image[7][0] = PATTERN_8;
+  image[0] = PATTERN_1;
+  image[1] = PATTERN_2;
+  image[2] = PATTERN_3;
+  image[3] = PATTERN_4;
+  image[4] = PATTERN_5;
+  image[5] = PATTERN_6;
+  image[6] = PATTERN_7;
+  image[7] = PATTERN_8;
 
 }
 int loopCount = 0;
 void loop() {
 
   if(loopCount >= 2000){
-    shift(0,1);
+    shift(0,0);
     loopCount = 0;
   }
   
-  updateLEDRegisters(image[0][0], 0);
+  drawFrame();
+  // updateLEDRegisters(image[0], 0);
 
-  updateLEDRegisters(image[1][0], 1);
+  // updateLEDRegisters(image[1], 1);
 
-  updateLEDRegisters(image[2][0], 2);
+  // updateLEDRegisters(image[2], 2);
 
-  updateLEDRegisters(image[3][0], 3);
+  // updateLEDRegisters(image[3], 3);
 
-  updateLEDRegisters(image[4][0], 4);
+  // updateLEDRegisters(image[4], 4);
 
-  updateLEDRegisters(image[5][0], 5);
+  // updateLEDRegisters(image[5], 5);
 
-  updateLEDRegisters(image[6][0], 6);
+  // updateLEDRegisters(image[6], 6);
 
-  updateLEDRegisters(image[7][0], 7);
+  // updateLEDRegisters(image[7], 7);
   loopCount++;
 }
 
