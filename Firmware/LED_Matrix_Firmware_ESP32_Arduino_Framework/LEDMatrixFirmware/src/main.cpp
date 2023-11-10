@@ -7,20 +7,17 @@
 #define EO 15
 #define rowBus 16
 
-#define PATTERN_1 0b11111111
-#define PATTERN_2 0b10100101
-#define PATTERN_3 0b10100101
-#define PATTERN_4 0b10000001
-#define PATTERN_5 0b10011001
-#define PATTERN_6 0b11000011
-#define PATTERN_7 0b10111101
-#define PATTERN_8 0b11111111
+#define PATTERN_1 0b1111111100000000000000000000000
+#define PATTERN_2 0b0000000000000000000000010100101
+#define PATTERN_3 0b0000000000000000000000010100101
+#define PATTERN_4 0b0000000000000000000000010000001
+#define PATTERN_5 0b0000000000000000000000010011001
+#define PATTERN_6 0b0000000000000000000000011000011
+#define PATTERN_7 0b0000000000000000000000010111101
+#define PATTERN_8 0b0000000000000000000000011111111
 
-struct display {
-  char image[8][32]; 
-};
 
-typedef struct display Display;
+
 
 inline void setPinHigh() __attribute__ ((always_inline)); 
 inline void setPinHigh(int pin){
@@ -41,11 +38,11 @@ inline void updateRowBus(int rowVal){
   setPinLow(STR);
 }
 
-void initializeDisplay(Display *d);
-void initializeDisplay(Display *d){
+
+void initializeImage(){
   for(int i=0; i<8; i++){
     for(int j=0; j<32; j++){
-      d->image[i][j] = 0;
+      image[i][j] = 0;
     }
   }
 }
@@ -66,6 +63,21 @@ void updateLEDRegisters(uint32_t value, int row){
   updateRowBus(row);
 }
 
+void shift(int dx, int dy){
+  char newImage[8][32];
+  for(int i=0; i<8; i++){
+    for(int j=0; j<32; j++){
+      newImage[i][(j + dy) % 32] = image[i][j];
+    }
+  }
+  for(int i=0; i<8; i++){
+    for(int j=0; j<32; j++){
+      image[i][j] = newImage[i][j];
+    }
+  }
+
+}
+
 void setup() {
   pinMode(STR, OUTPUT);
   pinMode(DATA, OUTPUT);
@@ -75,29 +87,43 @@ void setup() {
   pinMode(rowBus + 1, OUTPUT);
   pinMode(rowBus + 2, OUTPUT);
   setPinHigh(EO);
+
+  initializeImage();
+
+  image[0][0] = PATTERN_1;
+  image[1][0] = PATTERN_2;
+  image[2][0] = PATTERN_3;
+  image[3][0] = PATTERN_4;
+  image[4][0] = PATTERN_5;
+  image[5][0] = PATTERN_6;
+  image[6][0] = PATTERN_7;
+  image[7][0] = PATTERN_8;
+
 }
-
+int loopCount = 0;
 void loop() {
-  Display display;
-  Display *displayPointer = &display;
-  initializeDisplay(displayPointer);
 
- 
-  updateLEDRegisters(PATTERN_1, 0);
+  if(loopCount >= 2000){
+    shift(0,1);
+    loopCount = 0;
+  }
+  
+  updateLEDRegisters(image[0][0], 0);
 
-  updateLEDRegisters(PATTERN_2, 1);
+  updateLEDRegisters(image[1][0], 1);
 
-  updateLEDRegisters(PATTERN_3, 2);
+  updateLEDRegisters(image[2][0], 2);
 
-  updateLEDRegisters(PATTERN_4, 3);
+  updateLEDRegisters(image[3][0], 3);
 
-  updateLEDRegisters(PATTERN_5, 4);
+  updateLEDRegisters(image[4][0], 4);
 
-  updateLEDRegisters(PATTERN_6, 5);
+  updateLEDRegisters(image[5][0], 5);
 
-  updateLEDRegisters(PATTERN_7, 6);
+  updateLEDRegisters(image[6][0], 6);
 
-  updateLEDRegisters(PATTERN_8, 7);
+  updateLEDRegisters(image[7][0], 7);
+  loopCount++;
 }
 
 // put function definitions here:
