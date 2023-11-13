@@ -1,0 +1,80 @@
+#include <Arduino.h>
+#include "LEDMatrix.h"
+
+#define STR 12
+#define DATA 13
+#define CLK 14
+#define EO 15
+#define rowBus 16
+
+uint32_t image[8]; //Global image array. 
+
+hw_timer_t *displayTimer = NULL;
+volatile int currentLine = 0;
+void initializeDisplay(){
+  displayTimer = timerBegin(0, 80, true);
+  timerAttachInterrupt(displayTimer, &onTimer, true);
+  timerAlarmWrite(displayTimer, 1000, true);
+  timerAlarmEnable(displayTimer);
+
+}
+
+void IRAM_ATTR onTimer(){
+  if(currentLine < 7){
+    updateLEDRegisters(image[currentLine], currentLine);
+    currentLine++;
+  }
+  else {
+    updateLEDRegisters(image[currentLine], currentLine);
+    currentLine = 0;
+  }
+}
+
+void setPin(int pin, bool val){
+  if(val){
+    GPIO.out_w1ts |= ((uint32_t) 1 << pin);
+  }else{
+    GPIO.out_w1tc |= ((uint32_t) 1 << pin);
+  }
+}
+
+
+void updateRowBus(int rowVal){
+  setPin(STR, 0);
+  uint32_t newRowVal = (GPIO.out & ~(7 << rowBus)) | (((uint32_t) rowVal) << rowBus);
+  //newRowVal = (newRowVal & ~(1 << STR)) | (1 << STR);
+  GPIO.out = newRowVal;
+  setPin(STR, 1);
+  setPin(STR, 0);
+}
+
+void updateLEDRegisters(uint32_t value, int row){
+  uint32_t tempValue = value;
+  setPin(CLK, 0);
+  for(int i=0; i<32; i++){
+    if((tempValue & 1) == 1){
+      setPin(DATA, 1);
+    } else {
+      setPin(DATA, 0);
+    }
+    setPin(CLK, 1);
+    tempValue = tempValue >> 1;
+    setPin(CLK, 0);
+  }
+  updateRowBus(row);
+}
+
+void shift(int dx, int dy){
+  //Wait until current frame finishes before executing
+  while(currentLine != 0);
+  ///
+  uint32_t newImage[8];
+  for(int i=0; i<8; i++){
+    newImage[(i + dx) % 8] = (image[i] << dy) | (image[i] >> 32 - dy);
+  }
+  for(int i=0; i<8; i++){
+    for(int j=0; j<32; j++){
+      image[i] = newImage[i];
+    }
+  }
+}
