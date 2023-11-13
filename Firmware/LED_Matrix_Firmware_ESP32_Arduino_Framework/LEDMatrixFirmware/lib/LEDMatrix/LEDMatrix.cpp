@@ -1,10 +1,15 @@
 #include <Arduino.h>
 #include "LEDMatrix.h"
 
+//"Store". Updates all shift register output pins to value in registers.
 #define STR 12
+//Data input pin of first shift register
 #define DATA 13
+//"Clock". Clock pin of every shift register.
 #define CLK 14
+//"Enable Output". All registers enabled when set to 1.
 #define EO 15
+//First pin of 3 pin bus. Each 3-bit value corresponds to one of 8 rows.
 #define rowBus 16
 
 uint32_t image[8]; //Global image array. 
@@ -64,13 +69,13 @@ void updateLEDRegisters(uint32_t value, int row){
   updateRowBus(row);
 }
 
-void shift(int dx, int dy){
+void shift(int offsetX, int offsetY){
   //Wait until current frame finishes before executing
   while(currentLine != 0);
   ///
   uint32_t newImage[8];
   for(int i=0; i<8; i++){
-    newImage[(i + dx) % 8] = (image[i] << dy) | (image[i] >> 32 - dy);
+    newImage[(i + offsetX) % 8] = (image[i] << offsetY) | (image[i] >> 32 - offsetY);
   }
   for(int i=0; i<8; i++){
     for(int j=0; j<32; j++){
