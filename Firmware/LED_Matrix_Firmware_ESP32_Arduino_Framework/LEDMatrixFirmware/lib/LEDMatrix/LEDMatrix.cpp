@@ -11,6 +11,8 @@
 #define EO 15
 //First pin of 3 pin bus. Each 3-bit value corresponds to one of 8 rows.
 #define rowBus 16
+//Blank line.
+#define BLANK 0
 
 uint32_t image[8]; //Global image array. 
 
@@ -19,18 +21,19 @@ volatile int currentLine = 0;
 void initializeDisplay(){
   displayTimer = timerBegin(0, 80, true);
   timerAttachInterrupt(displayTimer, &onTimer, true);
-  timerAlarmWrite(displayTimer, 1000, true);
+  timerAlarmWrite(displayTimer, 2000, true);
   timerAlarmEnable(displayTimer);
 
 }
 
 void IRAM_ATTR onTimer(){
-  if(currentLine < 7){
+  if(currentLine <= 7){
     updateLEDRegisters(image[currentLine], currentLine);
     currentLine++;
   }
+
   else {
-    updateLEDRegisters(image[currentLine], currentLine);
+    updateLEDRegisters(BLANK, 0);
     currentLine = 0;
   }
 }
@@ -69,17 +72,22 @@ void updateLEDRegisters(uint32_t value, int row){
   updateRowBus(row);
 }
 
-void shift(int offsetX, int offsetY){
+int frameCount = 0;
+
+void shift(int offsetX, int offsetY, int frameCount){
   //Wait until current frame finishes before executing
-  while(currentLine != 0);
-  ///
-  uint32_t newImage[8];
-  for(int i=0; i<8; i++){
-    newImage[(i + offsetX) % 8] = (image[i] << offsetY) | (image[i] >> 32 - offsetY);
-  }
-  for(int i=0; i<8; i++){
-    for(int j=0; j<32; j++){
-      image[i] = newImage[i];
+  while(currentLine != 8){}
+  if(frameCount % 4 == 0){
+    uint32_t newImage[8];
+    for(int i=0; i<8; i++){
+      newImage[(i + offsetX) % 8] = (image[i] << offsetY) | (image[i] >> 32 - offsetY);
+    }
+    for(int i=0; i<8; i++){
+      for(int j=0; j<32; j++){
+        image[i] = newImage[i];
+      }
     }
   }
+  frameCount++;
+  while(currentLine != 0){}
 }

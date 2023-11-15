@@ -10,4 +10,4 @@ void setPin(int pin, bool val);
 
 void updateLEDRegisters(uint32_t value, int row);
 
-void shift(int dx, int dy);
+void shift(int dx, int dy, int frameCount);

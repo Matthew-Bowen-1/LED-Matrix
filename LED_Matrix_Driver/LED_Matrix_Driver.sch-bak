@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -1369,12 +1369,6 @@ Wire Wire Line
 	5950 1650 6000 1650
 Wire Wire Line
 	5950 1650 5950 2450
-$Sheet
-S 650  900  3550 5900
-U 6543F936
-F0 "LED_Matrix_8x32" 50
-F1 "LED_Matrix_8x32.sch" 50
-$EndSheet
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 65592254
