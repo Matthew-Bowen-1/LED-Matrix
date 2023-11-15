@@ -19,9 +19,9 @@ uint32_t image[8]; //Global image array.
 hw_timer_t *displayTimer = NULL;
 volatile int currentLine = 0;
 void initializeDisplay(){
-  displayTimer = timerBegin(0, 80, true);
+  displayTimer = timerBegin(0, 800, true);
   timerAttachInterrupt(displayTimer, &onTimer, true);
-  timerAlarmWrite(displayTimer, 2000, true);
+  timerAlarmWrite(displayTimer, 100, true);
   timerAlarmEnable(displayTimer);
 
 }
@@ -74,10 +74,10 @@ void updateLEDRegisters(uint32_t value, int row){
 
 int frameCount = 0;
 
-void shift(int offsetX, int offsetY, int frameCount){
+void shift(int offsetX, int offsetY, int frameDelay){
   //Wait until current frame finishes before executing
   while(currentLine != 8){}
-  if(frameCount % 4 == 0){
+  if(frameCount % frameDelay == 0){
     uint32_t newImage[8];
     for(int i=0; i<8; i++){
       newImage[(i + offsetX) % 8] = (image[i] << offsetY) | (image[i] >> 32 - offsetY);

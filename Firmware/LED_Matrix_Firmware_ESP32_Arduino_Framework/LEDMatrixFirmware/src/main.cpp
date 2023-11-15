@@ -74,7 +74,7 @@ void setup() {
 uint32_t loopCount = 0;
 void loop() {
 
-  shift(0,1,4);
+  shift(0,1,8);
 
   if(loopCount >= 800000){
     
