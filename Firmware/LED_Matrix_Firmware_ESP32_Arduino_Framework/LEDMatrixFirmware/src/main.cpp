@@ -59,7 +59,7 @@ void setup() {
   setPin(EO, 1);
 
   initializeImage();
-  initializeDisplay();
+  initializeDisplay(800, 100);
 
   image[0] = PATTERN_1;
   image[1] = PATTERN_2;
@@ -74,7 +74,7 @@ void setup() {
 uint32_t loopCount = 0;
 void loop() {
 
-  shift(0,1,8);
+  //shift(0,1,8);
 
   if(loopCount >= 800000){
     

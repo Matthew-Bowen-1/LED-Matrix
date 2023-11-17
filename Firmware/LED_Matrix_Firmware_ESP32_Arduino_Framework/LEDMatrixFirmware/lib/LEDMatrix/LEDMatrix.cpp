@@ -18,10 +18,10 @@ uint32_t image[8]; //Global image array.
 
 hw_timer_t *displayTimer = NULL;
 volatile int currentLine = 0;
-void initializeDisplay(){
-  displayTimer = timerBegin(0, 800, true);
+void initializeDisplay(int prescaler, int intervalSize){
+  displayTimer = timerBegin(0, prescaler, true);
   timerAttachInterrupt(displayTimer, &onTimer, true);
-  timerAlarmWrite(displayTimer, 100, true);
+  timerAlarmWrite(displayTimer, intervalSize, true);
   timerAlarmEnable(displayTimer);
 
 }
@@ -90,4 +90,32 @@ void shift(int offsetX, int offsetY, int frameDelay){
   }
   frameCount++;
   while(currentLine != 0){}
+}
+
+void shiftChar(int frameDelay, char currentCharMatrix[8]){
+  char tempCharMatrix[8];
+  char tempCharMatrixMask = 1;
+  for(int i=0; i<8; i++){
+    //Char matrix only needs last 6 bits.
+    tempCharMatrix[i] = currentCharMatrix[i];
+  }
+  int currentColumn = 5;
+  char tempCharDataValue = 0;
+  //Each character matrix consists of 5 data columns and a blank column
+  for(int i=0; i<(6 * frameDelay); i++){
+    while(currentLine != 8){}
+    if(frameCount % frameDelay == 0){
+      uint32_t newImage[8];
+      for(int j=0; j<8; j++){
+        tempCharDataValue = (tempCharMatrix[j] >> currentColumn) & tempCharMatrixMask;
+        newImage[j] = (image[j] << 1) | tempCharDataValue;
+      }
+      currentColumn--;
+      for(int j=0; j<8; j++){
+        image[j] = newImage[j];
+      }
+    }
+    frameCount++;
+    while(currentLine != 0){}
+  }
 }

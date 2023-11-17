@@ -2,7 +2,7 @@
 
 extern uint32_t image[8];
 
-void initializeDisplay();
+void initializeDisplay(int prescaler, int intervalSize);
 
 void IRAM_ATTR onTimer();
 
