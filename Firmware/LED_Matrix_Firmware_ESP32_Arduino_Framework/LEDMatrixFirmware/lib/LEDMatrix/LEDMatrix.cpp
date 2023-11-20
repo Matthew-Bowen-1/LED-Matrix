@@ -12,9 +12,17 @@
 //First pin of 3 pin bus. Each 3-bit value corresponds to one of 8 rows.
 #define rowBus 16
 //Blank line.
-#define BLANK 0
 
-uint32_t image[8]; //Global image array. 
+
+const uint32_t BLANK = 0;
+
+const uint32_t ANTIBLANK = 0xFFFFFFFF;
+
+uint32_t image[8]; //Global image array.
+const uint32_t blankImage[8] = {0,0,0,0,0,0,0,0}; //Blank image array
+
+//Determines whether display image is inverted. Deault is false.
+bool inverted = false;
 
 hw_timer_t *displayTimer = NULL;
 volatile int currentLine = 0;
@@ -23,7 +31,7 @@ void initializeDisplay(int prescaler, int intervalSize){
   timerAttachInterrupt(displayTimer, &onTimer, true);
   timerAlarmWrite(displayTimer, intervalSize, true);
   timerAlarmEnable(displayTimer);
-
+  inverted = false;
 }
 
 void IRAM_ATTR onTimer(){
@@ -32,8 +40,12 @@ void IRAM_ATTR onTimer(){
     currentLine++;
   }
 
-  else {
+  else if (!inverted){
     updateLEDRegisters(BLANK, 0);
+    currentLine = 0;
+  }
+  else if(inverted){
+    updateLEDRegisters(ANTIBLANK, 0);
     currentLine = 0;
   }
 }
@@ -46,6 +58,21 @@ void setPin(int pin, bool val){
   }
 }
 
+void invertImage(bool value){
+  inverted = value;
+}
+
+bool isImageInverted(){
+  return inverted;
+}
+
+void toggleInverted(){
+  if(inverted == true){
+    inverted = false;
+  }else if(inverted == false){
+    inverted = true;
+  }
+}
 
 void updateRowBus(int rowVal){
   setPin(STR, 0);
@@ -56,10 +83,27 @@ void updateRowBus(int rowVal){
   setPin(STR, 0);
 }
 
+/*
+  The global variable 'inverted' is used to set the data pin so that the image
+  can easily be inverted simply by setting the value of the 'inverted' boolean.
+*/
 void updateLEDRegisters(uint32_t value, int row){
   uint32_t tempValue = value;
   setPin(CLK, 0);
-  for(int i=0; i<32; i++){
+  if(inverted){
+    for(int i=0; i<32; i++){
+    if((tempValue & 1) == 1){
+      setPin(DATA, 0);
+    } else {
+      setPin(DATA, 1);
+    }
+    setPin(CLK, 1);
+    tempValue = tempValue >> 1;
+    setPin(CLK, 0);
+    }
+  }
+  else if (!inverted){
+    for(int i=0; i<32; i++){
     if((tempValue & 1) == 1){
       setPin(DATA, 1);
     } else {
@@ -68,11 +112,29 @@ void updateLEDRegisters(uint32_t value, int row){
     setPin(CLK, 1);
     tempValue = tempValue >> 1;
     setPin(CLK, 0);
+    }
   }
   updateRowBus(row);
 }
 
 int frameCount = 0;
+
+void shiftBlank(int frameDelay, bool high){
+  for(int i=0; i<(32*frameDelay); i++){
+    while(currentLine != 8){}
+    if(frameCount % frameDelay == 0){
+      for(int i=0; i<8; i++){
+        image[i] = image[i] << 1;
+        if(high){
+          image[i] |= 1;
+        }
+      }
+    }
+    frameCount++;
+    while(currentLine != 0){}
+  }
+  
+}
 
 void shift(int offsetX, int offsetY, int frameDelay){
   //Wait until current frame finishes before executing

@@ -134,3 +134,14 @@ const uint8_t characters[128][8] = {
     {0x00,0x00,0x00,0x1A,0x24,0x00,0x00,0x00}, // ~
     {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}, // DEL
 };
+
+//Set how many frames between updates
+void setTextFrameDelay(int newFrameDelay);
+
+//Blank between prints. If so, should blank LED state be set as high or low?
+void setBlankBetweenPrints(bool blankBetweenPrints, bool LEDState);  
+
+//Set whether display should invert with every character printed.
+void setFlashingCharacters(bool isFlashing);
+
+void scrollPrint(const char *string);
