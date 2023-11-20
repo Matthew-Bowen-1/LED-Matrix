@@ -5,22 +5,10 @@
 const char emptyMatrix[8] = {0,0,0,0,0,0,0,0};
 
 //Basic display parameters. Default values set here but can be changed.
-int frameDelay = 0;
-
-bool blankBetweenPrints = false;
 
 bool blankLEDState = false;
 
 bool flashingCharacters = false;
-
-void setTextFrameDelay(int newFrameDelay){
-    frameDelay = newFrameDelay;
-}
-
-void setBlankBetweenPrints(bool newBlankBetweenPrints, bool newLEDState){
-    blankBetweenPrints = newBlankBetweenPrints;
-    blankLEDState = newLEDState;
-}
 
 void setFlashingCharacters(bool isFlashing){
     flashingCharacters = isFlashing;
@@ -39,13 +27,45 @@ void scrollPrint(const char *string){
         for(int j=0; j<8; j++){
             currentCharMatrix[j] = characters[currentCharValue][j];
         }
-        shiftChar(frameDelay, currentCharMatrix);
+        shiftChar(currentCharMatrix);
         if(flashingCharacters){
             toggleInverted();
         }
 
     }
-    if(blankBetweenPrints){
-        shiftBlank(frameDelay, blankLEDState);
+}
+
+void scrollPrintInt(int64_t value){
+    char currentCharMatrix[8];
+    if(value == 0){
+        for(int i=0; i<8; i++){
+            currentCharMatrix[i] = characters['0'][i];
+        }
+        shiftChar(currentCharMatrix);
+    }
+    //If value is negative, convert it to positive.
+    //The negation sign will be added at the end.
+    
+    if(value < 0){
+        int64_t tempValue = ~value;
+        tempValue += 1;
+        int decimalNumSize = log10(tempValue) + 1;
+        char *numberArray = (char*)calloc(decimalNumSize + 2, sizeof(char));
+        numberArray[0] = '-';
+        for(int i = (decimalNumSize - 1); i >= 0; --i, tempValue /= 10){
+            numberArray[i + 1] = (tempValue % 10) + '0';
+        }
+        numberArray[decimalNumSize + 1] = 0;
+        scrollPrint(numberArray);
+    }
+    else{
+        int64_t tempValue = value;
+        int decimalNumSize = log10(tempValue) + 1;
+        char *numberArray = (char*)calloc(decimalNumSize + 1, sizeof(char));
+        for(int i = (decimalNumSize - 1); i >= 0; --i, tempValue /= 10){
+            numberArray[i] = (tempValue % 10) + '0';
+        }
+        numberArray[decimalNumSize] = 0;
+        scrollPrint(numberArray);
     }
 }

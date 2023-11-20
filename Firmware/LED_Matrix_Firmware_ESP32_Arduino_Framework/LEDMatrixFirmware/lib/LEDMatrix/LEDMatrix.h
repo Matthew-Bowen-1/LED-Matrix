@@ -4,22 +4,37 @@ extern uint32_t image[8];
 
 extern bool inverted;
 
-void initializeDisplay(int prescaler, int intervalSize);
+//Starts the display timer running and starts display interrupts. 
+void initializeDisplay(int prescaler, int intervalSize, int newFrameDelay); //Clock speed: 80MHz.
 
+//Initialize image array to all 0
+void initializeImage();
+
+//Sets new frame delay.
+void setFrameDelay(int newFrameDelay);
+
+//Timer interrupt service routine for updating the display
 void IRAM_ATTR onTimer();
 
+//Set a specified pin high or low. Probably faster than digitalWrite()
 void setPin(int pin, bool val);
-
-void invertImage(bool value);
-
-bool isImageInverted();
-
-void toggleInverted();
 
 void updateLEDRegisters(uint32_t value, int row);
 
-void shiftBlank(int frameDelay, bool high);
+//When true, the display will invert on and off LEDs
+void invertImage(bool value);
 
-void shift(int dx, int dy, int frameDelay);
+//Returns whether the display image is currently inverted
+bool isImageInverted();
 
-void shiftChar(int frameDelay, char currentCharMatrix[8]);
+//Toggles display between normal and inverted modes
+void toggleInverted();
+
+//Shifts everything off the display. 
+void shiftBlank(bool high);
+
+//Circular shifts elements on the display in either X or Y direction.
+void shift(int dx, int dy);
+
+//Shifts an 8 row by 6 column character onto the display.
+void shiftChar(char currentCharMatrix[8]);

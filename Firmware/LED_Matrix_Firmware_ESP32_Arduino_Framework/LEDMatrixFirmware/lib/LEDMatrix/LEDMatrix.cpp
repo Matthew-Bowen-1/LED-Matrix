@@ -21,17 +21,33 @@ const uint32_t ANTIBLANK = 0xFFFFFFFF;
 uint32_t image[8]; //Global image array.
 const uint32_t blankImage[8] = {0,0,0,0,0,0,0,0}; //Blank image array
 
+int frameDelay = 1;
+
 //Determines whether display image is inverted. Deault is false.
 bool inverted = false;
 
 hw_timer_t *displayTimer = NULL;
 volatile int currentLine = 0;
-void initializeDisplay(int prescaler, int intervalSize){
+
+void initializeDisplay(int prescaler, int intervalSize, int newFrameDelay){
   displayTimer = timerBegin(0, prescaler, true);
   timerAttachInterrupt(displayTimer, &onTimer, true);
   timerAlarmWrite(displayTimer, intervalSize, true);
   timerAlarmEnable(displayTimer);
+  frameDelay = newFrameDelay;
   inverted = false;
+}
+
+void initializeImage(){
+  for(int i=0; i<8; i++){
+    for(int j=0; j<32; j++){
+      image[i] = 0;
+    }
+  }
+}
+
+void setFrameDelay(int newFrameDelay){
+  frameDelay = newFrameDelay;
 }
 
 void IRAM_ATTR onTimer(){
@@ -119,7 +135,7 @@ void updateLEDRegisters(uint32_t value, int row){
 
 int frameCount = 0;
 
-void shiftBlank(int frameDelay, bool high){
+void shiftBlank(bool high){
   for(int i=0; i<(32*frameDelay); i++){
     while(currentLine != 8){}
     if(frameCount % frameDelay == 0){
@@ -136,7 +152,7 @@ void shiftBlank(int frameDelay, bool high){
   
 }
 
-void shift(int offsetX, int offsetY, int frameDelay){
+void shift(int offsetX, int offsetY){
   //Wait until current frame finishes before executing
   while(currentLine != 8){}
   if(frameCount % frameDelay == 0){
@@ -154,7 +170,7 @@ void shift(int offsetX, int offsetY, int frameDelay){
   while(currentLine != 0){}
 }
 
-void shiftChar(int frameDelay, char currentCharMatrix[8]){
+void shiftChar(char currentCharMatrix[8]){
   char tempCharMatrix[8];
   char tempCharMatrixMask = 1;
   for(int i=0; i<8; i++){
