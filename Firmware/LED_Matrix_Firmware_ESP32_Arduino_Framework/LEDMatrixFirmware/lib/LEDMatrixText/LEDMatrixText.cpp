@@ -45,7 +45,7 @@ void scrollPrintInt(int64_t value){
     }
     //If value is negative, convert it to positive.
     //The negation sign will be added at the end.
-    
+    //Assembles a string version of a given integer
     if(value < 0){
         int64_t tempValue = ~value;
         tempValue += 1;
@@ -55,8 +55,9 @@ void scrollPrintInt(int64_t value){
         for(int i = (decimalNumSize - 1); i >= 0; --i, tempValue /= 10){
             numberArray[i + 1] = (tempValue % 10) + '0';
         }
-        numberArray[decimalNumSize + 1] = 0;
+        numberArray[decimalNumSize + 1] = 0;//Append null charachter 
         scrollPrint(numberArray);
+        free(numberArray);
     }
     else{
         int64_t tempValue = value;
@@ -67,5 +68,7 @@ void scrollPrintInt(int64_t value){
         }
         numberArray[decimalNumSize] = 0;
         scrollPrint(numberArray);
+        free(numberArray);
     }
+    
 }

@@ -22,8 +22,9 @@ void setup() {
   setPin(EO, 1);
   initializeImage();
   initializeDisplay(800, 240, 1);
+  scrollPrint("Start");
 }
-int loopCount = 1;
+int64_t loopCount = 100;
 int delayVal = 8;
 void loop() {
   // scrollPrint("I");
@@ -49,12 +50,9 @@ void loop() {
   // scrollPrint("!");
   // toggleInverted();
 
-  scrollPrint("Hello! ");
-  scrollPrintInt(loopCount);
-  shiftBlank(0);
-  toggleInverted();
-  
-  loopCount++;
+  // scrollPrintInt(loopCount);
+  // scrollPrint(" ");
+  // loopCount--;
 
 
 }
