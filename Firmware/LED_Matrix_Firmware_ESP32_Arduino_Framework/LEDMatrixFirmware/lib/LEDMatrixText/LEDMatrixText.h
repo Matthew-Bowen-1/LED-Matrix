@@ -143,3 +143,6 @@ void scrollPrint(const char *string);
 
 //Prints a signed integer value right to left across the display.
 void scrollPrintInt(int64_t value);
+
+//Prints an unsigned integer value right to left across the display.
+void scrollPrintUint(uint64_t value);
