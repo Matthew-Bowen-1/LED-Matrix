@@ -70,5 +70,26 @@ void scrollPrintInt(int64_t value){
         scrollPrint(numberArray);
         free(numberArray);
     }
-    
+}
+
+void scrollPrintUint(uint64_t value){
+    char currentCharMatrix[8];
+    if(value == 0){
+        for(int i=0; i<8; i++){
+            currentCharMatrix[i] = characters['0'][i];
+        }
+        shiftChar(currentCharMatrix);
+    }
+    else
+    {
+        uint64_t tempValue = value;
+        int decimalNumSize = log10(tempValue) + 1;
+        char *numberArray = (char*)calloc(decimalNumSize + 1, sizeof(char));
+        for(int i = (decimalNumSize - 1); i >= 0; --i, tempValue /= 10){
+            numberArray[i] = (tempValue % 10) + '0';
+        }
+        numberArray[decimalNumSize] = 0;
+        scrollPrint(numberArray);
+        free(numberArray);
+    }
 }
