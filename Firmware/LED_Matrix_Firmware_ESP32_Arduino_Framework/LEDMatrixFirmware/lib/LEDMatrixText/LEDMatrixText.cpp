@@ -59,7 +59,7 @@ void scrollPrintInt(int64_t value){
         scrollPrint(numberArray);
         free(numberArray);
     }
-    else{
+    else if (value > 0){
         int64_t tempValue = value;
         int decimalNumSize = log10(tempValue) + 1;
         char *numberArray = (char*)calloc(decimalNumSize + 1, sizeof(char));

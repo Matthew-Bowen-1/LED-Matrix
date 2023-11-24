@@ -50,9 +50,13 @@ void loop() {
   // scrollPrint("!");
   // toggleInverted();
 
-  // scrollPrintInt(loopCount);
-  // scrollPrint(" ");
-  // loopCount--;
+  scrollPrintInt(loopCount);
+  scrollPrint(" ");
+  loopCount--;
+  if(loopCount == -1){
+    loopCount = 100;
+  }
+  
 
 
 }
