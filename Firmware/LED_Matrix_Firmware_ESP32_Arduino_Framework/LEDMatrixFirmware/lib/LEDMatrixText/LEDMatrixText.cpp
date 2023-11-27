@@ -35,9 +35,6 @@ void scrollPrint(const char *string){
     }
 }
 
-void staticPrint(const char *string){
-    
-}
 
 void scrollPrintInt(int64_t value){
     char currentCharMatrix[8];
