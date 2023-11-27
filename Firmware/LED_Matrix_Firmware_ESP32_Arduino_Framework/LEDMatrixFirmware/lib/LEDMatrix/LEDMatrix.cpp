@@ -50,12 +50,15 @@ void setFrameDelay(int newFrameDelay){
   frameDelay = newFrameDelay;
 }
 
+int frameCount = 0;
+
+
 void IRAM_ATTR onTimer(){
+  
   if(currentLine <= 7){
     updateLEDRegisters(image[currentLine], currentLine);
     currentLine++;
   }
-
   else if (!inverted){
     updateLEDRegisters(BLANK, 0);
     currentLine = 0;
@@ -65,6 +68,7 @@ void IRAM_ATTR onTimer(){
     currentLine = 0;
   }
 }
+
 
 void setPin(int pin, bool val){
   if(val){
@@ -133,15 +137,14 @@ void updateLEDRegisters(uint32_t value, int row){
   updateRowBus(row);
 }
 
-int frameCount = 0;
 
-void shiftBlank(bool high){
-  for(int i=0; i<(32*frameDelay); i++){
+void shiftBlank(bool value){
+  for(int i=0; i<32*frameDelay; i++){
     while(currentLine != 8){}
     if(frameCount % frameDelay == 0){
       for(int i=0; i<8; i++){
         image[i] = image[i] << 1;
-        if(high){
+        if(value){
           image[i] |= 1;
         }
       }
@@ -149,8 +152,9 @@ void shiftBlank(bool high){
     frameCount++;
     while(currentLine != 0){}
   }
-  
 }
+
+
 
 void shift(int offsetX, int offsetY){
   //Wait until current frame finishes before executing
