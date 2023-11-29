@@ -30,8 +30,8 @@ bool inverted = false;
 hw_timer_t *displayTimer = NULL;
 volatile int currentLine = 0;
 
-void initializeDisplay(int prescaler, int intervalSize, int newFrameDelay){
-  displayTimer = timerBegin(0, prescaler, true);
+void initializeDisplay(int timerNumber, int prescaler, int intervalSize, int newFrameDelay){
+  displayTimer = timerBegin(timerNumber, prescaler, true);
   timerAttachInterrupt(displayTimer, &onTimer, true);
   timerAlarmWrite(displayTimer, intervalSize, true);
   timerAlarmEnable(displayTimer);

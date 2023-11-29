@@ -5,7 +5,7 @@ extern uint32_t image[8];
 extern bool inverted;
 
 //Starts the display timer running and starts display interrupts. 
-void initializeDisplay(int prescaler, int intervalSize, int newFrameDelay); //Clock speed: 80MHz.
+void initializeDisplay(int timerNumber, int prescaler, int intervalSize, int newFrameDelay); //Clock speed: 80MHz.
 
 //Initialize image array to all 0
 void initializeImage();

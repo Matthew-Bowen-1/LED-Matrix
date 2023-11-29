@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "LEDMatrix.h"
 #include "LEDMatrixText.h"
+#include "Timekeeper.h"
 
 
 //"Store". Updates all shift register output pins to value in registers.
@@ -21,7 +22,7 @@ void setup() {
   }
   setPin(EO, 1);
   initializeImage();
-  initializeDisplay(800, 200, 1);
+  initializeDisplay(0,800, 200, 1);
 }
 
 void loop() {
