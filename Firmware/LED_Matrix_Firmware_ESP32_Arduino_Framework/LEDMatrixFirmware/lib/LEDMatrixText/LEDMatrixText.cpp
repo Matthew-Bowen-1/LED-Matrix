@@ -35,8 +35,40 @@ void scrollPrint(const char *string){
     }
 }
 
+int position = 4;
 void staticPrint(const char *string){
+    int stringLength = strlen(string);
+    char currentCharMatrix[8];
+    char currentCharValue = 0;
+    //8x32 display means only 5 5x7 characters possible with 1 space in between
+    if(stringLength < 6){
+        for(int i=0; i<(stringLength); i++){
+            currentCharValue = string[i];
+            for(int j=0; j<8; j++){
+                currentCharMatrix[j] = characters[string[i]][j];
+            }
+            staticChar(currentCharMatrix, position);
+            position--;
+            if(position < 0){
+                position = 4;
+            }
+        }
+    }
+    else{
+        for(int i=0; i<5; i++){
+            currentCharValue = string[i];
+            for(int j=0; j<8; j++){
+                currentCharMatrix[j] = characters[currentCharValue][j];
+            }
+            staticChar(currentCharMatrix, position);
+            position--;
+            if(position < 0){
+                position = 4;
+            }
+        }
+    }
     
+
 }
 
 void scrollPrintInt(int64_t value){

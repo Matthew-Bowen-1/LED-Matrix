@@ -21,37 +21,10 @@ void setup() {
   }
   setPin(EO, 1);
   initializeImage();
-  initializeDisplay(800, 240, 1);
-  scrollPrint("Start");
+  initializeDisplay(800, 200, 1);
+  staticPrint("Hello");
 }
-int64_t loopCount = 100;
-int delayVal = 8;
+
 void loop() {
-  // scrollPrint("I");
-  // toggleInverted();
-  // scrollPrint(" ");
-  // toggleInverted();
-  // scrollPrint("L");
-  // toggleInverted();
-  // scrollPrint("O");
-  // toggleInverted();
-  // scrollPrint("V");
-  // toggleInverted();
-  // scrollPrint("E");
-  // toggleInverted();
-  // scrollPrint(" ");
-  // toggleInverted();
-  // scrollPrint("Y");
-  // toggleInverted();
-  // scrollPrint("O");
-  // toggleInverted();
-  // scrollPrint("U");
-  // toggleInverted();
-  // scrollPrint("!");
-  // toggleInverted();
-
-  shift(0,1);
-  
-
 
 }

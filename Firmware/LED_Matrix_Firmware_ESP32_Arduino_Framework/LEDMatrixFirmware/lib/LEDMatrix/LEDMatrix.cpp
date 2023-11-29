@@ -201,3 +201,22 @@ void shiftChar(char currentCharMatrix[8]){
     while(currentLine != 0){}
   }
 }
+
+void staticChar(char currentCharMatrix[8], int position){
+  while(currentLine != 8){}
+  uint32_t imageMask[8];
+  uint32_t tempCharMatrix[8];
+  for(int i=0; i<8; i++){
+    imageMask[i] = 0x3F << (1 + (position * 6));
+    image[i] &=~ imageMask[i];
+    tempCharMatrix[i] = (uint32_t)currentCharMatrix[i];
+  }
+  for(int i=0; i<8; i++){
+      tempCharMatrix[i] = tempCharMatrix[i] << (1 + (position * 6));
+      image[i] |= tempCharMatrix[i];
+  }
+
+
+
+
+}

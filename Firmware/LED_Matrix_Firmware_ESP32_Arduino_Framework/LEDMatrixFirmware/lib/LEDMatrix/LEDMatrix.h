@@ -38,3 +38,6 @@ void shift(int dx, int dy);
 
 //Shifts an 8 row by 6 column character onto the display.
 void shiftChar(char currentCharMatrix[8]);
+
+//Prints a static character onto the display in one of 6 spots.
+void staticChar(char currentCharMatrix[8], int position);

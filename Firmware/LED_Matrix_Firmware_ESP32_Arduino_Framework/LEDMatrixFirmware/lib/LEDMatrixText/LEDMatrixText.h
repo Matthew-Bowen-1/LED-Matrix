@@ -141,6 +141,9 @@ void setFlashingCharacters(bool isFlashing);
 //Prints a string by scrolling it right to left across the display.
 void scrollPrint(const char *string);
 
+//Prints a string statically left to right
+void staticPrint(const char *string);
+
 //Prints a signed integer value right to left across the display.
 void scrollPrintInt(int64_t value);
 
