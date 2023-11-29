@@ -22,9 +22,8 @@ void setup() {
   setPin(EO, 1);
   initializeImage();
   initializeDisplay(800, 200, 1);
-  staticPrint("Help");
 }
 
 void loop() {
-
+  scrollPrint("Hello World ");
 }

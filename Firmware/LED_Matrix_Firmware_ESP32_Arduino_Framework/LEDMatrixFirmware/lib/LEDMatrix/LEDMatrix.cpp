@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "LEDMatrix.h"
+#include "LEDMatrixText.h"
 
 //"Store". Updates all shift register output pins to value in registers.
 #define STR 12
@@ -49,8 +50,10 @@ void initializeImage(){
 void setFrameDelay(int newFrameDelay){
   frameDelay = newFrameDelay;
 }
-
+//Global variables and flags for updating the display
 int frameCount = 0;
+bool shiftNext = false;
+int shiftOffsetX, shiftOffsetY;
 
 
 void IRAM_ATTR onTimer(){
@@ -59,13 +62,19 @@ void IRAM_ATTR onTimer(){
     updateLEDRegisters(image[currentLine], currentLine);
     currentLine++;
   }
-  else if (!inverted){
-    updateLEDRegisters(BLANK, 0);
-    currentLine = 0;
-  }
-  else if(inverted){
-    updateLEDRegisters(ANTIBLANK, 0);
-    currentLine = 0;
+  else{
+    if (!inverted){
+      updateLEDRegisters(BLANK, 0);
+      currentLine = 0;
+    }
+    if(inverted){
+      updateLEDRegisters(ANTIBLANK, 0);
+      currentLine = 0;
+    }
+    if(shiftNext){
+      shiftHelper(shiftOffsetX, shiftOffsetY);
+      shiftNext = false;
+    }
   }
 }
 
@@ -137,28 +146,21 @@ void updateLEDRegisters(uint32_t value, int row){
   updateRowBus(row);
 }
 
+void shiftBlank(){
+  scrollPrint("      ");
+}
 
-void shiftBlank(bool value){
-  for(int i=0; i<32*frameDelay; i++){
-    while(currentLine != 8){}
-    if(frameCount % frameDelay == 0){
-      for(int i=0; i<8; i++){
-        image[i] = image[i] << 1;
-        if(value){
-          image[i] |= 1;
-        }
-      }
-    }
-    frameCount++;
-    while(currentLine != 0){}
+void shift(int offsetX, int offsetY){
+  if(!shiftNext){
+    shiftOffsetX = offsetX;
+    shiftOffsetY = offsetY;
+    shiftNext = true;
+    
   }
 }
 
-
-
-void shift(int offsetX, int offsetY){
+void shiftHelper(int offsetX, int offsetY){
   //Wait until current frame finishes before executing
-  while(currentLine != 8){}
   if(frameCount % frameDelay == 0){
     uint32_t newImage[8];
     for(int i=0; i<8; i++){
@@ -171,7 +173,6 @@ void shift(int offsetX, int offsetY){
     }
   }
   frameCount++;
-  while(currentLine != 0){}
 }
 
 void shiftChar(char currentCharMatrix[8]){
@@ -215,8 +216,4 @@ void staticChar(char currentCharMatrix[8], int position){
       tempCharMatrix[i] = tempCharMatrix[i] << (1 + (position * 6));
       image[i] |= tempCharMatrix[i];
   }
-
-
-
-
 }

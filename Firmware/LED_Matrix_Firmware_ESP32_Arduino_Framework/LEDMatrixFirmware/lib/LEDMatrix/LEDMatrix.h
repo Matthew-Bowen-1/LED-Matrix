@@ -31,10 +31,11 @@ bool isImageInverted();
 void toggleInverted();
 
 //Shifts everything off the display. 
-void shiftBlank(bool high);
+void shiftBlank();
 
 //Circular shifts elements on the display in either X or Y direction.
 void shift(int dx, int dy);
+void shiftHelper(int dx, int dy);
 
 //Shifts an 8 row by 6 column character onto the display.
 void shiftChar(char currentCharMatrix[8]);
