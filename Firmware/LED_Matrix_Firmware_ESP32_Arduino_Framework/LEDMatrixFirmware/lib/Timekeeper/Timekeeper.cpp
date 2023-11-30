@@ -6,14 +6,15 @@
 #define AM false
 #define PM true
 
-hw_timer_t *clockTimer = NULL;
+hw_timer_t* clockTimer = NULL;
 uint8_t hours = 1, minutes = 0, seconds = 0;
+uint32_t timeImage[8];
 char currentTime[5];
 bool dayState = AM;
 bool clockIsDisplayed = false;
 
 void initializeClock(int timerNumber, int currentHours, int currentMins, bool currentDayState){
-    hours  = currentHours;
+    hours = currentHours;
     minutes = currentMins;
     dayState = currentDayState;
     clockTimer = timerBegin(timerNumber, 800, true);
@@ -21,6 +22,14 @@ void initializeClock(int timerNumber, int currentHours, int currentMins, bool cu
     timerAlarmWrite(clockTimer, 100000, true);
     timerAlarmEnable(clockTimer);
     currentTime[2] = ':';
+}
+
+void initializeTimeImage(){
+    for(int i = 0; i < 8; i++){
+        for(int j = 0; j < 32; j++){
+            timeImage[i] = 0;
+        }
+    }
 }
 
 void displayClock(bool value){
@@ -32,21 +41,27 @@ bool isClockDisplayed(){
 }
 
 void IRAM_ATTR onClockUpdate(){
-    if(seconds <59){
+    if(seconds < 59){
         seconds++;
-    }else{
+    }
+    else{
         seconds = 0;
         if(minutes < 59){
             minutes++;
         }
         else{
             minutes = 0;
-            if(hours <= 12){
+            if(hours < 12){
                 hours++;
             }
             else{
                 hours = 1;
-                dayState != dayState;
+                if(dayState){
+                    dayState = false;
+                }
+                else{
+                    dayState = true;
+                }
             }
         }
     }
@@ -55,7 +70,7 @@ void IRAM_ATTR onClockUpdate(){
 void updateClockFace(){
     while(currentLine != 8){}
     char currentCharMatrix[8];
-    char *timeString = (char*)calloc(6, sizeof(char));
+    char* timeString = (char*)calloc(6, sizeof(char));
     if(hours > 9){
         currentTime[0] = '1';
         currentTime[1] = (hours % 10) + '0';
@@ -72,28 +87,37 @@ void updateClockFace(){
         currentTime[3] = '0';
         currentTime[4] = minutes + '0';
     }
-    for(int i=0; i<5; i++){
+    for(int i = 0; i < 5; i++){
         timeString[i] = currentTime[i];
     }
     timeString[5] = 0;
     staticPrint(timeString);
-    
-    int doubleSeconds = (seconds/2) + 1;
+
+
+
+    int doubleSeconds = (seconds / 2) + 1;
     if(seconds == 0){
-        image[7] &= ~ 1 << doubleSeconds;
+        image[7] &= ~1 << doubleSeconds;
     }
     image[7] |= (1 << doubleSeconds) | ((1 << doubleSeconds) - 1);
     if(dayState == PM){
-        for(int i=0; i<8; i++){
+        for(int i = 0; i < 8; i++){
             image[i] |= 1;
-            image[i] |= 1 << 31; 
+            image[i] |= 1 << 31;
         }
-    }else if(dayState == AM){
-        for(int i=0; i<8; i++){
+    }
+    else if(dayState == AM){
+        for(int i = 0; i < 8; i++){
             image[i] &= ~(uint32_t)1;
-            image[i] &= ~((uint32_t)1 << 31); 
+            image[i] &= ~((uint32_t)1 << 31);
         }
+    }
+    for(int i = 0; i < 8; i++){
+        timeImage[i] = image[i];
     }
     free(timeString);
     while(currentLine != 0){}
 }
+
+
+

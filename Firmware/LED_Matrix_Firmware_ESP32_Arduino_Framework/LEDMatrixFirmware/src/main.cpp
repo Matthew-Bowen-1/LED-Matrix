@@ -16,26 +16,27 @@
 #define rowBus 16
 
 int currentHours;
-void setup() {
-  //All output pins are adjacent
-  for(int i=STR; i<=(rowBus+2); i++){
-    pinMode(i, OUTPUT);
-  }
-  setPin(EO, 1);
-  initializeImage();
-  initializeDisplay(0,800, 200, 1);
-  initializeClock(1, 7, 22, true);
-  displayClock(true);
-  currentHours = hours;
+void setup(){
+    //All output pins are adjacent
+    for(int i = STR; i <= (rowBus + 2); i++){
+        pinMode(i, OUTPUT);
+    }
+    setPin(EO, 1);
+    initializeImage();
+    initializeDisplay(0, 800, 200, 1);
+    initializeClock(1, 4, 58, true);
+    displayClock(true);
+    currentHours = hours;
 }
 
-void loop() {
-  updateClockFace();
-  if(hours != currentHours){
-    shiftBlank();
-    scrollPrintInt(hours);
-    scrollPrint(" O'clock");
-    shiftBlank();
-    currentHours = hours;
-  }
+void loop(){
+    updateClockFace();
+    if(hours != currentHours){
+        shiftBlank();
+        scrollPrintInt(hours);
+        scrollPrint(" O'clock");
+        shiftBlank();
+        shiftIn(timeImage);
+        currentHours = hours;
+    }
 }

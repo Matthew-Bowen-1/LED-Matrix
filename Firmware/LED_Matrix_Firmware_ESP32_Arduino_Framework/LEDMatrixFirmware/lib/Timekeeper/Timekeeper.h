@@ -2,6 +2,8 @@
 
 extern uint8_t hours, minutes, seconds;
 
+extern uint32_t timeImage[8];
+
 //Initialize the clock
 void initializeClock(int timerNumber, int currentHours, int currentMins, bool currentDayState);
 

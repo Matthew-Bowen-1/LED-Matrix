@@ -37,6 +37,9 @@ void shiftBlank();
 void shift(int dx, int dy);
 void shiftHelper(int dx, int dy);
 
+//Shifts a new image onto the display
+void shiftIn(uint32_t newImage[8]);
+
 //Shifts an 8 row by 6 column character onto the display.
 void shiftChar(char currentCharMatrix[8]);
 
