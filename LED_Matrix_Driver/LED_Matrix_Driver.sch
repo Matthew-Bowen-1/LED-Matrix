@@ -873,8 +873,6 @@ Wire Wire Line
 Wire Wire Line
 	8350 1900 8350 900 
 Wire Wire Line
-	6850 6300 6850 6150
-Wire Wire Line
 	7550 6300 7550 6150
 Wire Wire Line
 	6000 1950 6000 2050
@@ -896,7 +894,7 @@ F 3 "~" H 6500 2450 50  0001 C CNN
 $EndComp
 Connection ~ 6500 2350
 Wire Wire Line
-	6500 2450 6500 2350
+	6500 2450 6500 2400
 $Comp
 L power:+5V #PWR06
 U 1 1 653C6F5E
@@ -962,16 +960,16 @@ Wire Wire Line
 	6550 2850 6550 3450
 Connection ~ 7300 2850
 Wire Wire Line
-	7600 3450 7700 3450
+	7600 3450 7650 3450
 $Comp
 L power:Earth #PWR08
 U 1 1 65533632
-P 6550 3500
-F 0 "#PWR08" H 6550 3250 50  0001 C CNN
-F 1 "Earth" H 6550 3350 50  0001 C CNN
-F 2 "" H 6550 3500 50  0001 C CNN
-F 3 "~" H 6550 3500 50  0001 C CNN
-	1    6550 3500
+P 6550 4100
+F 0 "#PWR08" H 6550 3850 50  0001 C CNN
+F 1 "Earth" H 6550 3950 50  0001 C CNN
+F 2 "" H 6550 4100 50  0001 C CNN
+F 3 "~" H 6550 4100 50  0001 C CNN
+	1    6550 4100
 	1    0    0    -1  
 $EndComp
 Connection ~ 6550 3450
@@ -979,8 +977,6 @@ Wire Wire Line
 	6550 3450 6650 3450
 Wire Wire Line
 	6550 2850 7300 2850
-Wire Wire Line
-	6550 3500 6550 3450
 Wire Wire Line
 	7700 3450 7700 3400
 Wire Wire Line
@@ -1348,9 +1344,133 @@ Wire Wire Line
 Wire Wire Line
 	5000 3050 5650 3050
 Wire Wire Line
-	8150 2000 8150 3350
+	8150 2000 8150 3250
 Wire Wire Line
-	8150 3350 8150 4700
+	8150 3350 8150 4600
 Wire Wire Line
-	8150 4700 8150 6050
+	8150 4700 8150 5950
+$Comp
+L Device:C_Small C1
+U 1 1 656ACBE6
+P 6700 750
+F 0 "C1" V 6471 750 50  0000 C CNN
+F 1 "0.1uF" V 6562 750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 6700 750 50  0001 C CNN
+F 3 "~" H 6700 750 50  0001 C CNN
+	1    6700 750 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 2400 6500 2400
+Connection ~ 6500 2400
+Wire Wire Line
+	6500 2400 6500 2350
+$Comp
+L Device:C_Small C4
+U 1 1 656DD45F
+P 8250 1900
+F 0 "C4" V 8021 1900 50  0000 C CNN
+F 1 "0.1uF" V 8112 1900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 8250 1900 50  0001 C CNN
+F 3 "~" H 8250 1900 50  0001 C CNN
+	1    8250 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 656DE70C
+P 8250 3250
+F 0 "C5" V 8021 3250 50  0000 C CNN
+F 1 "0.1uF" V 8112 3250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 8250 3250 50  0001 C CNN
+F 3 "~" H 8250 3250 50  0001 C CNN
+	1    8250 3250
+	0    1    1    0   
+$EndComp
+Connection ~ 8150 3250
+Wire Wire Line
+	8150 3250 8150 3350
+$Comp
+L Device:C_Small C6
+U 1 1 656DF0C7
+P 8250 4600
+F 0 "C6" V 8021 4600 50  0000 C CNN
+F 1 "0.1uF" V 8112 4600 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 8250 4600 50  0001 C CNN
+F 3 "~" H 8250 4600 50  0001 C CNN
+	1    8250 4600
+	0    1    1    0   
+$EndComp
+Connection ~ 8150 4600
+Wire Wire Line
+	8150 4600 8150 4700
+$Comp
+L Device:C_Small C7
+U 1 1 656DFE0F
+P 8250 5950
+F 0 "C7" V 8021 5950 50  0000 C CNN
+F 1 "0.1uF" V 8112 5950 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 8250 5950 50  0001 C CNN
+F 3 "~" H 8250 5950 50  0001 C CNN
+	1    8250 5950
+	0    1    1    0   
+$EndComp
+Connection ~ 8350 5950
+Connection ~ 8150 5950
+Wire Wire Line
+	8150 5950 8150 6050
+$Comp
+L Device:C_Small C2
+U 1 1 656E07C6
+P 7200 6300
+F 0 "C2" V 7300 6200 50  0000 C CNN
+F 1 "0.1uF" V 7300 6400 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 7200 6300 50  0001 C CNN
+F 3 "~" H 7200 6300 50  0001 C CNN
+	1    7200 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 6300 6850 6150
+Wire Wire Line
+	7100 6300 6850 6300
+Connection ~ 6850 6300
+Wire Wire Line
+	7300 6300 7550 6300
+Connection ~ 7550 6300
+$Comp
+L Device:C_Small C3
+U 1 1 6572E66B
+P 7650 3600
+F 0 "C3" H 7700 3700 50  0000 L CNN
+F 1 "0.1uF" H 7700 3500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 7650 3600 50  0001 C CNN
+F 3 "~" H 7650 3600 50  0001 C CNN
+	1    7650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3500 7650 3450
+Connection ~ 7650 3450
+Wire Wire Line
+	7650 3450 7700 3450
+Wire Wire Line
+	6550 4050 7650 4050
+Wire Wire Line
+	7650 4050 7650 3700
+Wire Wire Line
+	6550 3450 6550 4050
+Wire Wire Line
+	6550 4100 6550 4050
+Connection ~ 6550 4050
+Wire Wire Line
+	8150 2000 8150 1900
+Connection ~ 8150 2000
+Wire Wire Line
+	6600 750  6500 750 
+Connection ~ 6500 750 
+Wire Wire Line
+	6800 750  7300 750 
+Wire Wire Line
+	7300 750  7300 2400
 $EndSCHEMATC
