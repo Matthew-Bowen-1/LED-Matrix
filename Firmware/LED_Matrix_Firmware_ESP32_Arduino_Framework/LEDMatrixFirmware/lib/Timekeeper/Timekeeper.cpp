@@ -92,9 +92,6 @@ void updateClockFace(){
     }
     timeString[5] = 0;
     staticPrint(timeString);
-
-
-
     int doubleSeconds = (seconds / 2) + 1;
     if(seconds == 0){
         image[7] &= ~1 << doubleSeconds;
@@ -118,6 +115,3 @@ void updateClockFace(){
     free(timeString);
     while(currentLine != 0){}
 }
-
-
-

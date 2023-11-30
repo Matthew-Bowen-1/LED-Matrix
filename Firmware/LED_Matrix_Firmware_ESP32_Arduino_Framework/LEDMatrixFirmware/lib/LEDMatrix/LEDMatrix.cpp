@@ -240,3 +240,4 @@ void staticChar(char currentCharMatrix[8], int position){
         image[i] |= tempCharMatrix[i];
     }
 }
+

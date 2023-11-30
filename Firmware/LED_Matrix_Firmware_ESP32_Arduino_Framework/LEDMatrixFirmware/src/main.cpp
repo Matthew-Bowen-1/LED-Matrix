@@ -24,19 +24,19 @@ void setup(){
     setPin(EO, 1);
     initializeImage();
     initializeDisplay(0, 800, 200, 1);
-    initializeClock(1, 4, 58, true);
+    initializeClock(1, 6, 8, true);
     displayClock(true);
     currentHours = hours;
 }
 
 void loop(){
-    updateClockFace();
     if(hours != currentHours){
         shiftBlank();
         scrollPrintInt(hours);
-        scrollPrint(" O'clock");
+        scrollPrint(" O'clock"); 
         shiftBlank();
         shiftIn(timeImage);
         currentHours = hours;
     }
+    updateClockFace();
 }
