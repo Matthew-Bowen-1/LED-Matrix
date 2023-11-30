@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 extern uint32_t image[8];
-
+extern volatile int currentLine;
 extern bool inverted;
 
 //Starts the display timer running and starts display interrupts. 

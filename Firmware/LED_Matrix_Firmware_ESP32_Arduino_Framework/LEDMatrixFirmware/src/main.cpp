@@ -15,6 +15,7 @@
 //First pin of 3 pin bus. Each 3-bit value corresponds to one of 8 rows.
 #define rowBus 16
 
+int currentHours;
 void setup() {
   //All output pins are adjacent
   for(int i=STR; i<=(rowBus+2); i++){
@@ -23,8 +24,18 @@ void setup() {
   setPin(EO, 1);
   initializeImage();
   initializeDisplay(0,800, 200, 1);
+  initializeClock(1, 7, 22, true);
+  displayClock(true);
+  currentHours = hours;
 }
 
 void loop() {
-  scrollPrint("Hello World ");
+  updateClockFace();
+  if(hours != currentHours){
+    shiftBlank();
+    scrollPrintInt(hours);
+    scrollPrint(" O'clock");
+    shiftBlank();
+    currentHours = hours;
+  }
 }

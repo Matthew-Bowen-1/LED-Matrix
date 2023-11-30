@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "LEDMatrix.h"
 #include "LEDMatrixText.h"
+#include "Timekeeper.h"
 
 //"Store". Updates all shift register output pins to value in registers.
 #define STR 12
