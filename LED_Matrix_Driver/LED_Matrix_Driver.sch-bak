@@ -1112,26 +1112,6 @@ Wire Wire Line
 	6350 3050 6350 2950
 Wire Wire Line
 	6250 3050 6350 3050
-Wire Wire Line
-	5650 3050 6050 3050
-Connection ~ 5700 2950
-Wire Wire Line
-	5700 2950 6050 2950
-Connection ~ 5750 2850
-Wire Wire Line
-	6050 2850 5750 2850
-Connection ~ 5800 2750
-Wire Wire Line
-	5800 2750 6050 2750
-Connection ~ 5850 2650
-Wire Wire Line
-	6050 2650 5850 2650
-Connection ~ 5900 2550
-Wire Wire Line
-	5900 2550 6050 2550
-Connection ~ 5950 2450
-Wire Wire Line
-	6050 2450 5950 2450
 $Comp
 L Device:R_Small_US R1
 U 1 1 65394B3F
@@ -1198,7 +1178,6 @@ F 3 "~" H 6150 2950 50  0001 C CNN
 	1    6150 2950
 	0    -1   -1   0   
 $EndComp
-Connection ~ 5650 3050
 $Comp
 L Device:R_Small_US R7
 U 1 1 6533D909
@@ -1210,7 +1189,7 @@ F 3 "~" H 6150 3050 50  0001 C CNN
 	1    6150 3050
 	0    -1   -1   0   
 $EndComp
-Text Notes 4250 750  0    50   ~ 0
+Text Notes 6900 725  0    50   ~ 0
 Note: Purpose of 74HCT244 is to translate 3V3 \nlogic from ESP32 to 5V logic for the control ICs. \nUnidirectional operation only. 
 Wire Wire Line
 	4450 3850 4450 3900
@@ -1236,47 +1215,31 @@ Wire Wire Line
 	4350 3850 4450 3850
 Wire Wire Line
 	4350 3800 4350 3850
-Wire Wire Line
-	4450 950  4450 1000
 $Comp
 L power:+5V #PWR03
 U 1 1 6580F9E1
-P 4450 950
-F 0 "#PWR03" H 4450 800 50  0001 C CNN
-F 1 "+5V" H 4465 1123 50  0000 C CNN
-F 2 "" H 4450 950 50  0001 C CNN
-F 3 "" H 4450 950 50  0001 C CNN
-	1    4450 950 
+P 4450 1000
+F 0 "#PWR03" H 4450 850 50  0001 C CNN
+F 1 "+5V" H 4350 1100 50  0000 C CNN
+F 2 "" H 4450 1000 50  0001 C CNN
+F 3 "" H 4450 1000 50  0001 C CNN
+	1    4450 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5650 1050 6000 1050
 Wire Wire Line
-	5650 1050 5650 3050
-Wire Wire Line
 	6000 1150 5700 1150
-Wire Wire Line
-	5700 1150 5700 2950
 Wire Wire Line
 	5750 1250 6000 1250
 Wire Wire Line
-	5750 1250 5750 2850
-Wire Wire Line
 	6000 1350 5800 1350
-Wire Wire Line
-	5800 1350 5800 2750
 Wire Wire Line
 	5850 1450 6000 1450
 Wire Wire Line
-	5850 1450 5850 2650
-Wire Wire Line
 	5900 1550 6000 1550
 Wire Wire Line
-	5900 1550 5900 2550
-Wire Wire Line
 	5950 1650 6000 1650
-Wire Wire Line
-	5950 1650 5950 2450
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 65592254
@@ -1318,31 +1281,6 @@ Wire Wire Line
 	4850 6150 4850 6100
 Wire Wire Line
 	4850 6100 4950 6100
-$Comp
-L Custom_Symbols:ESP32-DEVKITC-32E U1
-U 1 1 6539A849
-P 4350 2400
-F 0 "U1" H 4100 3000 50  0000 C CNN
-F 1 "ESP32-DEVKITC-32E" V 4400 2850 50  0000 C CNN
-F 2 "Arduino:ESP32-DevkitC" H 4300 2400 50  0001 C CNN
-F 3 "" H 4300 2400 50  0001 C CNN
-	1    4350 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 2450 5950 2450
-Wire Wire Line
-	5000 2550 5900 2550
-Wire Wire Line
-	5000 2650 5850 2650
-Wire Wire Line
-	5000 2750 5800 2750
-Wire Wire Line
-	5000 2850 5750 2850
-Wire Wire Line
-	5000 2950 5700 2950
-Wire Wire Line
-	5000 3050 5650 3050
 Wire Wire Line
 	8150 2000 8150 3250
 Wire Wire Line
@@ -1352,20 +1290,14 @@ Wire Wire Line
 $Comp
 L Device:C_Small C1
 U 1 1 656ACBE6
-P 6700 800
-F 0 "C1" V 6471 800 50  0000 C CNN
-F 1 "0.1uF" V 6562 800 50  0000 C CNN
-F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 6700 800 50  0001 C CNN
-F 3 "~" H 6700 800 50  0001 C CNN
-	1    6700 800 
+P 6700 750
+F 0 "C1" V 6471 750 50  0000 C CNN
+F 1 "0.1uF" V 6562 750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 6700 750 50  0001 C CNN
+F 3 "~" H 6700 750 50  0001 C CNN
+	1    6700 750 
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6500 800  6600 800 
-Wire Wire Line
-	6800 800  7300 800 
-Wire Wire Line
-	7300 800  7300 2400
 Wire Wire Line
 	7300 2400 6500 2400
 Connection ~ 6500 2400
@@ -1472,4 +1404,215 @@ Connection ~ 6550 4050
 Wire Wire Line
 	8150 2000 8150 1900
 Connection ~ 8150 2000
+Wire Wire Line
+	6600 750  6500 750 
+Connection ~ 6500 750 
+Wire Wire Line
+	6800 750  7300 750 
+Wire Wire Line
+	7300 750  7300 2400
+Wire Wire Line
+	5850 1450 5850 2650
+Wire Wire Line
+	5950 1650 5950 2450
+Wire Wire Line
+	5900 1550 5900 2550
+Wire Wire Line
+	5800 1350 5800 2750
+Wire Wire Line
+	5650 3050 6050 3050
+Wire Wire Line
+	5700 2950 6050 2950
+Wire Wire Line
+	6050 2850 5750 2850
+Wire Wire Line
+	5800 2750 6050 2750
+Wire Wire Line
+	6050 2650 5850 2650
+Wire Wire Line
+	5900 2550 6050 2550
+Wire Wire Line
+	6050 2450 5950 2450
+Wire Wire Line
+	5750 1250 5750 2850
+Wire Wire Line
+	5700 1150 5700 2950
+Wire Wire Line
+	5650 1050 5650 3050
+Connection ~ 5650 3050
+Wire Wire Line
+	5000 3050 5650 3050
+Connection ~ 5700 2950
+Wire Wire Line
+	5000 2950 5700 2950
+Connection ~ 5750 2850
+Wire Wire Line
+	5000 2850 5750 2850
+Connection ~ 5800 2750
+Wire Wire Line
+	5000 2750 5800 2750
+Connection ~ 5850 2650
+Wire Wire Line
+	5000 2650 5850 2650
+Connection ~ 5900 2550
+Wire Wire Line
+	5000 2550 5900 2550
+Connection ~ 5950 2450
+Wire Wire Line
+	5000 2450 5950 2450
+$Comp
+L Custom_Symbols:ESP32-DEVKITC-32E U1
+U 1 1 6539A849
+P 4350 2400
+F 0 "U1" H 4100 3000 50  0000 C CNN
+F 1 "ESP32-DEVKITC-32E" V 4400 2850 50  0000 C CNN
+F 2 "Arduino:ESP32-DevkitC" H 4300 2400 50  0001 C CNN
+F 3 "" H 4300 2400 50  0001 C CNN
+	1    4350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 658676FC
+P 3250 1400
+F 0 "SW6" V 3100 1600 50  0000 R CNN
+F 1 "RIGHT" V 3250 1450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 3250 1600 50  0001 C CNN
+F 3 "~" H 3250 1600 50  0001 C CNN
+	1    3250 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 6586BF68
+P 2850 1400
+F 0 "SW5" V 2700 1600 50  0000 R CNN
+F 1 "LEFT" V 2850 1450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 2850 1600 50  0001 C CNN
+F 3 "~" H 2850 1600 50  0001 C CNN
+	1    2850 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 6586C49E
+P 2450 1400
+F 0 "SW4" V 2300 1600 50  0000 R CNN
+F 1 "DOWN" V 2450 1450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 2450 1600 50  0001 C CNN
+F 3 "~" H 2450 1600 50  0001 C CNN
+	1    2450 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 6586C73A
+P 2050 1400
+F 0 "SW3" V 1900 1600 50  0000 R CNN
+F 1 "UP" V 2050 1450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 2050 1600 50  0001 C CNN
+F 3 "~" H 2050 1600 50  0001 C CNN
+	1    2050 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 6586CCB3
+P 1650 1400
+F 0 "SW2" V 1500 1600 50  0000 R CNN
+F 1 "BACK" V 1650 1450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 1650 1600 50  0001 C CNN
+F 3 "~" H 1650 1600 50  0001 C CNN
+	1    1650 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6590598D
+P 1250 1400
+F 0 "SW1" V 1100 1600 50  0000 R CNN
+F 1 "OK" V 1250 1450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 1250 1600 50  0001 C CNN
+F 3 "~" H 1250 1600 50  0001 C CNN
+	1    1250 1400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3250 1200 3250 850 
+Wire Wire Line
+	3250 850  5050 850 
+Wire Wire Line
+	5050 850  5050 1750
+Wire Wire Line
+	5050 1750 5000 1750
+Wire Wire Line
+	2850 1200 2850 800 
+Wire Wire Line
+	2850 800  5100 800 
+Wire Wire Line
+	5100 800  5100 1850
+Wire Wire Line
+	5100 1850 5000 1850
+Wire Wire Line
+	2450 1200 2450 750 
+Wire Wire Line
+	2450 750  5150 750 
+Wire Wire Line
+	5150 750  5150 2000
+Wire Wire Line
+	5150 2000 5000 2000
+Wire Wire Line
+	2050 1200 2050 700 
+Wire Wire Line
+	2050 700  5200 700 
+Wire Wire Line
+	5200 700  5200 2100
+Wire Wire Line
+	5200 2100 5000 2100
+Wire Wire Line
+	5000 2200 5250 2200
+Wire Wire Line
+	5250 2200 5250 650 
+Wire Wire Line
+	5250 650  1650 650 
+Wire Wire Line
+	1650 650  1650 1200
+Wire Wire Line
+	1250 1200 1250 600 
+Wire Wire Line
+	1250 600  5300 600 
+Wire Wire Line
+	5300 600  5300 2350
+Wire Wire Line
+	5300 2350 5000 2350
+Wire Wire Line
+	1250 1600 1650 1600
+Connection ~ 2850 1600
+Wire Wire Line
+	2850 1600 3250 1600
+Connection ~ 2450 1600
+Wire Wire Line
+	2450 1600 2850 1600
+Connection ~ 1650 1600
+Wire Wire Line
+	1650 1600 2050 1600
+Wire Wire Line
+	2050 1600 2250 1600
+Connection ~ 2050 1600
+Wire Wire Line
+	2250 1600 2250 1750
+Connection ~ 2250 1600
+Wire Wire Line
+	2250 1600 2450 1600
+$Comp
+L power:Earth #PWR014
+U 1 1 65AE4D92
+P 2250 1750
+F 0 "#PWR014" H 2250 1500 50  0001 C CNN
+F 1 "Earth" H 2250 1600 50  0001 C CNN
+F 2 "" H 2250 1750 50  0001 C CNN
+F 3 "~" H 2250 1750 50  0001 C CNN
+	1    2250 1750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

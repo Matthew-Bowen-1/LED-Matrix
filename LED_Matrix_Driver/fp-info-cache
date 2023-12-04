@@ -1,4 +1,4 @@
-19241537570766436
+19243239288766347
 Arduino
 Arduino_Micro
 Arduino Micro
@@ -27,6 +27,13 @@ Arduino Pro Mini
 0
 28
 28
+Arduino
+Custom_Pin_Header
+
+
+0
+2
+2
 Arduino
 ESP32-DevkitC
 
