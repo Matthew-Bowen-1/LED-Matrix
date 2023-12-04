@@ -18,3 +18,7 @@ void IRAM_ATTR onClockUpdate();
 
 //Update and print the clock face
 void updateClockFace();
+
+void staticTimePrint(const char* string);
+
+void staticTimeChar(char currentCharMatrix[8], int timePosition);
