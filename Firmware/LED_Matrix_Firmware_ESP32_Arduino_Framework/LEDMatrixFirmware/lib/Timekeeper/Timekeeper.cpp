@@ -12,12 +12,13 @@ uint32_t timeImage[8];
 char currentTime[5];
 bool dayState = AM;
 bool clockIsDisplayed = false;
-int prevHours;
+int prevHours, prevMinutes;
 void initializeClock(int timerNumber, int currentHours, int currentMins, bool currentDayState){
     hours = currentHours;
     minutes = currentMins;
     dayState = currentDayState;
     prevHours = hours;
+    prevMinutes = minutes;
     clockTimer = timerBegin(timerNumber, 800, true);
     timerAttachInterrupt(clockTimer, &onClockUpdate, true);
     timerAlarmWrite(clockTimer, 50000, true);
@@ -107,17 +108,17 @@ void updateClockFace(){
     timeString[5] = 0;
     staticTimePrint(timeString);
     int doubleSeconds = (seconds / 2) + 1;
-    
+
     timeImage[7] &= ~1 << doubleSeconds;
-    
+
     if(halfSeconds == 0){
         timeImage[7] |= (1 << doubleSeconds) | ((1 << doubleSeconds) - 1);
     }
     else{
         timeImage[7] &= ~1 << doubleSeconds;
-        timeImage[7] |= (1 << doubleSeconds) - 1; 
+        timeImage[7] |= (1 << doubleSeconds) - 1;
     }
-    
+
     if(dayState == PM){
         for(int i = 0; i < 8; i++){
             timeImage[i] |= 1;
@@ -138,13 +139,17 @@ void updateClockFace(){
         shiftBlank();
         shiftIn(timeImage);
         prevHours = hours;
-    }else if(minutes == 30){
-        shiftBlank();
-        scrollPrint("It's ");
-        scrollPrintUint(hours);
-        scrollPrint(":30");
-        shiftBlank();
-        shiftIn(timeImage);
+    }
+    else if(prevMinutes != minutes){
+        if(minutes == 30){
+            shiftBlank();
+            scrollPrint("It's ");
+            scrollPrintUint(hours);
+            scrollPrint(":30");
+            shiftBlank();
+            shiftIn(timeImage); 
+        }
+        prevMinutes = minutes;
     }
     for(int i = 0; i < 8; i++){
         image[i] = timeImage[i];
