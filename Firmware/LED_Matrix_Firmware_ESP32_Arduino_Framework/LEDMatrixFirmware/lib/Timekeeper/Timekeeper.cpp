@@ -138,6 +138,13 @@ void updateClockFace(){
         shiftBlank();
         shiftIn(timeImage);
         prevHours = hours;
+    }else if(minutes == 30){
+        shiftBlank();
+        scrollPrint("It's ");
+        scrollPrintUint(hours);
+        scrollPrint(":30");
+        shiftBlank();
+        shiftIn(timeImage);
     }
     for(int i = 0; i < 8; i++){
         image[i] = timeImage[i];
