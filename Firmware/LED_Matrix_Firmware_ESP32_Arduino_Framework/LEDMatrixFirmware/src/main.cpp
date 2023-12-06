@@ -27,7 +27,7 @@ void setup(){
     initializeClock(1, 2, 52, true);
     displayClock(true);
     currentHours = hours;
-    //gitTest
+
 }
 
 void loop(){
