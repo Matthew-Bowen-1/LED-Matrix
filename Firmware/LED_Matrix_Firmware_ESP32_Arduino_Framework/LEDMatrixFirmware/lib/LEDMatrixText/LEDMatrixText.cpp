@@ -2,7 +2,7 @@
 #include "LEDMatrixText.h"
 #include "LEDMatrix.h"
 
-const char emptyMatrix[8] = {0,0,0,0,0,0,0,0};
+const char emptyMatrix[8] = { 0,0,0,0,0,0,0,0 };
 
 //Basic display parameters. Default values set here but can be changed.
 
@@ -14,17 +14,17 @@ void setFlashingCharacters(bool isFlashing){
     flashingCharacters = isFlashing;
 }
 
-void scrollPrint(const char *string){
+void scrollPrint(const char* string){
     int stringLength = strlen(string);
     char currentCharValue = 0;
     char currentCharMatrix[8];
 
-    for(int i=0; i<stringLength; i++){
+    for(int i = 0; i < stringLength; i++){
         currentCharValue = string[i];
         if(currentCharValue == 0){
 
         }
-        for(int j=0; j<8; j++){
+        for(int j = 0; j < 8; j++){
             currentCharMatrix[j] = characters[currentCharValue][j];
         }
         shiftChar(currentCharMatrix);
@@ -36,15 +36,15 @@ void scrollPrint(const char *string){
 }
 
 int position = 4;
-void staticPrint(const char *string){
+void staticPrint(const char* string){
     int stringLength = strlen(string);
     char currentCharMatrix[8];
     char currentCharValue = 0;
     //8x32 display means only 5 5x7 characters possible with 1 space in between
     if(stringLength < 6){
-        for(int i=0; i<(stringLength); i++){
+        for(int i = 0; i < (stringLength); i++){
             currentCharValue = string[i];
-            for(int j=0; j<8; j++){
+            for(int j = 0; j < 8; j++){
                 currentCharMatrix[j] = characters[string[i]][j];
             }
             staticChar(currentCharMatrix, position);
@@ -55,9 +55,9 @@ void staticPrint(const char *string){
         }
     }
     else{
-        for(int i=0; i<5; i++){
+        for(int i = 0; i < 5; i++){
             currentCharValue = string[i];
-            for(int j=0; j<8; j++){
+            for(int j = 0; j < 8; j++){
                 currentCharMatrix[j] = characters[currentCharValue][j];
             }
             staticChar(currentCharMatrix, position);
@@ -72,7 +72,7 @@ void staticPrint(const char *string){
 void scrollPrintInt(int64_t value){
     char currentCharMatrix[8];
     if(value == 0){
-        for(int i=0; i<8; i++){
+        for(int i = 0; i < 8; i++){
             currentCharMatrix[i] = characters['0'][i];
         }
         shiftChar(currentCharMatrix);
@@ -84,7 +84,7 @@ void scrollPrintInt(int64_t value){
         int64_t tempValue = ~value;
         tempValue += 1;
         int decimalNumSize = log10(tempValue) + 1;
-        char *numberArray = (char*)calloc(decimalNumSize + 2, sizeof(char));
+        char* numberArray = (char*)calloc(decimalNumSize + 2, sizeof(char));
         numberArray[0] = '-';
         for(int i = (decimalNumSize - 1); i >= 0; --i, tempValue /= 10){
             numberArray[i + 1] = (tempValue % 10) + '0';
@@ -93,10 +93,10 @@ void scrollPrintInt(int64_t value){
         scrollPrint(numberArray);
         free(numberArray);
     }
-    else if (value > 0){
+    else if(value > 0){
         int64_t tempValue = value;
         int decimalNumSize = log10(tempValue) + 1;
-        char *numberArray = (char*)calloc(decimalNumSize + 1, sizeof(char));
+        char* numberArray = (char*)calloc(decimalNumSize + 1, sizeof(char));
         for(int i = (decimalNumSize - 1); i >= 0; --i, tempValue /= 10){
             numberArray[i] = (tempValue % 10) + '0';
         }
@@ -109,16 +109,15 @@ void scrollPrintInt(int64_t value){
 void scrollPrintUint(uint64_t value){
     char currentCharMatrix[8];
     if(value == 0){
-        for(int i=0; i<8; i++){
+        for(int i = 0; i < 8; i++){
             currentCharMatrix[i] = characters['0'][i];
         }
         shiftChar(currentCharMatrix);
     }
-    else
-    {
+    else{
         uint64_t tempValue = value;
         int decimalNumSize = log10(tempValue) + 1;
-        char *numberArray = (char*)calloc(decimalNumSize + 1, sizeof(char));
+        char* numberArray = (char*)calloc(decimalNumSize + 1, sizeof(char));
         for(int i = (decimalNumSize - 1); i >= 0; --i, tempValue /= 10){
             numberArray[i] = (tempValue % 10) + '0';
         }

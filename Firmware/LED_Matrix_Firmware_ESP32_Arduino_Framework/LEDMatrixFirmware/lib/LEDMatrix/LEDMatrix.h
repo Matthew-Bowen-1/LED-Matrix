@@ -1,11 +1,11 @@
 #include <Arduino.h>
 
 extern uint32_t image[8];
-
+extern volatile int currentLine;
 extern bool inverted;
 
 //Starts the display timer running and starts display interrupts. 
-void initializeDisplay(int prescaler, int intervalSize, int newFrameDelay); //Clock speed: 80MHz.
+void initializeDisplay(int timerNumber, int prescaler, int intervalSize, int newFrameDelay); //Clock speed: 80MHz.
 
 //Initialize image array to all 0
 void initializeImage();
@@ -36,6 +36,9 @@ void shiftBlank();
 //Circular shifts elements on the display in either X or Y direction.
 void shift(int dx, int dy);
 void shiftHelper(int dx, int dy);
+
+//Shifts a new image onto the display
+void shiftIn(uint32_t newImage[8]);
 
 //Shifts an 8 row by 6 column character onto the display.
 void shiftChar(char currentCharMatrix[8]);
