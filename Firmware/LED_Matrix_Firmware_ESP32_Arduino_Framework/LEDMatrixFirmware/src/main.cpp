@@ -22,7 +22,7 @@ void setup() {
   setPin(EO, 1);
   initializeImage();
   initializeDisplay(800, 200, 1);
-}
+}//Git test
 
 void loop() {
   scrollPrint("Hello World ");
