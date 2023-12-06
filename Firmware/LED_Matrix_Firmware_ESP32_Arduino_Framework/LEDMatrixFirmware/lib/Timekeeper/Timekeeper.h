@@ -24,3 +24,7 @@ void staticTimePrint(const char* string);
 
 //Called by staticTimePrint()
 void staticTimeChar(char currentCharMatrix[8], int timePosition);
+
+char *getNumberString(int number);
+
+void generateClockFaceString(char currentTime[6]);
