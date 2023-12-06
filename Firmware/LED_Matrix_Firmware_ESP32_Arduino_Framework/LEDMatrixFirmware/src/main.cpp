@@ -15,6 +15,7 @@
 //First pin of 3 pin bus. Each 3-bit value corresponds to one of 8 rows.
 #define rowBus 16
 
+
 int currentHours;
 void setup(){
     //All output pins are adjacent
@@ -29,7 +30,6 @@ void setup(){
     currentHours = hours;
 
 }
-
 void loop(){
     updateClockFace();
 }
