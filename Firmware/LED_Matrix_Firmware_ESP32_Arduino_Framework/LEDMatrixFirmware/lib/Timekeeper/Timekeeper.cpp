@@ -135,15 +135,13 @@ void updateClockFace(){
     if(prevHours != hours){
         for(int i = 0; i < 2; i++){
             shiftBlank();
-            setFlashingCharacters(true);
             scrollPrint("It's ");
             //scrollPrintUint(hours);
             char* hourString = getNumberString(hours);
             scrollPrint(hourString);
             free(hourString);
             scrollPrint(" O'Clock");
-            setFlashingCharacters(false);
-            invertImage(false);
+
         }
         shiftBlank();
         shiftIn(timeImage);
