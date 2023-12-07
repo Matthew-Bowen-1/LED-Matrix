@@ -137,7 +137,6 @@ void updateClockFace(){
             shiftBlank();
             setFlashingCharacters(true);
             scrollPrint("It's ");
-            //scrollPrintUint(hours);
             char* hourString = getNumberString(hours);
             scrollPrint(hourString);
             free(hourString);
@@ -153,11 +152,14 @@ void updateClockFace(){
         if(minutes == 30){
             for(int i = 0; i < 2; i++){
                 shiftBlank();
+                setFlashingCharacters(true);
                 scrollPrint("It's ");
                 char* hourString = getNumberString(hours);
                 scrollPrint(hourString);
                 free(hourString);
                 scrollPrint(" Thirty");
+                setFlashingCharacters(false);
+                invertImage(false);
             }
             shiftBlank();
             shiftIn(timeImage);
