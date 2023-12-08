@@ -11,7 +11,6 @@ uint8_t hours = 1, minutes = 0, seconds = 0, halfSeconds = 0;
 uint32_t timeImage[8];
 
 bool dayState = AM;
-bool clockIsDisplayed = false;
 int prevHours, prevMinutes;
 void initializeClock(int timerNumber, int currentHours, int currentMins, bool currentDayState){
     hours = currentHours;
@@ -32,14 +31,6 @@ void initializeTimeImage(){
             timeImage[i] = 0;
         }
     }
-}
-
-void displayClock(bool value){
-    clockIsDisplayed = value;
-}
-
-bool isClockDisplayed(){
-    return clockIsDisplayed;
 }
 
 void IRAM_ATTR onClockUpdate(){
@@ -141,10 +132,10 @@ void updateClockFace(){
             scrollPrint(hourString);
             free(hourString);
             scrollPrint(" O'Clock");
-            setFlashingCharacters(false);
-            invertImage(false);
         }
         shiftBlank();
+        setFlashingCharacters(false);
+        invertImage(false);
         shiftIn(timeImage);
         prevHours = hours;
     }
@@ -158,10 +149,11 @@ void updateClockFace(){
                 scrollPrint(hourString);
                 free(hourString);
                 scrollPrint(" Thirty");
-                setFlashingCharacters(false);
-                invertImage(false);
+
             }
             shiftBlank();
+            setFlashingCharacters(false);
+            invertImage(false);
             shiftIn(timeImage);
         }
         prevMinutes = minutes;

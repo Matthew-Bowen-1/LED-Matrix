@@ -24,8 +24,7 @@ void setup(){
     setPin(EO, 1);
     initializeImage();
     initializeDisplay(0, 800, 200, 1);
-    initializeClock(1, 8, 07, true);
-    displayClock(true);
+    initializeClock(1, 1, 38, true);
     currentHours = hours;
 
 }
