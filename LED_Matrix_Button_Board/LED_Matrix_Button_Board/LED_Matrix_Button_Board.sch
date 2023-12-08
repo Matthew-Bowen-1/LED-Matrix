@@ -1,0 +1,146 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6573526D
+P 1700 1550
+F 0 "SW1" V 1850 1550 50  0000 R CNN
+F 1 "Ok" V 1700 1600 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1700 1750 50  0001 C CNN
+F 3 "~" H 1700 1750 50  0001 C CNN
+	1    1700 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 6573732F
+P 2000 1550
+F 0 "SW2" V 2150 1550 50  0000 R CNN
+F 1 "Back" V 2000 1600 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2000 1750 50  0001 C CNN
+F 3 "~" H 2000 1750 50  0001 C CNN
+	1    2000 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 6573890B
+P 2900 1550
+F 0 "SW5" V 3050 1550 50  0000 R CNN
+F 1 "F3" V 2900 1600 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2900 1750 50  0001 C CNN
+F 3 "~" H 2900 1750 50  0001 C CNN
+	1    2900 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 65738C60
+P 3200 1550
+F 0 "SW6" V 3350 1550 50  0000 R CNN
+F 1 "F4" V 3200 1600 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 3200 1750 50  0001 C CNN
+F 3 "~" H 3200 1750 50  0001 C CNN
+	1    3200 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 6573834C
+P 2600 1550
+F 0 "SW4" V 2750 1550 50  0000 R CNN
+F 1 "F2" V 2600 1600 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2600 1750 50  0001 C CNN
+F 3 "~" H 2600 1750 50  0001 C CNN
+	1    2600 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 65737B6E
+P 2300 1550
+F 0 "SW3" V 2450 1550 50  0000 R CNN
+F 1 "F1" V 2300 1600 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2300 1750 50  0001 C CNN
+F 3 "~" H 2300 1750 50  0001 C CNN
+	1    2300 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 1350 2400 1350
+Wire Wire Line
+	2400 1350 2400 1200
+Wire Wire Line
+	2600 1350 2500 1350
+Wire Wire Line
+	2500 1350 2500 1200
+Wire Wire Line
+	2000 1350 2000 1300
+Wire Wire Line
+	2000 1300 2300 1300
+Wire Wire Line
+	2300 1300 2300 1200
+Wire Wire Line
+	2200 1200 2200 1250
+Wire Wire Line
+	2200 1250 1700 1250
+Wire Wire Line
+	1700 1250 1700 1350
+Wire Wire Line
+	2600 1200 2600 1300
+Wire Wire Line
+	2600 1300 2900 1300
+Wire Wire Line
+	2900 1300 2900 1350
+Wire Wire Line
+	2700 1200 2700 1250
+Wire Wire Line
+	2700 1250 3200 1250
+Wire Wire Line
+	3200 1250 3200 1350
+Wire Wire Line
+	1700 1750 2000 1750
+Connection ~ 2000 1750
+Wire Wire Line
+	2000 1750 2300 1750
+Connection ~ 2300 1750
+Wire Wire Line
+	2300 1750 2600 1750
+Connection ~ 2600 1750
+Wire Wire Line
+	2600 1750 2900 1750
+Connection ~ 2900 1750
+Wire Wire Line
+	2900 1750 3200 1750
+Wire Wire Line
+	3200 1750 3400 1750
+Wire Wire Line
+	3400 1750 3400 1200
+Wire Wire Line
+	3400 1200 2800 1200
+Connection ~ 3200 1750
+$Comp
+L Connector:Screw_Terminal_01x07 J1
+U 1 1 6574EB6E
+P 2500 1000
+F 0 "J1" V 2464 612 50  0000 R CNN
+F 1 "Buttons" V 2373 612 50  0000 R CNN
+F 2 "Arduino:Custom_Pin_Header" H 2500 1000 50  0001 C CNN
+F 3 "~" H 2500 1000 50  0001 C CNN
+	1    2500 1000
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
