@@ -1477,7 +1477,7 @@ U 1 1 658676FC
 P 3250 1400
 F 0 "SW6" V 3100 1600 50  0000 R CNN
 F 1 "RIGHT" V 3250 1450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 3250 1600 50  0001 C CNN
+F 2 "Arduino:Custom_Pin_Header" H 3250 1600 50  0001 C CNN
 F 3 "~" H 3250 1600 50  0001 C CNN
 	1    3250 1400
 	0    -1   1    0   
@@ -1488,7 +1488,7 @@ U 1 1 6586BF68
 P 2850 1400
 F 0 "SW5" V 2700 1600 50  0000 R CNN
 F 1 "LEFT" V 2850 1450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 2850 1600 50  0001 C CNN
+F 2 "Arduino:Custom_Pin_Header" H 2850 1600 50  0001 C CNN
 F 3 "~" H 2850 1600 50  0001 C CNN
 	1    2850 1400
 	0    -1   1    0   
@@ -1499,7 +1499,7 @@ U 1 1 6586C49E
 P 2450 1400
 F 0 "SW4" V 2300 1600 50  0000 R CNN
 F 1 "DOWN" V 2450 1450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 2450 1600 50  0001 C CNN
+F 2 "Arduino:Custom_Pin_Header" H 2450 1600 50  0001 C CNN
 F 3 "~" H 2450 1600 50  0001 C CNN
 	1    2450 1400
 	0    -1   1    0   
@@ -1510,7 +1510,7 @@ U 1 1 6586C73A
 P 2050 1400
 F 0 "SW3" V 1900 1600 50  0000 R CNN
 F 1 "UP" V 2050 1450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 2050 1600 50  0001 C CNN
+F 2 "Arduino:Custom_Pin_Header" H 2050 1600 50  0001 C CNN
 F 3 "~" H 2050 1600 50  0001 C CNN
 	1    2050 1400
 	0    -1   1    0   
@@ -1521,7 +1521,7 @@ U 1 1 6586CCB3
 P 1650 1400
 F 0 "SW2" V 1500 1600 50  0000 R CNN
 F 1 "BACK" V 1650 1450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 1650 1600 50  0001 C CNN
+F 2 "Arduino:Custom_Pin_Header" H 1650 1600 50  0001 C CNN
 F 3 "~" H 1650 1600 50  0001 C CNN
 	1    1650 1400
 	0    -1   1    0   
@@ -1532,7 +1532,7 @@ U 1 1 6590598D
 P 1250 1400
 F 0 "SW1" V 1100 1600 50  0000 R CNN
 F 1 "OK" V 1250 1450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 1250 1600 50  0001 C CNN
+F 2 "Arduino:Custom_Pin_Header" H 1250 1600 50  0001 C CNN
 F 3 "~" H 1250 1600 50  0001 C CNN
 	1    1250 1400
 	0    -1   1    0   
