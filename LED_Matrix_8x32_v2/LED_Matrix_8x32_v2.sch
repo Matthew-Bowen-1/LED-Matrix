@@ -1,0 +1,5249 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED_Small D1
+U 1 1 65443D95
+P 2550 950
+F 0 "D1" H 2700 900 50  0001 R CNN
+F 1 "LED" H 2650 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2550 950 50  0001 C CNN
+F 3 "~" V 2550 950 50  0001 C CNN
+	1    2550 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D9
+U 1 1 654C646A
+P 2700 950
+F 0 "D9" H 2850 900 50  0001 R CNN
+F 1 "LED" H 2800 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2700 950 50  0001 C CNN
+F 3 "~" V 2700 950 50  0001 C CNN
+	1    2700 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D17
+U 1 1 654C6766
+P 2850 950
+F 0 "D17" H 3000 900 50  0001 R CNN
+F 1 "LED" H 2950 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2850 950 50  0001 C CNN
+F 3 "~" V 2850 950 50  0001 C CNN
+	1    2850 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D25
+U 1 1 654C6BCB
+P 3000 950
+F 0 "D25" H 3150 900 50  0001 R CNN
+F 1 "LED" H 3100 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3000 950 50  0001 C CNN
+F 3 "~" V 3000 950 50  0001 C CNN
+	1    3000 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D33
+U 1 1 654CC3EF
+P 3150 950
+F 0 "D33" H 3300 900 50  0001 R CNN
+F 1 "LED" H 3250 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3150 950 50  0001 C CNN
+F 3 "~" V 3150 950 50  0001 C CNN
+	1    3150 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D41
+U 1 1 654CC3F5
+P 3300 950
+F 0 "D41" H 3450 900 50  0001 R CNN
+F 1 "LED" H 3400 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3300 950 50  0001 C CNN
+F 3 "~" V 3300 950 50  0001 C CNN
+	1    3300 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D49
+U 1 1 654CC3FB
+P 3450 950
+F 0 "D49" H 3600 900 50  0001 R CNN
+F 1 "LED" H 3550 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3450 950 50  0001 C CNN
+F 3 "~" V 3450 950 50  0001 C CNN
+	1    3450 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D57
+U 1 1 654CC401
+P 3600 950
+F 0 "D57" H 3750 900 50  0001 R CNN
+F 1 "LED" H 3700 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3600 950 50  0001 C CNN
+F 3 "~" V 3600 950 50  0001 C CNN
+	1    3600 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D65
+U 1 1 654D2E9B
+P 3750 950
+F 0 "D65" H 3900 900 50  0001 R CNN
+F 1 "LED" H 3850 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3750 950 50  0001 C CNN
+F 3 "~" V 3750 950 50  0001 C CNN
+	1    3750 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D73
+U 1 1 654D2EA1
+P 3900 950
+F 0 "D73" H 4050 900 50  0001 R CNN
+F 1 "LED" H 4000 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3900 950 50  0001 C CNN
+F 3 "~" V 3900 950 50  0001 C CNN
+	1    3900 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D81
+U 1 1 654D2EA7
+P 4050 950
+F 0 "D81" H 4200 900 50  0001 R CNN
+F 1 "LED" H 4150 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4050 950 50  0001 C CNN
+F 3 "~" V 4050 950 50  0001 C CNN
+	1    4050 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D89
+U 1 1 654D2EAD
+P 4200 950
+F 0 "D89" H 4350 900 50  0001 R CNN
+F 1 "LED" H 4300 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4200 950 50  0001 C CNN
+F 3 "~" V 4200 950 50  0001 C CNN
+	1    4200 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D97
+U 1 1 654D2EB3
+P 4350 950
+F 0 "D97" H 4500 900 50  0001 R CNN
+F 1 "LED" H 4450 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4350 950 50  0001 C CNN
+F 3 "~" V 4350 950 50  0001 C CNN
+	1    4350 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D105
+U 1 1 654D2EB9
+P 4500 950
+F 0 "D105" H 4650 900 50  0001 R CNN
+F 1 "LED" H 4600 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4500 950 50  0001 C CNN
+F 3 "~" V 4500 950 50  0001 C CNN
+	1    4500 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D113
+U 1 1 654D2EBF
+P 4650 950
+F 0 "D113" H 4800 900 50  0001 R CNN
+F 1 "LED" H 4750 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4650 950 50  0001 C CNN
+F 3 "~" V 4650 950 50  0001 C CNN
+	1    4650 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D121
+U 1 1 654D2EC5
+P 4800 950
+F 0 "D121" H 4950 900 50  0001 R CNN
+F 1 "LED" H 4900 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4800 950 50  0001 C CNN
+F 3 "~" V 4800 950 50  0001 C CNN
+	1    4800 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D129
+U 1 1 654DCB59
+P 4950 950
+F 0 "D129" H 5100 900 50  0001 R CNN
+F 1 "LED" H 5050 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4950 950 50  0001 C CNN
+F 3 "~" V 4950 950 50  0001 C CNN
+	1    4950 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D137
+U 1 1 654DCB5F
+P 5100 950
+F 0 "D137" H 5250 900 50  0001 R CNN
+F 1 "LED" H 5200 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5100 950 50  0001 C CNN
+F 3 "~" V 5100 950 50  0001 C CNN
+	1    5100 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D145
+U 1 1 654DCB65
+P 5250 950
+F 0 "D145" H 5400 900 50  0001 R CNN
+F 1 "LED" H 5350 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5250 950 50  0001 C CNN
+F 3 "~" V 5250 950 50  0001 C CNN
+	1    5250 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D153
+U 1 1 654DCB6B
+P 5400 950
+F 0 "D153" H 5550 900 50  0001 R CNN
+F 1 "LED" H 5500 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5400 950 50  0001 C CNN
+F 3 "~" V 5400 950 50  0001 C CNN
+	1    5400 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D161
+U 1 1 654DCB71
+P 5550 950
+F 0 "D161" H 5700 900 50  0001 R CNN
+F 1 "LED" H 5650 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5550 950 50  0001 C CNN
+F 3 "~" V 5550 950 50  0001 C CNN
+	1    5550 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D169
+U 1 1 654DCB77
+P 5700 950
+F 0 "D169" H 5850 900 50  0001 R CNN
+F 1 "LED" H 5800 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5700 950 50  0001 C CNN
+F 3 "~" V 5700 950 50  0001 C CNN
+	1    5700 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D177
+U 1 1 654DCB7D
+P 5850 950
+F 0 "D177" H 6000 900 50  0001 R CNN
+F 1 "LED" H 5950 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5850 950 50  0001 C CNN
+F 3 "~" V 5850 950 50  0001 C CNN
+	1    5850 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D185
+U 1 1 654DCB83
+P 6000 950
+F 0 "D185" H 6150 900 50  0001 R CNN
+F 1 "LED" H 6100 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6000 950 50  0001 C CNN
+F 3 "~" V 6000 950 50  0001 C CNN
+	1    6000 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D193
+U 1 1 654DCB89
+P 6150 950
+F 0 "D193" H 6300 900 50  0001 R CNN
+F 1 "LED" H 6250 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6150 950 50  0001 C CNN
+F 3 "~" V 6150 950 50  0001 C CNN
+	1    6150 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D201
+U 1 1 654DCB8F
+P 6300 950
+F 0 "D201" H 6450 900 50  0001 R CNN
+F 1 "LED" H 6400 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6300 950 50  0001 C CNN
+F 3 "~" V 6300 950 50  0001 C CNN
+	1    6300 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D209
+U 1 1 654DCB95
+P 6450 950
+F 0 "D209" H 6600 900 50  0001 R CNN
+F 1 "LED" H 6550 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6450 950 50  0001 C CNN
+F 3 "~" V 6450 950 50  0001 C CNN
+	1    6450 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D217
+U 1 1 654DCB9B
+P 6600 950
+F 0 "D217" H 6750 900 50  0001 R CNN
+F 1 "LED" H 6700 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6600 950 50  0001 C CNN
+F 3 "~" V 6600 950 50  0001 C CNN
+	1    6600 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D225
+U 1 1 654DCBA1
+P 6750 950
+F 0 "D225" H 6900 900 50  0001 R CNN
+F 1 "LED" H 6850 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6750 950 50  0001 C CNN
+F 3 "~" V 6750 950 50  0001 C CNN
+	1    6750 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D233
+U 1 1 654DCBA7
+P 6900 950
+F 0 "D233" H 7050 900 50  0001 R CNN
+F 1 "LED" H 7000 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6900 950 50  0001 C CNN
+F 3 "~" V 6900 950 50  0001 C CNN
+	1    6900 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D241
+U 1 1 654DCBAD
+P 7050 950
+F 0 "D241" H 7200 900 50  0001 R CNN
+F 1 "LED" H 7150 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7050 950 50  0001 C CNN
+F 3 "~" V 7050 950 50  0001 C CNN
+	1    7050 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D249
+U 1 1 654DCBB3
+P 7200 950
+F 0 "D249" H 7350 900 50  0001 R CNN
+F 1 "LED" H 7300 850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7200 950 50  0001 C CNN
+F 3 "~" V 7200 950 50  0001 C CNN
+	1    7200 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 850  2700 850 
+Connection ~ 2700 850 
+Wire Wire Line
+	2700 850  2850 850 
+Connection ~ 2850 850 
+Wire Wire Line
+	2850 850  3000 850 
+Connection ~ 3000 850 
+Wire Wire Line
+	3000 850  3150 850 
+Connection ~ 3150 850 
+Wire Wire Line
+	3150 850  3300 850 
+Connection ~ 3300 850 
+Wire Wire Line
+	3300 850  3450 850 
+Connection ~ 3450 850 
+Wire Wire Line
+	3450 850  3600 850 
+Connection ~ 3600 850 
+Wire Wire Line
+	3600 850  3750 850 
+Connection ~ 3750 850 
+Wire Wire Line
+	3750 850  3900 850 
+Connection ~ 3900 850 
+Wire Wire Line
+	3900 850  4050 850 
+Connection ~ 4050 850 
+Wire Wire Line
+	4050 850  4200 850 
+Connection ~ 4200 850 
+Wire Wire Line
+	4200 850  4350 850 
+Connection ~ 4350 850 
+Wire Wire Line
+	4350 850  4500 850 
+Connection ~ 4500 850 
+Wire Wire Line
+	4500 850  4650 850 
+Connection ~ 4650 850 
+Wire Wire Line
+	4650 850  4800 850 
+Connection ~ 4800 850 
+Wire Wire Line
+	4800 850  4950 850 
+Connection ~ 4950 850 
+Wire Wire Line
+	4950 850  5100 850 
+Connection ~ 5100 850 
+Wire Wire Line
+	5100 850  5250 850 
+Connection ~ 5250 850 
+Wire Wire Line
+	5250 850  5400 850 
+Connection ~ 5400 850 
+Wire Wire Line
+	5400 850  5550 850 
+Connection ~ 5550 850 
+Wire Wire Line
+	5550 850  5700 850 
+Connection ~ 5700 850 
+Wire Wire Line
+	5700 850  5850 850 
+Connection ~ 5850 850 
+Wire Wire Line
+	5850 850  6000 850 
+Connection ~ 6000 850 
+Wire Wire Line
+	6000 850  6150 850 
+Connection ~ 6150 850 
+Wire Wire Line
+	6150 850  6300 850 
+Connection ~ 6300 850 
+Wire Wire Line
+	6300 850  6450 850 
+Connection ~ 6450 850 
+Wire Wire Line
+	6450 850  6600 850 
+Connection ~ 6600 850 
+Wire Wire Line
+	6600 850  6750 850 
+Connection ~ 6750 850 
+Wire Wire Line
+	6750 850  6900 850 
+Connection ~ 6900 850 
+Wire Wire Line
+	6900 850  7050 850 
+Connection ~ 7050 850 
+Wire Wire Line
+	7050 850  7200 850 
+$Comp
+L Device:LED_Small D2
+U 1 1 654FAA5D
+P 2550 1200
+F 0 "D2" H 2700 1150 50  0001 R CNN
+F 1 "LED" H 2650 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2550 1200 50  0001 C CNN
+F 3 "~" V 2550 1200 50  0001 C CNN
+	1    2550 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D10
+U 1 1 654FAA63
+P 2700 1200
+F 0 "D10" H 2850 1150 50  0001 R CNN
+F 1 "LED" H 2800 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2700 1200 50  0001 C CNN
+F 3 "~" V 2700 1200 50  0001 C CNN
+	1    2700 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D18
+U 1 1 654FAA69
+P 2850 1200
+F 0 "D18" H 3000 1150 50  0001 R CNN
+F 1 "LED" H 2950 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2850 1200 50  0001 C CNN
+F 3 "~" V 2850 1200 50  0001 C CNN
+	1    2850 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D26
+U 1 1 654FAA6F
+P 3000 1200
+F 0 "D26" H 3150 1150 50  0001 R CNN
+F 1 "LED" H 3100 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3000 1200 50  0001 C CNN
+F 3 "~" V 3000 1200 50  0001 C CNN
+	1    3000 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D34
+U 1 1 654FAA75
+P 3150 1200
+F 0 "D34" H 3300 1150 50  0001 R CNN
+F 1 "LED" H 3250 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3150 1200 50  0001 C CNN
+F 3 "~" V 3150 1200 50  0001 C CNN
+	1    3150 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D42
+U 1 1 654FAA7B
+P 3300 1200
+F 0 "D42" H 3450 1150 50  0001 R CNN
+F 1 "LED" H 3400 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3300 1200 50  0001 C CNN
+F 3 "~" V 3300 1200 50  0001 C CNN
+	1    3300 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D50
+U 1 1 654FAA81
+P 3450 1200
+F 0 "D50" H 3600 1150 50  0001 R CNN
+F 1 "LED" H 3550 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3450 1200 50  0001 C CNN
+F 3 "~" V 3450 1200 50  0001 C CNN
+	1    3450 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D58
+U 1 1 654FAA87
+P 3600 1200
+F 0 "D58" H 3750 1150 50  0001 R CNN
+F 1 "LED" H 3700 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3600 1200 50  0001 C CNN
+F 3 "~" V 3600 1200 50  0001 C CNN
+	1    3600 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D66
+U 1 1 654FAA8D
+P 3750 1200
+F 0 "D66" H 3900 1150 50  0001 R CNN
+F 1 "LED" H 3850 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3750 1200 50  0001 C CNN
+F 3 "~" V 3750 1200 50  0001 C CNN
+	1    3750 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D74
+U 1 1 654FAA93
+P 3900 1200
+F 0 "D74" H 4050 1150 50  0001 R CNN
+F 1 "LED" H 4000 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3900 1200 50  0001 C CNN
+F 3 "~" V 3900 1200 50  0001 C CNN
+	1    3900 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D82
+U 1 1 654FAA99
+P 4050 1200
+F 0 "D82" H 4200 1150 50  0001 R CNN
+F 1 "LED" H 4150 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4050 1200 50  0001 C CNN
+F 3 "~" V 4050 1200 50  0001 C CNN
+	1    4050 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D90
+U 1 1 654FAA9F
+P 4200 1200
+F 0 "D90" H 4350 1150 50  0001 R CNN
+F 1 "LED" H 4300 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4200 1200 50  0001 C CNN
+F 3 "~" V 4200 1200 50  0001 C CNN
+	1    4200 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D98
+U 1 1 654FAAA5
+P 4350 1200
+F 0 "D98" H 4500 1150 50  0001 R CNN
+F 1 "LED" H 4450 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4350 1200 50  0001 C CNN
+F 3 "~" V 4350 1200 50  0001 C CNN
+	1    4350 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D106
+U 1 1 654FAAAB
+P 4500 1200
+F 0 "D106" H 4650 1150 50  0001 R CNN
+F 1 "LED" H 4600 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4500 1200 50  0001 C CNN
+F 3 "~" V 4500 1200 50  0001 C CNN
+	1    4500 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D114
+U 1 1 654FAAB1
+P 4650 1200
+F 0 "D114" H 4800 1150 50  0001 R CNN
+F 1 "LED" H 4750 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4650 1200 50  0001 C CNN
+F 3 "~" V 4650 1200 50  0001 C CNN
+	1    4650 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D122
+U 1 1 654FAAB7
+P 4800 1200
+F 0 "D122" H 4950 1150 50  0001 R CNN
+F 1 "LED" H 4900 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4800 1200 50  0001 C CNN
+F 3 "~" V 4800 1200 50  0001 C CNN
+	1    4800 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D130
+U 1 1 654FAABD
+P 4950 1200
+F 0 "D130" H 5100 1150 50  0001 R CNN
+F 1 "LED" H 5050 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4950 1200 50  0001 C CNN
+F 3 "~" V 4950 1200 50  0001 C CNN
+	1    4950 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D138
+U 1 1 654FAAC3
+P 5100 1200
+F 0 "D138" H 5250 1150 50  0001 R CNN
+F 1 "LED" H 5200 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5100 1200 50  0001 C CNN
+F 3 "~" V 5100 1200 50  0001 C CNN
+	1    5100 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D146
+U 1 1 654FAAC9
+P 5250 1200
+F 0 "D146" H 5400 1150 50  0001 R CNN
+F 1 "LED" H 5350 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5250 1200 50  0001 C CNN
+F 3 "~" V 5250 1200 50  0001 C CNN
+	1    5250 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D154
+U 1 1 654FAACF
+P 5400 1200
+F 0 "D154" H 5550 1150 50  0001 R CNN
+F 1 "LED" H 5500 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5400 1200 50  0001 C CNN
+F 3 "~" V 5400 1200 50  0001 C CNN
+	1    5400 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D162
+U 1 1 654FAAD5
+P 5550 1200
+F 0 "D162" H 5700 1150 50  0001 R CNN
+F 1 "LED" H 5650 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5550 1200 50  0001 C CNN
+F 3 "~" V 5550 1200 50  0001 C CNN
+	1    5550 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D170
+U 1 1 654FAADB
+P 5700 1200
+F 0 "D170" H 5850 1150 50  0001 R CNN
+F 1 "LED" H 5800 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5700 1200 50  0001 C CNN
+F 3 "~" V 5700 1200 50  0001 C CNN
+	1    5700 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D178
+U 1 1 654FAAE1
+P 5850 1200
+F 0 "D178" H 6000 1150 50  0001 R CNN
+F 1 "LED" H 5950 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5850 1200 50  0001 C CNN
+F 3 "~" V 5850 1200 50  0001 C CNN
+	1    5850 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D186
+U 1 1 654FAAE7
+P 6000 1200
+F 0 "D186" H 6150 1150 50  0001 R CNN
+F 1 "LED" H 6100 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6000 1200 50  0001 C CNN
+F 3 "~" V 6000 1200 50  0001 C CNN
+	1    6000 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D194
+U 1 1 654FAAED
+P 6150 1200
+F 0 "D194" H 6300 1150 50  0001 R CNN
+F 1 "LED" H 6250 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6150 1200 50  0001 C CNN
+F 3 "~" V 6150 1200 50  0001 C CNN
+	1    6150 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D202
+U 1 1 654FAAF3
+P 6300 1200
+F 0 "D202" H 6450 1150 50  0001 R CNN
+F 1 "LED" H 6400 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6300 1200 50  0001 C CNN
+F 3 "~" V 6300 1200 50  0001 C CNN
+	1    6300 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D210
+U 1 1 654FAAF9
+P 6450 1200
+F 0 "D210" H 6600 1150 50  0001 R CNN
+F 1 "LED" H 6550 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6450 1200 50  0001 C CNN
+F 3 "~" V 6450 1200 50  0001 C CNN
+	1    6450 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D218
+U 1 1 654FAAFF
+P 6600 1200
+F 0 "D218" H 6750 1150 50  0001 R CNN
+F 1 "LED" H 6700 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6600 1200 50  0001 C CNN
+F 3 "~" V 6600 1200 50  0001 C CNN
+	1    6600 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D226
+U 1 1 654FAB05
+P 6750 1200
+F 0 "D226" H 6900 1150 50  0001 R CNN
+F 1 "LED" H 6850 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6750 1200 50  0001 C CNN
+F 3 "~" V 6750 1200 50  0001 C CNN
+	1    6750 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D234
+U 1 1 654FAB0B
+P 6900 1200
+F 0 "D234" H 7050 1150 50  0001 R CNN
+F 1 "LED" H 7000 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6900 1200 50  0001 C CNN
+F 3 "~" V 6900 1200 50  0001 C CNN
+	1    6900 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D242
+U 1 1 654FAB11
+P 7050 1200
+F 0 "D242" H 7200 1150 50  0001 R CNN
+F 1 "LED" H 7150 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7050 1200 50  0001 C CNN
+F 3 "~" V 7050 1200 50  0001 C CNN
+	1    7050 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D250
+U 1 1 654FAB17
+P 7200 1200
+F 0 "D250" H 7350 1150 50  0001 R CNN
+F 1 "LED" H 7300 1100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7200 1200 50  0001 C CNN
+F 3 "~" V 7200 1200 50  0001 C CNN
+	1    7200 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 1100 2700 1100
+Connection ~ 2700 1100
+Wire Wire Line
+	2700 1100 2850 1100
+Connection ~ 2850 1100
+Wire Wire Line
+	2850 1100 3000 1100
+Connection ~ 3000 1100
+Wire Wire Line
+	3000 1100 3150 1100
+Connection ~ 3150 1100
+Wire Wire Line
+	3150 1100 3300 1100
+Connection ~ 3300 1100
+Wire Wire Line
+	3300 1100 3450 1100
+Connection ~ 3450 1100
+Wire Wire Line
+	3450 1100 3600 1100
+Connection ~ 3600 1100
+Wire Wire Line
+	3600 1100 3750 1100
+Connection ~ 3750 1100
+Wire Wire Line
+	3750 1100 3900 1100
+Connection ~ 3900 1100
+Wire Wire Line
+	3900 1100 4050 1100
+Connection ~ 4050 1100
+Wire Wire Line
+	4050 1100 4200 1100
+Connection ~ 4200 1100
+Wire Wire Line
+	4200 1100 4350 1100
+Connection ~ 4350 1100
+Wire Wire Line
+	4350 1100 4500 1100
+Connection ~ 4500 1100
+Wire Wire Line
+	4500 1100 4650 1100
+Connection ~ 4650 1100
+Wire Wire Line
+	4650 1100 4800 1100
+Connection ~ 4800 1100
+Wire Wire Line
+	4800 1100 4950 1100
+Connection ~ 4950 1100
+Wire Wire Line
+	4950 1100 5100 1100
+Connection ~ 5100 1100
+Wire Wire Line
+	5100 1100 5250 1100
+Connection ~ 5250 1100
+Wire Wire Line
+	5250 1100 5400 1100
+Connection ~ 5400 1100
+Wire Wire Line
+	5400 1100 5550 1100
+Connection ~ 5550 1100
+Wire Wire Line
+	5550 1100 5700 1100
+Connection ~ 5700 1100
+Wire Wire Line
+	5700 1100 5850 1100
+Connection ~ 5850 1100
+Wire Wire Line
+	5850 1100 6000 1100
+Connection ~ 6000 1100
+Wire Wire Line
+	6000 1100 6150 1100
+Connection ~ 6150 1100
+Wire Wire Line
+	6150 1100 6300 1100
+Connection ~ 6300 1100
+Wire Wire Line
+	6300 1100 6450 1100
+Connection ~ 6450 1100
+Wire Wire Line
+	6450 1100 6600 1100
+Connection ~ 6600 1100
+Wire Wire Line
+	6600 1100 6750 1100
+Connection ~ 6750 1100
+Wire Wire Line
+	6750 1100 6900 1100
+Connection ~ 6900 1100
+Wire Wire Line
+	6900 1100 7050 1100
+Connection ~ 7050 1100
+Wire Wire Line
+	7050 1100 7200 1100
+$Comp
+L Device:LED_Small D3
+U 1 1 65505CD8
+P 2550 1450
+F 0 "D3" H 2700 1400 50  0001 R CNN
+F 1 "LED" H 2650 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2550 1450 50  0001 C CNN
+F 3 "~" V 2550 1450 50  0001 C CNN
+	1    2550 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D11
+U 1 1 65505CDE
+P 2700 1450
+F 0 "D11" H 2850 1400 50  0001 R CNN
+F 1 "LED" H 2800 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2700 1450 50  0001 C CNN
+F 3 "~" V 2700 1450 50  0001 C CNN
+	1    2700 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D19
+U 1 1 65505CE4
+P 2850 1450
+F 0 "D19" H 3000 1400 50  0001 R CNN
+F 1 "LED" H 2950 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2850 1450 50  0001 C CNN
+F 3 "~" V 2850 1450 50  0001 C CNN
+	1    2850 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D27
+U 1 1 65505CEA
+P 3000 1450
+F 0 "D27" H 3150 1400 50  0001 R CNN
+F 1 "LED" H 3100 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3000 1450 50  0001 C CNN
+F 3 "~" V 3000 1450 50  0001 C CNN
+	1    3000 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D35
+U 1 1 65505CF0
+P 3150 1450
+F 0 "D35" H 3300 1400 50  0001 R CNN
+F 1 "LED" H 3250 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3150 1450 50  0001 C CNN
+F 3 "~" V 3150 1450 50  0001 C CNN
+	1    3150 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D43
+U 1 1 65505CF6
+P 3300 1450
+F 0 "D43" H 3450 1400 50  0001 R CNN
+F 1 "LED" H 3400 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3300 1450 50  0001 C CNN
+F 3 "~" V 3300 1450 50  0001 C CNN
+	1    3300 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D51
+U 1 1 65505CFC
+P 3450 1450
+F 0 "D51" H 3600 1400 50  0001 R CNN
+F 1 "LED" H 3550 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3450 1450 50  0001 C CNN
+F 3 "~" V 3450 1450 50  0001 C CNN
+	1    3450 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D59
+U 1 1 65505D02
+P 3600 1450
+F 0 "D59" H 3750 1400 50  0001 R CNN
+F 1 "LED" H 3700 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3600 1450 50  0001 C CNN
+F 3 "~" V 3600 1450 50  0001 C CNN
+	1    3600 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D67
+U 1 1 65505D08
+P 3750 1450
+F 0 "D67" H 3900 1400 50  0001 R CNN
+F 1 "LED" H 3850 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3750 1450 50  0001 C CNN
+F 3 "~" V 3750 1450 50  0001 C CNN
+	1    3750 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D75
+U 1 1 65505D0E
+P 3900 1450
+F 0 "D75" H 4050 1400 50  0001 R CNN
+F 1 "LED" H 4000 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3900 1450 50  0001 C CNN
+F 3 "~" V 3900 1450 50  0001 C CNN
+	1    3900 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D83
+U 1 1 65505D14
+P 4050 1450
+F 0 "D83" H 4200 1400 50  0001 R CNN
+F 1 "LED" H 4150 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4050 1450 50  0001 C CNN
+F 3 "~" V 4050 1450 50  0001 C CNN
+	1    4050 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D91
+U 1 1 65505D1A
+P 4200 1450
+F 0 "D91" H 4350 1400 50  0001 R CNN
+F 1 "LED" H 4300 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4200 1450 50  0001 C CNN
+F 3 "~" V 4200 1450 50  0001 C CNN
+	1    4200 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D99
+U 1 1 65505D20
+P 4350 1450
+F 0 "D99" H 4500 1400 50  0001 R CNN
+F 1 "LED" H 4450 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4350 1450 50  0001 C CNN
+F 3 "~" V 4350 1450 50  0001 C CNN
+	1    4350 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D107
+U 1 1 65505D26
+P 4500 1450
+F 0 "D107" H 4650 1400 50  0001 R CNN
+F 1 "LED" H 4600 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4500 1450 50  0001 C CNN
+F 3 "~" V 4500 1450 50  0001 C CNN
+	1    4500 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D115
+U 1 1 65505D2C
+P 4650 1450
+F 0 "D115" H 4800 1400 50  0001 R CNN
+F 1 "LED" H 4750 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4650 1450 50  0001 C CNN
+F 3 "~" V 4650 1450 50  0001 C CNN
+	1    4650 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D123
+U 1 1 65505D32
+P 4800 1450
+F 0 "D123" H 4950 1400 50  0001 R CNN
+F 1 "LED" H 4900 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4800 1450 50  0001 C CNN
+F 3 "~" V 4800 1450 50  0001 C CNN
+	1    4800 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D131
+U 1 1 65505D38
+P 4950 1450
+F 0 "D131" H 5100 1400 50  0001 R CNN
+F 1 "LED" H 5050 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4950 1450 50  0001 C CNN
+F 3 "~" V 4950 1450 50  0001 C CNN
+	1    4950 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D139
+U 1 1 65505D3E
+P 5100 1450
+F 0 "D139" H 5250 1400 50  0001 R CNN
+F 1 "LED" H 5200 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5100 1450 50  0001 C CNN
+F 3 "~" V 5100 1450 50  0001 C CNN
+	1    5100 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D147
+U 1 1 65505D44
+P 5250 1450
+F 0 "D147" H 5400 1400 50  0001 R CNN
+F 1 "LED" H 5350 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5250 1450 50  0001 C CNN
+F 3 "~" V 5250 1450 50  0001 C CNN
+	1    5250 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D155
+U 1 1 65505D4A
+P 5400 1450
+F 0 "D155" H 5550 1400 50  0001 R CNN
+F 1 "LED" H 5500 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5400 1450 50  0001 C CNN
+F 3 "~" V 5400 1450 50  0001 C CNN
+	1    5400 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D163
+U 1 1 65505D50
+P 5550 1450
+F 0 "D163" H 5700 1400 50  0001 R CNN
+F 1 "LED" H 5650 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5550 1450 50  0001 C CNN
+F 3 "~" V 5550 1450 50  0001 C CNN
+	1    5550 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D171
+U 1 1 65505D56
+P 5700 1450
+F 0 "D171" H 5850 1400 50  0001 R CNN
+F 1 "LED" H 5800 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5700 1450 50  0001 C CNN
+F 3 "~" V 5700 1450 50  0001 C CNN
+	1    5700 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D179
+U 1 1 65505D5C
+P 5850 1450
+F 0 "D179" H 6000 1400 50  0001 R CNN
+F 1 "LED" H 5950 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5850 1450 50  0001 C CNN
+F 3 "~" V 5850 1450 50  0001 C CNN
+	1    5850 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D187
+U 1 1 65505D62
+P 6000 1450
+F 0 "D187" H 6150 1400 50  0001 R CNN
+F 1 "LED" H 6100 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6000 1450 50  0001 C CNN
+F 3 "~" V 6000 1450 50  0001 C CNN
+	1    6000 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D195
+U 1 1 65505D68
+P 6150 1450
+F 0 "D195" H 6300 1400 50  0001 R CNN
+F 1 "LED" H 6250 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6150 1450 50  0001 C CNN
+F 3 "~" V 6150 1450 50  0001 C CNN
+	1    6150 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D203
+U 1 1 65505D6E
+P 6300 1450
+F 0 "D203" H 6450 1400 50  0001 R CNN
+F 1 "LED" H 6400 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6300 1450 50  0001 C CNN
+F 3 "~" V 6300 1450 50  0001 C CNN
+	1    6300 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D211
+U 1 1 65505D74
+P 6450 1450
+F 0 "D211" H 6600 1400 50  0001 R CNN
+F 1 "LED" H 6550 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6450 1450 50  0001 C CNN
+F 3 "~" V 6450 1450 50  0001 C CNN
+	1    6450 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D219
+U 1 1 65505D7A
+P 6600 1450
+F 0 "D219" H 6750 1400 50  0001 R CNN
+F 1 "LED" H 6700 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6600 1450 50  0001 C CNN
+F 3 "~" V 6600 1450 50  0001 C CNN
+	1    6600 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D227
+U 1 1 65505D80
+P 6750 1450
+F 0 "D227" H 6900 1400 50  0001 R CNN
+F 1 "LED" H 6850 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6750 1450 50  0001 C CNN
+F 3 "~" V 6750 1450 50  0001 C CNN
+	1    6750 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D235
+U 1 1 65505D86
+P 6900 1450
+F 0 "D235" H 7050 1400 50  0001 R CNN
+F 1 "LED" H 7000 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6900 1450 50  0001 C CNN
+F 3 "~" V 6900 1450 50  0001 C CNN
+	1    6900 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D243
+U 1 1 65505D8C
+P 7050 1450
+F 0 "D243" H 7200 1400 50  0001 R CNN
+F 1 "LED" H 7150 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7050 1450 50  0001 C CNN
+F 3 "~" V 7050 1450 50  0001 C CNN
+	1    7050 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D251
+U 1 1 65505D92
+P 7200 1450
+F 0 "D251" H 7350 1400 50  0001 R CNN
+F 1 "LED" H 7300 1350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7200 1450 50  0001 C CNN
+F 3 "~" V 7200 1450 50  0001 C CNN
+	1    7200 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 1350 2700 1350
+Connection ~ 2700 1350
+Wire Wire Line
+	2700 1350 2850 1350
+Connection ~ 2850 1350
+Wire Wire Line
+	2850 1350 3000 1350
+Connection ~ 3000 1350
+Wire Wire Line
+	3000 1350 3150 1350
+Connection ~ 3150 1350
+Wire Wire Line
+	3150 1350 3300 1350
+Connection ~ 3300 1350
+Wire Wire Line
+	3300 1350 3450 1350
+Connection ~ 3450 1350
+Wire Wire Line
+	3450 1350 3600 1350
+Connection ~ 3600 1350
+Wire Wire Line
+	3600 1350 3750 1350
+Connection ~ 3750 1350
+Wire Wire Line
+	3750 1350 3900 1350
+Connection ~ 3900 1350
+Wire Wire Line
+	3900 1350 4050 1350
+Connection ~ 4050 1350
+Wire Wire Line
+	4050 1350 4200 1350
+Connection ~ 4200 1350
+Wire Wire Line
+	4200 1350 4350 1350
+Connection ~ 4350 1350
+Wire Wire Line
+	4350 1350 4500 1350
+Connection ~ 4500 1350
+Wire Wire Line
+	4500 1350 4650 1350
+Connection ~ 4650 1350
+Wire Wire Line
+	4650 1350 4800 1350
+Connection ~ 4800 1350
+Wire Wire Line
+	4800 1350 4950 1350
+Connection ~ 4950 1350
+Wire Wire Line
+	4950 1350 5100 1350
+Connection ~ 5100 1350
+Wire Wire Line
+	5100 1350 5250 1350
+Connection ~ 5250 1350
+Wire Wire Line
+	5250 1350 5400 1350
+Connection ~ 5400 1350
+Wire Wire Line
+	5400 1350 5550 1350
+Connection ~ 5550 1350
+Wire Wire Line
+	5550 1350 5700 1350
+Connection ~ 5700 1350
+Wire Wire Line
+	5700 1350 5850 1350
+Connection ~ 5850 1350
+Wire Wire Line
+	5850 1350 6000 1350
+Connection ~ 6000 1350
+Wire Wire Line
+	6000 1350 6150 1350
+Connection ~ 6150 1350
+Wire Wire Line
+	6150 1350 6300 1350
+Connection ~ 6300 1350
+Wire Wire Line
+	6300 1350 6450 1350
+Connection ~ 6450 1350
+Wire Wire Line
+	6450 1350 6600 1350
+Connection ~ 6600 1350
+Wire Wire Line
+	6600 1350 6750 1350
+Connection ~ 6750 1350
+Wire Wire Line
+	6750 1350 6900 1350
+Connection ~ 6900 1350
+Wire Wire Line
+	6900 1350 7050 1350
+Connection ~ 7050 1350
+Wire Wire Line
+	7050 1350 7200 1350
+$Comp
+L Device:LED_Small D4
+U 1 1 655146E4
+P 2550 1700
+F 0 "D4" H 2700 1650 50  0001 R CNN
+F 1 "LED" H 2650 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2550 1700 50  0001 C CNN
+F 3 "~" V 2550 1700 50  0001 C CNN
+	1    2550 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D12
+U 1 1 655146EA
+P 2700 1700
+F 0 "D12" H 2850 1650 50  0001 R CNN
+F 1 "LED" H 2800 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2700 1700 50  0001 C CNN
+F 3 "~" V 2700 1700 50  0001 C CNN
+	1    2700 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D20
+U 1 1 655146F0
+P 2850 1700
+F 0 "D20" H 3000 1650 50  0001 R CNN
+F 1 "LED" H 2950 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2850 1700 50  0001 C CNN
+F 3 "~" V 2850 1700 50  0001 C CNN
+	1    2850 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D28
+U 1 1 655146F6
+P 3000 1700
+F 0 "D28" H 3150 1650 50  0001 R CNN
+F 1 "LED" H 3100 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3000 1700 50  0001 C CNN
+F 3 "~" V 3000 1700 50  0001 C CNN
+	1    3000 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D36
+U 1 1 655146FC
+P 3150 1700
+F 0 "D36" H 3300 1650 50  0001 R CNN
+F 1 "LED" H 3250 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3150 1700 50  0001 C CNN
+F 3 "~" V 3150 1700 50  0001 C CNN
+	1    3150 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D44
+U 1 1 65514702
+P 3300 1700
+F 0 "D44" H 3450 1650 50  0001 R CNN
+F 1 "LED" H 3400 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3300 1700 50  0001 C CNN
+F 3 "~" V 3300 1700 50  0001 C CNN
+	1    3300 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D52
+U 1 1 65514708
+P 3450 1700
+F 0 "D52" H 3600 1650 50  0001 R CNN
+F 1 "LED" H 3550 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3450 1700 50  0001 C CNN
+F 3 "~" V 3450 1700 50  0001 C CNN
+	1    3450 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D60
+U 1 1 6551470E
+P 3600 1700
+F 0 "D60" H 3750 1650 50  0001 R CNN
+F 1 "LED" H 3700 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3600 1700 50  0001 C CNN
+F 3 "~" V 3600 1700 50  0001 C CNN
+	1    3600 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D68
+U 1 1 65514714
+P 3750 1700
+F 0 "D68" H 3900 1650 50  0001 R CNN
+F 1 "LED" H 3850 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3750 1700 50  0001 C CNN
+F 3 "~" V 3750 1700 50  0001 C CNN
+	1    3750 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D76
+U 1 1 6551471A
+P 3900 1700
+F 0 "D76" H 4050 1650 50  0001 R CNN
+F 1 "LED" H 4000 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3900 1700 50  0001 C CNN
+F 3 "~" V 3900 1700 50  0001 C CNN
+	1    3900 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D84
+U 1 1 65514720
+P 4050 1700
+F 0 "D84" H 4200 1650 50  0001 R CNN
+F 1 "LED" H 4150 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4050 1700 50  0001 C CNN
+F 3 "~" V 4050 1700 50  0001 C CNN
+	1    4050 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D92
+U 1 1 65514726
+P 4200 1700
+F 0 "D92" H 4350 1650 50  0001 R CNN
+F 1 "LED" H 4300 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4200 1700 50  0001 C CNN
+F 3 "~" V 4200 1700 50  0001 C CNN
+	1    4200 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D100
+U 1 1 6551472C
+P 4350 1700
+F 0 "D100" H 4500 1650 50  0001 R CNN
+F 1 "LED" H 4450 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4350 1700 50  0001 C CNN
+F 3 "~" V 4350 1700 50  0001 C CNN
+	1    4350 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D108
+U 1 1 65514732
+P 4500 1700
+F 0 "D108" H 4650 1650 50  0001 R CNN
+F 1 "LED" H 4600 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4500 1700 50  0001 C CNN
+F 3 "~" V 4500 1700 50  0001 C CNN
+	1    4500 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D116
+U 1 1 65514738
+P 4650 1700
+F 0 "D116" H 4800 1650 50  0001 R CNN
+F 1 "LED" H 4750 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4650 1700 50  0001 C CNN
+F 3 "~" V 4650 1700 50  0001 C CNN
+	1    4650 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D124
+U 1 1 6551473E
+P 4800 1700
+F 0 "D124" H 4950 1650 50  0001 R CNN
+F 1 "LED" H 4900 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4800 1700 50  0001 C CNN
+F 3 "~" V 4800 1700 50  0001 C CNN
+	1    4800 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D132
+U 1 1 65514744
+P 4950 1700
+F 0 "D132" H 5100 1650 50  0001 R CNN
+F 1 "LED" H 5050 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4950 1700 50  0001 C CNN
+F 3 "~" V 4950 1700 50  0001 C CNN
+	1    4950 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D140
+U 1 1 6551474A
+P 5100 1700
+F 0 "D140" H 5250 1650 50  0001 R CNN
+F 1 "LED" H 5200 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5100 1700 50  0001 C CNN
+F 3 "~" V 5100 1700 50  0001 C CNN
+	1    5100 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D148
+U 1 1 65514750
+P 5250 1700
+F 0 "D148" H 5400 1650 50  0001 R CNN
+F 1 "LED" H 5350 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5250 1700 50  0001 C CNN
+F 3 "~" V 5250 1700 50  0001 C CNN
+	1    5250 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D156
+U 1 1 65514756
+P 5400 1700
+F 0 "D156" H 5550 1650 50  0001 R CNN
+F 1 "LED" H 5500 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5400 1700 50  0001 C CNN
+F 3 "~" V 5400 1700 50  0001 C CNN
+	1    5400 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D164
+U 1 1 6551475C
+P 5550 1700
+F 0 "D164" H 5700 1650 50  0001 R CNN
+F 1 "LED" H 5650 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5550 1700 50  0001 C CNN
+F 3 "~" V 5550 1700 50  0001 C CNN
+	1    5550 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D172
+U 1 1 65514762
+P 5700 1700
+F 0 "D172" H 5850 1650 50  0001 R CNN
+F 1 "LED" H 5800 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5700 1700 50  0001 C CNN
+F 3 "~" V 5700 1700 50  0001 C CNN
+	1    5700 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D180
+U 1 1 65514768
+P 5850 1700
+F 0 "D180" H 6000 1650 50  0001 R CNN
+F 1 "LED" H 5950 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5850 1700 50  0001 C CNN
+F 3 "~" V 5850 1700 50  0001 C CNN
+	1    5850 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D188
+U 1 1 6551476E
+P 6000 1700
+F 0 "D188" H 6150 1650 50  0001 R CNN
+F 1 "LED" H 6100 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6000 1700 50  0001 C CNN
+F 3 "~" V 6000 1700 50  0001 C CNN
+	1    6000 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D196
+U 1 1 65514774
+P 6150 1700
+F 0 "D196" H 6300 1650 50  0001 R CNN
+F 1 "LED" H 6250 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6150 1700 50  0001 C CNN
+F 3 "~" V 6150 1700 50  0001 C CNN
+	1    6150 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D204
+U 1 1 6551477A
+P 6300 1700
+F 0 "D204" H 6450 1650 50  0001 R CNN
+F 1 "LED" H 6400 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6300 1700 50  0001 C CNN
+F 3 "~" V 6300 1700 50  0001 C CNN
+	1    6300 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D212
+U 1 1 65514780
+P 6450 1700
+F 0 "D212" H 6600 1650 50  0001 R CNN
+F 1 "LED" H 6550 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6450 1700 50  0001 C CNN
+F 3 "~" V 6450 1700 50  0001 C CNN
+	1    6450 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D220
+U 1 1 65514786
+P 6600 1700
+F 0 "D220" H 6750 1650 50  0001 R CNN
+F 1 "LED" H 6700 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6600 1700 50  0001 C CNN
+F 3 "~" V 6600 1700 50  0001 C CNN
+	1    6600 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D228
+U 1 1 6551478C
+P 6750 1700
+F 0 "D228" H 6900 1650 50  0001 R CNN
+F 1 "LED" H 6850 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6750 1700 50  0001 C CNN
+F 3 "~" V 6750 1700 50  0001 C CNN
+	1    6750 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D236
+U 1 1 65514792
+P 6900 1700
+F 0 "D236" H 7050 1650 50  0001 R CNN
+F 1 "LED" H 7000 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6900 1700 50  0001 C CNN
+F 3 "~" V 6900 1700 50  0001 C CNN
+	1    6900 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D244
+U 1 1 65514798
+P 7050 1700
+F 0 "D244" H 7200 1650 50  0001 R CNN
+F 1 "LED" H 7150 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7050 1700 50  0001 C CNN
+F 3 "~" V 7050 1700 50  0001 C CNN
+	1    7050 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D252
+U 1 1 6551479E
+P 7200 1700
+F 0 "D252" H 7350 1650 50  0001 R CNN
+F 1 "LED" H 7300 1600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7200 1700 50  0001 C CNN
+F 3 "~" V 7200 1700 50  0001 C CNN
+	1    7200 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 1600 2700 1600
+Connection ~ 2700 1600
+Wire Wire Line
+	2700 1600 2850 1600
+Connection ~ 2850 1600
+Wire Wire Line
+	2850 1600 3000 1600
+Connection ~ 3000 1600
+Wire Wire Line
+	3000 1600 3150 1600
+Connection ~ 3150 1600
+Wire Wire Line
+	3150 1600 3300 1600
+Connection ~ 3300 1600
+Wire Wire Line
+	3300 1600 3450 1600
+Connection ~ 3450 1600
+Wire Wire Line
+	3450 1600 3600 1600
+Connection ~ 3600 1600
+Wire Wire Line
+	3600 1600 3750 1600
+Connection ~ 3750 1600
+Wire Wire Line
+	3750 1600 3900 1600
+Connection ~ 3900 1600
+Wire Wire Line
+	3900 1600 4050 1600
+Connection ~ 4050 1600
+Wire Wire Line
+	4050 1600 4200 1600
+Connection ~ 4200 1600
+Wire Wire Line
+	4200 1600 4350 1600
+Connection ~ 4350 1600
+Wire Wire Line
+	4350 1600 4500 1600
+Connection ~ 4500 1600
+Wire Wire Line
+	4500 1600 4650 1600
+Connection ~ 4650 1600
+Wire Wire Line
+	4650 1600 4800 1600
+Connection ~ 4800 1600
+Wire Wire Line
+	4800 1600 4950 1600
+Connection ~ 4950 1600
+Wire Wire Line
+	4950 1600 5100 1600
+Connection ~ 5100 1600
+Wire Wire Line
+	5100 1600 5250 1600
+Connection ~ 5250 1600
+Wire Wire Line
+	5250 1600 5400 1600
+Connection ~ 5400 1600
+Wire Wire Line
+	5400 1600 5550 1600
+Connection ~ 5550 1600
+Wire Wire Line
+	5550 1600 5700 1600
+Connection ~ 5700 1600
+Wire Wire Line
+	5700 1600 5850 1600
+Connection ~ 5850 1600
+Wire Wire Line
+	5850 1600 6000 1600
+Connection ~ 6000 1600
+Wire Wire Line
+	6000 1600 6150 1600
+Connection ~ 6150 1600
+Wire Wire Line
+	6150 1600 6300 1600
+Connection ~ 6300 1600
+Wire Wire Line
+	6300 1600 6450 1600
+Connection ~ 6450 1600
+Wire Wire Line
+	6450 1600 6600 1600
+Connection ~ 6600 1600
+Wire Wire Line
+	6600 1600 6750 1600
+Connection ~ 6750 1600
+Wire Wire Line
+	6750 1600 6900 1600
+Connection ~ 6900 1600
+Wire Wire Line
+	6900 1600 7050 1600
+Connection ~ 7050 1600
+Wire Wire Line
+	7050 1600 7200 1600
+$Comp
+L Device:LED_Small D5
+U 1 1 6552908B
+P 2550 1950
+F 0 "D5" H 2700 1900 50  0001 R CNN
+F 1 "LED" H 2650 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2550 1950 50  0001 C CNN
+F 3 "~" V 2550 1950 50  0001 C CNN
+	1    2550 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D13
+U 1 1 65529091
+P 2700 1950
+F 0 "D13" H 2850 1900 50  0001 R CNN
+F 1 "LED" H 2800 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2700 1950 50  0001 C CNN
+F 3 "~" V 2700 1950 50  0001 C CNN
+	1    2700 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D21
+U 1 1 65529097
+P 2850 1950
+F 0 "D21" H 3000 1900 50  0001 R CNN
+F 1 "LED" H 2950 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2850 1950 50  0001 C CNN
+F 3 "~" V 2850 1950 50  0001 C CNN
+	1    2850 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D29
+U 1 1 6552909D
+P 3000 1950
+F 0 "D29" H 3150 1900 50  0001 R CNN
+F 1 "LED" H 3100 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3000 1950 50  0001 C CNN
+F 3 "~" V 3000 1950 50  0001 C CNN
+	1    3000 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D37
+U 1 1 655290A3
+P 3150 1950
+F 0 "D37" H 3300 1900 50  0001 R CNN
+F 1 "LED" H 3250 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3150 1950 50  0001 C CNN
+F 3 "~" V 3150 1950 50  0001 C CNN
+	1    3150 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D45
+U 1 1 655290A9
+P 3300 1950
+F 0 "D45" H 3450 1900 50  0001 R CNN
+F 1 "LED" H 3400 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3300 1950 50  0001 C CNN
+F 3 "~" V 3300 1950 50  0001 C CNN
+	1    3300 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D53
+U 1 1 655290AF
+P 3450 1950
+F 0 "D53" H 3600 1900 50  0001 R CNN
+F 1 "LED" H 3550 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3450 1950 50  0001 C CNN
+F 3 "~" V 3450 1950 50  0001 C CNN
+	1    3450 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D61
+U 1 1 655290B5
+P 3600 1950
+F 0 "D61" H 3750 1900 50  0001 R CNN
+F 1 "LED" H 3700 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3600 1950 50  0001 C CNN
+F 3 "~" V 3600 1950 50  0001 C CNN
+	1    3600 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D69
+U 1 1 655290BB
+P 3750 1950
+F 0 "D69" H 3900 1900 50  0001 R CNN
+F 1 "LED" H 3850 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3750 1950 50  0001 C CNN
+F 3 "~" V 3750 1950 50  0001 C CNN
+	1    3750 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D77
+U 1 1 655290C1
+P 3900 1950
+F 0 "D77" H 4050 1900 50  0001 R CNN
+F 1 "LED" H 4000 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3900 1950 50  0001 C CNN
+F 3 "~" V 3900 1950 50  0001 C CNN
+	1    3900 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D85
+U 1 1 655290C7
+P 4050 1950
+F 0 "D85" H 4200 1900 50  0001 R CNN
+F 1 "LED" H 4150 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4050 1950 50  0001 C CNN
+F 3 "~" V 4050 1950 50  0001 C CNN
+	1    4050 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D93
+U 1 1 655290CD
+P 4200 1950
+F 0 "D93" H 4350 1900 50  0001 R CNN
+F 1 "LED" H 4300 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4200 1950 50  0001 C CNN
+F 3 "~" V 4200 1950 50  0001 C CNN
+	1    4200 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D101
+U 1 1 655290D3
+P 4350 1950
+F 0 "D101" H 4500 1900 50  0001 R CNN
+F 1 "LED" H 4450 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4350 1950 50  0001 C CNN
+F 3 "~" V 4350 1950 50  0001 C CNN
+	1    4350 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D109
+U 1 1 655290D9
+P 4500 1950
+F 0 "D109" H 4650 1900 50  0001 R CNN
+F 1 "LED" H 4600 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4500 1950 50  0001 C CNN
+F 3 "~" V 4500 1950 50  0001 C CNN
+	1    4500 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D117
+U 1 1 655290DF
+P 4650 1950
+F 0 "D117" H 4800 1900 50  0001 R CNN
+F 1 "LED" H 4750 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4650 1950 50  0001 C CNN
+F 3 "~" V 4650 1950 50  0001 C CNN
+	1    4650 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D125
+U 1 1 655290E5
+P 4800 1950
+F 0 "D125" H 4950 1900 50  0001 R CNN
+F 1 "LED" H 4900 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4800 1950 50  0001 C CNN
+F 3 "~" V 4800 1950 50  0001 C CNN
+	1    4800 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D133
+U 1 1 655290EB
+P 4950 1950
+F 0 "D133" H 5100 1900 50  0001 R CNN
+F 1 "LED" H 5050 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4950 1950 50  0001 C CNN
+F 3 "~" V 4950 1950 50  0001 C CNN
+	1    4950 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D141
+U 1 1 655290F1
+P 5100 1950
+F 0 "D141" H 5250 1900 50  0001 R CNN
+F 1 "LED" H 5200 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5100 1950 50  0001 C CNN
+F 3 "~" V 5100 1950 50  0001 C CNN
+	1    5100 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D149
+U 1 1 655290F7
+P 5250 1950
+F 0 "D149" H 5400 1900 50  0001 R CNN
+F 1 "LED" H 5350 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5250 1950 50  0001 C CNN
+F 3 "~" V 5250 1950 50  0001 C CNN
+	1    5250 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D157
+U 1 1 655290FD
+P 5400 1950
+F 0 "D157" H 5550 1900 50  0001 R CNN
+F 1 "LED" H 5500 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5400 1950 50  0001 C CNN
+F 3 "~" V 5400 1950 50  0001 C CNN
+	1    5400 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D165
+U 1 1 65529103
+P 5550 1950
+F 0 "D165" H 5700 1900 50  0001 R CNN
+F 1 "LED" H 5650 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5550 1950 50  0001 C CNN
+F 3 "~" V 5550 1950 50  0001 C CNN
+	1    5550 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D173
+U 1 1 65529109
+P 5700 1950
+F 0 "D173" H 5850 1900 50  0001 R CNN
+F 1 "LED" H 5800 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5700 1950 50  0001 C CNN
+F 3 "~" V 5700 1950 50  0001 C CNN
+	1    5700 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D181
+U 1 1 6552910F
+P 5850 1950
+F 0 "D181" H 6000 1900 50  0001 R CNN
+F 1 "LED" H 5950 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5850 1950 50  0001 C CNN
+F 3 "~" V 5850 1950 50  0001 C CNN
+	1    5850 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D189
+U 1 1 65529115
+P 6000 1950
+F 0 "D189" H 6150 1900 50  0001 R CNN
+F 1 "LED" H 6100 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6000 1950 50  0001 C CNN
+F 3 "~" V 6000 1950 50  0001 C CNN
+	1    6000 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D197
+U 1 1 6552911B
+P 6150 1950
+F 0 "D197" H 6300 1900 50  0001 R CNN
+F 1 "LED" H 6250 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6150 1950 50  0001 C CNN
+F 3 "~" V 6150 1950 50  0001 C CNN
+	1    6150 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D205
+U 1 1 65529121
+P 6300 1950
+F 0 "D205" H 6450 1900 50  0001 R CNN
+F 1 "LED" H 6400 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6300 1950 50  0001 C CNN
+F 3 "~" V 6300 1950 50  0001 C CNN
+	1    6300 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D213
+U 1 1 65529127
+P 6450 1950
+F 0 "D213" H 6600 1900 50  0001 R CNN
+F 1 "LED" H 6550 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6450 1950 50  0001 C CNN
+F 3 "~" V 6450 1950 50  0001 C CNN
+	1    6450 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D221
+U 1 1 6552912D
+P 6600 1950
+F 0 "D221" H 6750 1900 50  0001 R CNN
+F 1 "LED" H 6700 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6600 1950 50  0001 C CNN
+F 3 "~" V 6600 1950 50  0001 C CNN
+	1    6600 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D229
+U 1 1 65529133
+P 6750 1950
+F 0 "D229" H 6900 1900 50  0001 R CNN
+F 1 "LED" H 6850 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6750 1950 50  0001 C CNN
+F 3 "~" V 6750 1950 50  0001 C CNN
+	1    6750 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D237
+U 1 1 65529139
+P 6900 1950
+F 0 "D237" H 7050 1900 50  0001 R CNN
+F 1 "LED" H 7000 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6900 1950 50  0001 C CNN
+F 3 "~" V 6900 1950 50  0001 C CNN
+	1    6900 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D245
+U 1 1 6552913F
+P 7050 1950
+F 0 "D245" H 7200 1900 50  0001 R CNN
+F 1 "LED" H 7150 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7050 1950 50  0001 C CNN
+F 3 "~" V 7050 1950 50  0001 C CNN
+	1    7050 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D253
+U 1 1 65529145
+P 7200 1950
+F 0 "D253" H 7350 1900 50  0001 R CNN
+F 1 "LED" H 7300 1850 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7200 1950 50  0001 C CNN
+F 3 "~" V 7200 1950 50  0001 C CNN
+	1    7200 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 1850 2700 1850
+Connection ~ 2700 1850
+Wire Wire Line
+	2700 1850 2850 1850
+Connection ~ 2850 1850
+Wire Wire Line
+	2850 1850 3000 1850
+Connection ~ 3000 1850
+Wire Wire Line
+	3000 1850 3150 1850
+Connection ~ 3150 1850
+Wire Wire Line
+	3150 1850 3300 1850
+Connection ~ 3300 1850
+Wire Wire Line
+	3300 1850 3450 1850
+Connection ~ 3450 1850
+Wire Wire Line
+	3450 1850 3600 1850
+Connection ~ 3600 1850
+Wire Wire Line
+	3600 1850 3750 1850
+Connection ~ 3750 1850
+Wire Wire Line
+	3750 1850 3900 1850
+Connection ~ 3900 1850
+Wire Wire Line
+	3900 1850 4050 1850
+Connection ~ 4050 1850
+Wire Wire Line
+	4050 1850 4200 1850
+Connection ~ 4200 1850
+Wire Wire Line
+	4200 1850 4350 1850
+Connection ~ 4350 1850
+Wire Wire Line
+	4350 1850 4500 1850
+Connection ~ 4500 1850
+Wire Wire Line
+	4500 1850 4650 1850
+Connection ~ 4650 1850
+Wire Wire Line
+	4650 1850 4800 1850
+Connection ~ 4800 1850
+Wire Wire Line
+	4800 1850 4950 1850
+Connection ~ 4950 1850
+Wire Wire Line
+	4950 1850 5100 1850
+Connection ~ 5100 1850
+Wire Wire Line
+	5100 1850 5250 1850
+Connection ~ 5250 1850
+Wire Wire Line
+	5250 1850 5400 1850
+Connection ~ 5400 1850
+Wire Wire Line
+	5400 1850 5550 1850
+Connection ~ 5550 1850
+Wire Wire Line
+	5550 1850 5700 1850
+Connection ~ 5700 1850
+Wire Wire Line
+	5700 1850 5850 1850
+Connection ~ 5850 1850
+Wire Wire Line
+	5850 1850 6000 1850
+Connection ~ 6000 1850
+Wire Wire Line
+	6000 1850 6150 1850
+Connection ~ 6150 1850
+Wire Wire Line
+	6150 1850 6300 1850
+Connection ~ 6300 1850
+Wire Wire Line
+	6300 1850 6450 1850
+Connection ~ 6450 1850
+Wire Wire Line
+	6450 1850 6600 1850
+Connection ~ 6600 1850
+Wire Wire Line
+	6600 1850 6750 1850
+Connection ~ 6750 1850
+Wire Wire Line
+	6750 1850 6900 1850
+Connection ~ 6900 1850
+Wire Wire Line
+	6900 1850 7050 1850
+Connection ~ 7050 1850
+Wire Wire Line
+	7050 1850 7200 1850
+$Comp
+L Device:LED_Small D6
+U 1 1 6553DE39
+P 2550 2200
+F 0 "D6" H 2700 2150 50  0001 R CNN
+F 1 "LED" H 2650 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2550 2200 50  0001 C CNN
+F 3 "~" V 2550 2200 50  0001 C CNN
+	1    2550 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D14
+U 1 1 6553DE3F
+P 2700 2200
+F 0 "D14" H 2850 2150 50  0001 R CNN
+F 1 "LED" H 2800 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2700 2200 50  0001 C CNN
+F 3 "~" V 2700 2200 50  0001 C CNN
+	1    2700 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D22
+U 1 1 6553DE45
+P 2850 2200
+F 0 "D22" H 3000 2150 50  0001 R CNN
+F 1 "LED" H 2950 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2850 2200 50  0001 C CNN
+F 3 "~" V 2850 2200 50  0001 C CNN
+	1    2850 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D30
+U 1 1 6553DE4B
+P 3000 2200
+F 0 "D30" H 3150 2150 50  0001 R CNN
+F 1 "LED" H 3100 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3000 2200 50  0001 C CNN
+F 3 "~" V 3000 2200 50  0001 C CNN
+	1    3000 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D38
+U 1 1 6553DE51
+P 3150 2200
+F 0 "D38" H 3300 2150 50  0001 R CNN
+F 1 "LED" H 3250 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3150 2200 50  0001 C CNN
+F 3 "~" V 3150 2200 50  0001 C CNN
+	1    3150 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D46
+U 1 1 6553DE57
+P 3300 2200
+F 0 "D46" H 3450 2150 50  0001 R CNN
+F 1 "LED" H 3400 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3300 2200 50  0001 C CNN
+F 3 "~" V 3300 2200 50  0001 C CNN
+	1    3300 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D54
+U 1 1 6553DE5D
+P 3450 2200
+F 0 "D54" H 3600 2150 50  0001 R CNN
+F 1 "LED" H 3550 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3450 2200 50  0001 C CNN
+F 3 "~" V 3450 2200 50  0001 C CNN
+	1    3450 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D62
+U 1 1 6553DE63
+P 3600 2200
+F 0 "D62" H 3750 2150 50  0001 R CNN
+F 1 "LED" H 3700 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3600 2200 50  0001 C CNN
+F 3 "~" V 3600 2200 50  0001 C CNN
+	1    3600 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D70
+U 1 1 6553DE69
+P 3750 2200
+F 0 "D70" H 3900 2150 50  0001 R CNN
+F 1 "LED" H 3850 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3750 2200 50  0001 C CNN
+F 3 "~" V 3750 2200 50  0001 C CNN
+	1    3750 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D78
+U 1 1 6553DE6F
+P 3900 2200
+F 0 "D78" H 4050 2150 50  0001 R CNN
+F 1 "LED" H 4000 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3900 2200 50  0001 C CNN
+F 3 "~" V 3900 2200 50  0001 C CNN
+	1    3900 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D86
+U 1 1 6553DE75
+P 4050 2200
+F 0 "D86" H 4200 2150 50  0001 R CNN
+F 1 "LED" H 4150 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4050 2200 50  0001 C CNN
+F 3 "~" V 4050 2200 50  0001 C CNN
+	1    4050 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D94
+U 1 1 6553DE7B
+P 4200 2200
+F 0 "D94" H 4350 2150 50  0001 R CNN
+F 1 "LED" H 4300 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4200 2200 50  0001 C CNN
+F 3 "~" V 4200 2200 50  0001 C CNN
+	1    4200 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D102
+U 1 1 6553DE81
+P 4350 2200
+F 0 "D102" H 4500 2150 50  0001 R CNN
+F 1 "LED" H 4450 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4350 2200 50  0001 C CNN
+F 3 "~" V 4350 2200 50  0001 C CNN
+	1    4350 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D110
+U 1 1 6553DE87
+P 4500 2200
+F 0 "D110" H 4650 2150 50  0001 R CNN
+F 1 "LED" H 4600 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4500 2200 50  0001 C CNN
+F 3 "~" V 4500 2200 50  0001 C CNN
+	1    4500 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D118
+U 1 1 6553DE8D
+P 4650 2200
+F 0 "D118" H 4800 2150 50  0001 R CNN
+F 1 "LED" H 4750 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4650 2200 50  0001 C CNN
+F 3 "~" V 4650 2200 50  0001 C CNN
+	1    4650 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D126
+U 1 1 6553DE93
+P 4800 2200
+F 0 "D126" H 4950 2150 50  0001 R CNN
+F 1 "LED" H 4900 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4800 2200 50  0001 C CNN
+F 3 "~" V 4800 2200 50  0001 C CNN
+	1    4800 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D134
+U 1 1 6553DE99
+P 4950 2200
+F 0 "D134" H 5100 2150 50  0001 R CNN
+F 1 "LED" H 5050 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4950 2200 50  0001 C CNN
+F 3 "~" V 4950 2200 50  0001 C CNN
+	1    4950 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D142
+U 1 1 6553DE9F
+P 5100 2200
+F 0 "D142" H 5250 2150 50  0001 R CNN
+F 1 "LED" H 5200 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5100 2200 50  0001 C CNN
+F 3 "~" V 5100 2200 50  0001 C CNN
+	1    5100 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D150
+U 1 1 6553DEA5
+P 5250 2200
+F 0 "D150" H 5400 2150 50  0001 R CNN
+F 1 "LED" H 5350 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5250 2200 50  0001 C CNN
+F 3 "~" V 5250 2200 50  0001 C CNN
+	1    5250 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D158
+U 1 1 6553DEAB
+P 5400 2200
+F 0 "D158" H 5550 2150 50  0001 R CNN
+F 1 "LED" H 5500 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5400 2200 50  0001 C CNN
+F 3 "~" V 5400 2200 50  0001 C CNN
+	1    5400 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D166
+U 1 1 6553DEB1
+P 5550 2200
+F 0 "D166" H 5700 2150 50  0001 R CNN
+F 1 "LED" H 5650 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5550 2200 50  0001 C CNN
+F 3 "~" V 5550 2200 50  0001 C CNN
+	1    5550 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D174
+U 1 1 6553DEB7
+P 5700 2200
+F 0 "D174" H 5850 2150 50  0001 R CNN
+F 1 "LED" H 5800 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5700 2200 50  0001 C CNN
+F 3 "~" V 5700 2200 50  0001 C CNN
+	1    5700 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D182
+U 1 1 6553DEBD
+P 5850 2200
+F 0 "D182" H 6000 2150 50  0001 R CNN
+F 1 "LED" H 5950 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5850 2200 50  0001 C CNN
+F 3 "~" V 5850 2200 50  0001 C CNN
+	1    5850 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D190
+U 1 1 6553DEC3
+P 6000 2200
+F 0 "D190" H 6150 2150 50  0001 R CNN
+F 1 "LED" H 6100 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6000 2200 50  0001 C CNN
+F 3 "~" V 6000 2200 50  0001 C CNN
+	1    6000 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D198
+U 1 1 6553DEC9
+P 6150 2200
+F 0 "D198" H 6300 2150 50  0001 R CNN
+F 1 "LED" H 6250 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6150 2200 50  0001 C CNN
+F 3 "~" V 6150 2200 50  0001 C CNN
+	1    6150 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D206
+U 1 1 6553DECF
+P 6300 2200
+F 0 "D206" H 6450 2150 50  0001 R CNN
+F 1 "LED" H 6400 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6300 2200 50  0001 C CNN
+F 3 "~" V 6300 2200 50  0001 C CNN
+	1    6300 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D214
+U 1 1 6553DED5
+P 6450 2200
+F 0 "D214" H 6600 2150 50  0001 R CNN
+F 1 "LED" H 6550 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6450 2200 50  0001 C CNN
+F 3 "~" V 6450 2200 50  0001 C CNN
+	1    6450 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D222
+U 1 1 6553DEDB
+P 6600 2200
+F 0 "D222" H 6750 2150 50  0001 R CNN
+F 1 "LED" H 6700 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6600 2200 50  0001 C CNN
+F 3 "~" V 6600 2200 50  0001 C CNN
+	1    6600 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D230
+U 1 1 6553DEE1
+P 6750 2200
+F 0 "D230" H 6900 2150 50  0001 R CNN
+F 1 "LED" H 6850 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6750 2200 50  0001 C CNN
+F 3 "~" V 6750 2200 50  0001 C CNN
+	1    6750 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D238
+U 1 1 6553DEE7
+P 6900 2200
+F 0 "D238" H 7050 2150 50  0001 R CNN
+F 1 "LED" H 7000 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6900 2200 50  0001 C CNN
+F 3 "~" V 6900 2200 50  0001 C CNN
+	1    6900 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D246
+U 1 1 6553DEED
+P 7050 2200
+F 0 "D246" H 7200 2150 50  0001 R CNN
+F 1 "LED" H 7150 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7050 2200 50  0001 C CNN
+F 3 "~" V 7050 2200 50  0001 C CNN
+	1    7050 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D254
+U 1 1 6553DEF3
+P 7200 2200
+F 0 "D254" H 7350 2150 50  0001 R CNN
+F 1 "LED" H 7300 2100 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7200 2200 50  0001 C CNN
+F 3 "~" V 7200 2200 50  0001 C CNN
+	1    7200 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 2100 2700 2100
+Connection ~ 2700 2100
+Wire Wire Line
+	2700 2100 2850 2100
+Connection ~ 2850 2100
+Wire Wire Line
+	2850 2100 3000 2100
+Connection ~ 3000 2100
+Wire Wire Line
+	3000 2100 3150 2100
+Connection ~ 3150 2100
+Wire Wire Line
+	3150 2100 3300 2100
+Connection ~ 3300 2100
+Wire Wire Line
+	3300 2100 3450 2100
+Connection ~ 3450 2100
+Wire Wire Line
+	3450 2100 3600 2100
+Connection ~ 3600 2100
+Wire Wire Line
+	3600 2100 3750 2100
+Connection ~ 3750 2100
+Wire Wire Line
+	3750 2100 3900 2100
+Connection ~ 3900 2100
+Wire Wire Line
+	3900 2100 4050 2100
+Connection ~ 4050 2100
+Wire Wire Line
+	4050 2100 4200 2100
+Connection ~ 4200 2100
+Wire Wire Line
+	4200 2100 4350 2100
+Connection ~ 4350 2100
+Wire Wire Line
+	4350 2100 4500 2100
+Connection ~ 4500 2100
+Wire Wire Line
+	4500 2100 4650 2100
+Connection ~ 4650 2100
+Wire Wire Line
+	4650 2100 4800 2100
+Connection ~ 4800 2100
+Wire Wire Line
+	4800 2100 4950 2100
+Connection ~ 4950 2100
+Wire Wire Line
+	4950 2100 5100 2100
+Connection ~ 5100 2100
+Wire Wire Line
+	5100 2100 5250 2100
+Connection ~ 5250 2100
+Wire Wire Line
+	5250 2100 5400 2100
+Connection ~ 5400 2100
+Wire Wire Line
+	5400 2100 5550 2100
+Connection ~ 5550 2100
+Wire Wire Line
+	5550 2100 5700 2100
+Connection ~ 5700 2100
+Wire Wire Line
+	5700 2100 5850 2100
+Connection ~ 5850 2100
+Wire Wire Line
+	5850 2100 6000 2100
+Connection ~ 6000 2100
+Wire Wire Line
+	6000 2100 6150 2100
+Connection ~ 6150 2100
+Wire Wire Line
+	6150 2100 6300 2100
+Connection ~ 6300 2100
+Wire Wire Line
+	6300 2100 6450 2100
+Connection ~ 6450 2100
+Wire Wire Line
+	6450 2100 6600 2100
+Connection ~ 6600 2100
+Wire Wire Line
+	6600 2100 6750 2100
+Connection ~ 6750 2100
+Wire Wire Line
+	6750 2100 6900 2100
+Connection ~ 6900 2100
+Wire Wire Line
+	6900 2100 7050 2100
+Connection ~ 7050 2100
+Wire Wire Line
+	7050 2100 7200 2100
+$Comp
+L Device:LED_Small D7
+U 1 1 655596B7
+P 2550 2450
+F 0 "D7" H 2700 2400 50  0001 R CNN
+F 1 "LED" H 2650 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2550 2450 50  0001 C CNN
+F 3 "~" V 2550 2450 50  0001 C CNN
+	1    2550 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D15
+U 1 1 655596BD
+P 2700 2450
+F 0 "D15" H 2850 2400 50  0001 R CNN
+F 1 "LED" H 2800 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2700 2450 50  0001 C CNN
+F 3 "~" V 2700 2450 50  0001 C CNN
+	1    2700 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D23
+U 1 1 655596C3
+P 2850 2450
+F 0 "D23" H 3000 2400 50  0001 R CNN
+F 1 "LED" H 2950 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2850 2450 50  0001 C CNN
+F 3 "~" V 2850 2450 50  0001 C CNN
+	1    2850 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D31
+U 1 1 655596C9
+P 3000 2450
+F 0 "D31" H 3150 2400 50  0001 R CNN
+F 1 "LED" H 3100 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3000 2450 50  0001 C CNN
+F 3 "~" V 3000 2450 50  0001 C CNN
+	1    3000 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D39
+U 1 1 655596CF
+P 3150 2450
+F 0 "D39" H 3300 2400 50  0001 R CNN
+F 1 "LED" H 3250 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3150 2450 50  0001 C CNN
+F 3 "~" V 3150 2450 50  0001 C CNN
+	1    3150 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D47
+U 1 1 655596D5
+P 3300 2450
+F 0 "D47" H 3450 2400 50  0001 R CNN
+F 1 "LED" H 3400 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3300 2450 50  0001 C CNN
+F 3 "~" V 3300 2450 50  0001 C CNN
+	1    3300 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D55
+U 1 1 655596DB
+P 3450 2450
+F 0 "D55" H 3600 2400 50  0001 R CNN
+F 1 "LED" H 3550 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3450 2450 50  0001 C CNN
+F 3 "~" V 3450 2450 50  0001 C CNN
+	1    3450 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D63
+U 1 1 655596E1
+P 3600 2450
+F 0 "D63" H 3750 2400 50  0001 R CNN
+F 1 "LED" H 3700 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3600 2450 50  0001 C CNN
+F 3 "~" V 3600 2450 50  0001 C CNN
+	1    3600 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D71
+U 1 1 655596E7
+P 3750 2450
+F 0 "D71" H 3900 2400 50  0001 R CNN
+F 1 "LED" H 3850 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3750 2450 50  0001 C CNN
+F 3 "~" V 3750 2450 50  0001 C CNN
+	1    3750 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D79
+U 1 1 655596ED
+P 3900 2450
+F 0 "D79" H 4050 2400 50  0001 R CNN
+F 1 "LED" H 4000 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3900 2450 50  0001 C CNN
+F 3 "~" V 3900 2450 50  0001 C CNN
+	1    3900 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D87
+U 1 1 655596F3
+P 4050 2450
+F 0 "D87" H 4200 2400 50  0001 R CNN
+F 1 "LED" H 4150 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4050 2450 50  0001 C CNN
+F 3 "~" V 4050 2450 50  0001 C CNN
+	1    4050 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D95
+U 1 1 655596F9
+P 4200 2450
+F 0 "D95" H 4350 2400 50  0001 R CNN
+F 1 "LED" H 4300 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4200 2450 50  0001 C CNN
+F 3 "~" V 4200 2450 50  0001 C CNN
+	1    4200 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D103
+U 1 1 655596FF
+P 4350 2450
+F 0 "D103" H 4500 2400 50  0001 R CNN
+F 1 "LED" H 4450 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4350 2450 50  0001 C CNN
+F 3 "~" V 4350 2450 50  0001 C CNN
+	1    4350 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D111
+U 1 1 65559705
+P 4500 2450
+F 0 "D111" H 4650 2400 50  0001 R CNN
+F 1 "LED" H 4600 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4500 2450 50  0001 C CNN
+F 3 "~" V 4500 2450 50  0001 C CNN
+	1    4500 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D119
+U 1 1 6555970B
+P 4650 2450
+F 0 "D119" H 4800 2400 50  0001 R CNN
+F 1 "LED" H 4750 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4650 2450 50  0001 C CNN
+F 3 "~" V 4650 2450 50  0001 C CNN
+	1    4650 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D127
+U 1 1 65559711
+P 4800 2450
+F 0 "D127" H 4950 2400 50  0001 R CNN
+F 1 "LED" H 4900 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4800 2450 50  0001 C CNN
+F 3 "~" V 4800 2450 50  0001 C CNN
+	1    4800 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D135
+U 1 1 65559717
+P 4950 2450
+F 0 "D135" H 5100 2400 50  0001 R CNN
+F 1 "LED" H 5050 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4950 2450 50  0001 C CNN
+F 3 "~" V 4950 2450 50  0001 C CNN
+	1    4950 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D143
+U 1 1 6555971D
+P 5100 2450
+F 0 "D143" H 5250 2400 50  0001 R CNN
+F 1 "LED" H 5200 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5100 2450 50  0001 C CNN
+F 3 "~" V 5100 2450 50  0001 C CNN
+	1    5100 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D151
+U 1 1 65559723
+P 5250 2450
+F 0 "D151" H 5400 2400 50  0001 R CNN
+F 1 "LED" H 5350 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5250 2450 50  0001 C CNN
+F 3 "~" V 5250 2450 50  0001 C CNN
+	1    5250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D159
+U 1 1 65559729
+P 5400 2450
+F 0 "D159" H 5550 2400 50  0001 R CNN
+F 1 "LED" H 5500 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5400 2450 50  0001 C CNN
+F 3 "~" V 5400 2450 50  0001 C CNN
+	1    5400 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D167
+U 1 1 6555972F
+P 5550 2450
+F 0 "D167" H 5700 2400 50  0001 R CNN
+F 1 "LED" H 5650 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5550 2450 50  0001 C CNN
+F 3 "~" V 5550 2450 50  0001 C CNN
+	1    5550 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D175
+U 1 1 65559735
+P 5700 2450
+F 0 "D175" H 5850 2400 50  0001 R CNN
+F 1 "LED" H 5800 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5700 2450 50  0001 C CNN
+F 3 "~" V 5700 2450 50  0001 C CNN
+	1    5700 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D183
+U 1 1 6555973B
+P 5850 2450
+F 0 "D183" H 6000 2400 50  0001 R CNN
+F 1 "LED" H 5950 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5850 2450 50  0001 C CNN
+F 3 "~" V 5850 2450 50  0001 C CNN
+	1    5850 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D191
+U 1 1 65559741
+P 6000 2450
+F 0 "D191" H 6150 2400 50  0001 R CNN
+F 1 "LED" H 6100 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6000 2450 50  0001 C CNN
+F 3 "~" V 6000 2450 50  0001 C CNN
+	1    6000 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D199
+U 1 1 65559747
+P 6150 2450
+F 0 "D199" H 6300 2400 50  0001 R CNN
+F 1 "LED" H 6250 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6150 2450 50  0001 C CNN
+F 3 "~" V 6150 2450 50  0001 C CNN
+	1    6150 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D207
+U 1 1 6555974D
+P 6300 2450
+F 0 "D207" H 6450 2400 50  0001 R CNN
+F 1 "LED" H 6400 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6300 2450 50  0001 C CNN
+F 3 "~" V 6300 2450 50  0001 C CNN
+	1    6300 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D215
+U 1 1 65559753
+P 6450 2450
+F 0 "D215" H 6600 2400 50  0001 R CNN
+F 1 "LED" H 6550 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6450 2450 50  0001 C CNN
+F 3 "~" V 6450 2450 50  0001 C CNN
+	1    6450 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D223
+U 1 1 65559759
+P 6600 2450
+F 0 "D223" H 6750 2400 50  0001 R CNN
+F 1 "LED" H 6700 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6600 2450 50  0001 C CNN
+F 3 "~" V 6600 2450 50  0001 C CNN
+	1    6600 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D231
+U 1 1 6555975F
+P 6750 2450
+F 0 "D231" H 6900 2400 50  0001 R CNN
+F 1 "LED" H 6850 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6750 2450 50  0001 C CNN
+F 3 "~" V 6750 2450 50  0001 C CNN
+	1    6750 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D239
+U 1 1 65559765
+P 6900 2450
+F 0 "D239" H 7050 2400 50  0001 R CNN
+F 1 "LED" H 7000 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6900 2450 50  0001 C CNN
+F 3 "~" V 6900 2450 50  0001 C CNN
+	1    6900 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D247
+U 1 1 6555976B
+P 7050 2450
+F 0 "D247" H 7200 2400 50  0001 R CNN
+F 1 "LED" H 7150 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7050 2450 50  0001 C CNN
+F 3 "~" V 7050 2450 50  0001 C CNN
+	1    7050 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D255
+U 1 1 65559771
+P 7200 2450
+F 0 "D255" H 7350 2400 50  0001 R CNN
+F 1 "LED" H 7300 2350 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7200 2450 50  0001 C CNN
+F 3 "~" V 7200 2450 50  0001 C CNN
+	1    7200 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 2350 2700 2350
+Connection ~ 2700 2350
+Wire Wire Line
+	2700 2350 2850 2350
+Connection ~ 2850 2350
+Wire Wire Line
+	2850 2350 3000 2350
+Connection ~ 3000 2350
+Wire Wire Line
+	3000 2350 3150 2350
+Connection ~ 3150 2350
+Wire Wire Line
+	3150 2350 3300 2350
+Connection ~ 3300 2350
+Wire Wire Line
+	3300 2350 3450 2350
+Connection ~ 3450 2350
+Wire Wire Line
+	3450 2350 3600 2350
+Connection ~ 3600 2350
+Wire Wire Line
+	3600 2350 3750 2350
+Connection ~ 3750 2350
+Wire Wire Line
+	3750 2350 3900 2350
+Connection ~ 3900 2350
+Wire Wire Line
+	3900 2350 4050 2350
+Connection ~ 4050 2350
+Wire Wire Line
+	4050 2350 4200 2350
+Connection ~ 4200 2350
+Wire Wire Line
+	4200 2350 4350 2350
+Connection ~ 4350 2350
+Wire Wire Line
+	4350 2350 4500 2350
+Connection ~ 4500 2350
+Wire Wire Line
+	4500 2350 4650 2350
+Connection ~ 4650 2350
+Wire Wire Line
+	4650 2350 4800 2350
+Connection ~ 4800 2350
+Wire Wire Line
+	4800 2350 4950 2350
+Connection ~ 4950 2350
+Wire Wire Line
+	4950 2350 5100 2350
+Connection ~ 5100 2350
+Wire Wire Line
+	5100 2350 5250 2350
+Connection ~ 5250 2350
+Wire Wire Line
+	5250 2350 5400 2350
+Connection ~ 5400 2350
+Wire Wire Line
+	5400 2350 5550 2350
+Connection ~ 5550 2350
+Wire Wire Line
+	5550 2350 5700 2350
+Connection ~ 5700 2350
+Wire Wire Line
+	5700 2350 5850 2350
+Connection ~ 5850 2350
+Wire Wire Line
+	5850 2350 6000 2350
+Connection ~ 6000 2350
+Wire Wire Line
+	6000 2350 6150 2350
+Connection ~ 6150 2350
+Wire Wire Line
+	6150 2350 6300 2350
+Connection ~ 6300 2350
+Wire Wire Line
+	6300 2350 6450 2350
+Connection ~ 6450 2350
+Wire Wire Line
+	6450 2350 6600 2350
+Connection ~ 6600 2350
+Wire Wire Line
+	6600 2350 6750 2350
+Connection ~ 6750 2350
+Wire Wire Line
+	6750 2350 6900 2350
+Connection ~ 6900 2350
+Wire Wire Line
+	6900 2350 7050 2350
+Connection ~ 7050 2350
+Wire Wire Line
+	7050 2350 7200 2350
+$Comp
+L Device:LED_Small D8
+U 1 1 65578B3D
+P 2550 2700
+F 0 "D8" H 2700 2650 50  0001 R CNN
+F 1 "LED" H 2650 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2550 2700 50  0001 C CNN
+F 3 "~" V 2550 2700 50  0001 C CNN
+	1    2550 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D16
+U 1 1 65578B43
+P 2700 2700
+F 0 "D16" H 2850 2650 50  0001 R CNN
+F 1 "LED" H 2800 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2700 2700 50  0001 C CNN
+F 3 "~" V 2700 2700 50  0001 C CNN
+	1    2700 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D24
+U 1 1 65578B49
+P 2850 2700
+F 0 "D24" H 3000 2650 50  0001 R CNN
+F 1 "LED" H 2950 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 2850 2700 50  0001 C CNN
+F 3 "~" V 2850 2700 50  0001 C CNN
+	1    2850 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D32
+U 1 1 65578B4F
+P 3000 2700
+F 0 "D32" H 3150 2650 50  0001 R CNN
+F 1 "LED" H 3100 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3000 2700 50  0001 C CNN
+F 3 "~" V 3000 2700 50  0001 C CNN
+	1    3000 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D40
+U 1 1 65578B55
+P 3150 2700
+F 0 "D40" H 3300 2650 50  0001 R CNN
+F 1 "LED" H 3250 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3150 2700 50  0001 C CNN
+F 3 "~" V 3150 2700 50  0001 C CNN
+	1    3150 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D48
+U 1 1 65578B5B
+P 3300 2700
+F 0 "D48" H 3450 2650 50  0001 R CNN
+F 1 "LED" H 3400 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3300 2700 50  0001 C CNN
+F 3 "~" V 3300 2700 50  0001 C CNN
+	1    3300 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D56
+U 1 1 65578B61
+P 3450 2700
+F 0 "D56" H 3600 2650 50  0001 R CNN
+F 1 "LED" H 3550 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3450 2700 50  0001 C CNN
+F 3 "~" V 3450 2700 50  0001 C CNN
+	1    3450 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D64
+U 1 1 65578B67
+P 3600 2700
+F 0 "D64" H 3750 2650 50  0001 R CNN
+F 1 "LED" H 3700 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3600 2700 50  0001 C CNN
+F 3 "~" V 3600 2700 50  0001 C CNN
+	1    3600 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D72
+U 1 1 65578B6D
+P 3750 2700
+F 0 "D72" H 3900 2650 50  0001 R CNN
+F 1 "LED" H 3850 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3750 2700 50  0001 C CNN
+F 3 "~" V 3750 2700 50  0001 C CNN
+	1    3750 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D80
+U 1 1 65578B73
+P 3900 2700
+F 0 "D80" H 4050 2650 50  0001 R CNN
+F 1 "LED" H 4000 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 3900 2700 50  0001 C CNN
+F 3 "~" V 3900 2700 50  0001 C CNN
+	1    3900 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D88
+U 1 1 65578B79
+P 4050 2700
+F 0 "D88" H 4200 2650 50  0001 R CNN
+F 1 "LED" H 4150 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4050 2700 50  0001 C CNN
+F 3 "~" V 4050 2700 50  0001 C CNN
+	1    4050 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D96
+U 1 1 65578B7F
+P 4200 2700
+F 0 "D96" H 4350 2650 50  0001 R CNN
+F 1 "LED" H 4300 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4200 2700 50  0001 C CNN
+F 3 "~" V 4200 2700 50  0001 C CNN
+	1    4200 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D104
+U 1 1 65578B85
+P 4350 2700
+F 0 "D104" H 4500 2650 50  0001 R CNN
+F 1 "LED" H 4450 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4350 2700 50  0001 C CNN
+F 3 "~" V 4350 2700 50  0001 C CNN
+	1    4350 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D112
+U 1 1 65578B8B
+P 4500 2700
+F 0 "D112" H 4650 2650 50  0001 R CNN
+F 1 "LED" H 4600 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4500 2700 50  0001 C CNN
+F 3 "~" V 4500 2700 50  0001 C CNN
+	1    4500 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D120
+U 1 1 65578B91
+P 4650 2700
+F 0 "D120" H 4800 2650 50  0001 R CNN
+F 1 "LED" H 4750 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4650 2700 50  0001 C CNN
+F 3 "~" V 4650 2700 50  0001 C CNN
+	1    4650 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D128
+U 1 1 65578B97
+P 4800 2700
+F 0 "D128" H 4950 2650 50  0001 R CNN
+F 1 "LED" H 4900 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4800 2700 50  0001 C CNN
+F 3 "~" V 4800 2700 50  0001 C CNN
+	1    4800 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D136
+U 1 1 65578B9D
+P 4950 2700
+F 0 "D136" H 5100 2650 50  0001 R CNN
+F 1 "LED" H 5050 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 4950 2700 50  0001 C CNN
+F 3 "~" V 4950 2700 50  0001 C CNN
+	1    4950 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D144
+U 1 1 65578BA3
+P 5100 2700
+F 0 "D144" H 5250 2650 50  0001 R CNN
+F 1 "LED" H 5200 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5100 2700 50  0001 C CNN
+F 3 "~" V 5100 2700 50  0001 C CNN
+	1    5100 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D152
+U 1 1 65578BA9
+P 5250 2700
+F 0 "D152" H 5400 2650 50  0001 R CNN
+F 1 "LED" H 5350 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5250 2700 50  0001 C CNN
+F 3 "~" V 5250 2700 50  0001 C CNN
+	1    5250 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D160
+U 1 1 65578BAF
+P 5400 2700
+F 0 "D160" H 5550 2650 50  0001 R CNN
+F 1 "LED" H 5500 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5400 2700 50  0001 C CNN
+F 3 "~" V 5400 2700 50  0001 C CNN
+	1    5400 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D168
+U 1 1 65578BB5
+P 5550 2700
+F 0 "D168" H 5700 2650 50  0001 R CNN
+F 1 "LED" H 5650 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5550 2700 50  0001 C CNN
+F 3 "~" V 5550 2700 50  0001 C CNN
+	1    5550 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D176
+U 1 1 65578BBB
+P 5700 2700
+F 0 "D176" H 5850 2650 50  0001 R CNN
+F 1 "LED" H 5800 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5700 2700 50  0001 C CNN
+F 3 "~" V 5700 2700 50  0001 C CNN
+	1    5700 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D184
+U 1 1 65578BC1
+P 5850 2700
+F 0 "D184" H 6000 2650 50  0001 R CNN
+F 1 "LED" H 5950 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 5850 2700 50  0001 C CNN
+F 3 "~" V 5850 2700 50  0001 C CNN
+	1    5850 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D192
+U 1 1 65578BC7
+P 6000 2700
+F 0 "D192" H 6150 2650 50  0001 R CNN
+F 1 "LED" H 6100 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6000 2700 50  0001 C CNN
+F 3 "~" V 6000 2700 50  0001 C CNN
+	1    6000 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D200
+U 1 1 65578BCD
+P 6150 2700
+F 0 "D200" H 6300 2650 50  0001 R CNN
+F 1 "LED" H 6250 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6150 2700 50  0001 C CNN
+F 3 "~" V 6150 2700 50  0001 C CNN
+	1    6150 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D208
+U 1 1 65578BD3
+P 6300 2700
+F 0 "D208" H 6450 2650 50  0001 R CNN
+F 1 "LED" H 6400 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6300 2700 50  0001 C CNN
+F 3 "~" V 6300 2700 50  0001 C CNN
+	1    6300 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D216
+U 1 1 65578BD9
+P 6450 2700
+F 0 "D216" H 6600 2650 50  0001 R CNN
+F 1 "LED" H 6550 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6450 2700 50  0001 C CNN
+F 3 "~" V 6450 2700 50  0001 C CNN
+	1    6450 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D224
+U 1 1 65578BDF
+P 6600 2700
+F 0 "D224" H 6750 2650 50  0001 R CNN
+F 1 "LED" H 6700 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6600 2700 50  0001 C CNN
+F 3 "~" V 6600 2700 50  0001 C CNN
+	1    6600 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D232
+U 1 1 65578BE5
+P 6750 2700
+F 0 "D232" H 6900 2650 50  0001 R CNN
+F 1 "LED" H 6850 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6750 2700 50  0001 C CNN
+F 3 "~" V 6750 2700 50  0001 C CNN
+	1    6750 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D240
+U 1 1 65578BEB
+P 6900 2700
+F 0 "D240" H 7050 2650 50  0001 R CNN
+F 1 "LED" H 7000 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 6900 2700 50  0001 C CNN
+F 3 "~" V 6900 2700 50  0001 C CNN
+	1    6900 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D248
+U 1 1 65578BF1
+P 7050 2700
+F 0 "D248" H 7200 2650 50  0001 R CNN
+F 1 "LED" H 7150 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7050 2700 50  0001 C CNN
+F 3 "~" V 7050 2700 50  0001 C CNN
+	1    7050 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D256
+U 1 1 65578BF7
+P 7200 2700
+F 0 "D256" H 7350 2650 50  0001 R CNN
+F 1 "LED" H 7300 2600 50  0001 R CNN
+F 2 "Arduino:LED_D5.0mm_Silk_Moved" V 7200 2700 50  0001 C CNN
+F 3 "~" V 7200 2700 50  0001 C CNN
+	1    7200 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 2600 2700 2600
+Connection ~ 2700 2600
+Wire Wire Line
+	2700 2600 2850 2600
+Connection ~ 2850 2600
+Wire Wire Line
+	2850 2600 3000 2600
+Connection ~ 3000 2600
+Wire Wire Line
+	3000 2600 3150 2600
+Connection ~ 3150 2600
+Wire Wire Line
+	3150 2600 3300 2600
+Connection ~ 3300 2600
+Wire Wire Line
+	3300 2600 3450 2600
+Connection ~ 3450 2600
+Wire Wire Line
+	3450 2600 3600 2600
+Connection ~ 3600 2600
+Wire Wire Line
+	3600 2600 3750 2600
+Connection ~ 3750 2600
+Wire Wire Line
+	3750 2600 3900 2600
+Connection ~ 3900 2600
+Wire Wire Line
+	3900 2600 4050 2600
+Connection ~ 4050 2600
+Wire Wire Line
+	4050 2600 4200 2600
+Connection ~ 4200 2600
+Wire Wire Line
+	4200 2600 4350 2600
+Connection ~ 4350 2600
+Wire Wire Line
+	4350 2600 4500 2600
+Connection ~ 4500 2600
+Wire Wire Line
+	4500 2600 4650 2600
+Connection ~ 4650 2600
+Wire Wire Line
+	4650 2600 4800 2600
+Connection ~ 4800 2600
+Wire Wire Line
+	4800 2600 4950 2600
+Connection ~ 4950 2600
+Wire Wire Line
+	4950 2600 5100 2600
+Connection ~ 5100 2600
+Wire Wire Line
+	5100 2600 5250 2600
+Connection ~ 5250 2600
+Wire Wire Line
+	5250 2600 5400 2600
+Connection ~ 5400 2600
+Wire Wire Line
+	5400 2600 5550 2600
+Connection ~ 5550 2600
+Wire Wire Line
+	5550 2600 5700 2600
+Connection ~ 5700 2600
+Wire Wire Line
+	5700 2600 5850 2600
+Connection ~ 5850 2600
+Wire Wire Line
+	5850 2600 6000 2600
+Connection ~ 6000 2600
+Wire Wire Line
+	6000 2600 6150 2600
+Connection ~ 6150 2600
+Wire Wire Line
+	6150 2600 6300 2600
+Connection ~ 6300 2600
+Wire Wire Line
+	6300 2600 6450 2600
+Connection ~ 6450 2600
+Wire Wire Line
+	6450 2600 6600 2600
+Connection ~ 6600 2600
+Wire Wire Line
+	6600 2600 6750 2600
+Connection ~ 6750 2600
+Wire Wire Line
+	6750 2600 6900 2600
+Connection ~ 6900 2600
+Wire Wire Line
+	6900 2600 7050 2600
+Connection ~ 7050 2600
+Wire Wire Line
+	7050 2600 7200 2600
+Wire Wire Line
+	2550 1050 2600 1050
+Wire Wire Line
+	2600 1050 2600 1300
+Wire Wire Line
+	2600 1300 2550 1300
+Wire Wire Line
+	2600 1300 2600 1550
+Wire Wire Line
+	2600 1550 2550 1550
+Connection ~ 2600 1300
+Wire Wire Line
+	2600 1550 2600 1800
+Wire Wire Line
+	2600 1800 2550 1800
+Connection ~ 2600 1550
+Wire Wire Line
+	2600 1800 2600 2050
+Wire Wire Line
+	2600 2050 2550 2050
+Connection ~ 2600 1800
+Wire Wire Line
+	2600 2050 2600 2300
+Wire Wire Line
+	2600 2300 2550 2300
+Connection ~ 2600 2050
+Wire Wire Line
+	2600 2300 2600 2550
+Wire Wire Line
+	2600 2550 2550 2550
+Connection ~ 2600 2300
+Wire Wire Line
+	2600 2550 2600 2800
+Wire Wire Line
+	2600 2800 2550 2800
+Connection ~ 2600 2550
+Connection ~ 2550 850 
+Wire Wire Line
+	2550 1100 2500 1100
+Connection ~ 2550 1100
+Wire Wire Line
+	2700 1050 2750 1050
+Wire Wire Line
+	2750 1050 2750 1300
+Wire Wire Line
+	7200 1050 7250 1050
+Wire Wire Line
+	7250 1050 7250 1300
+Wire Wire Line
+	7250 1300 7200 1300
+Wire Wire Line
+	7250 1300 7250 1550
+Wire Wire Line
+	7250 1550 7200 1550
+Connection ~ 7250 1300
+Wire Wire Line
+	7250 1550 7250 1800
+Wire Wire Line
+	7250 1800 7200 1800
+Connection ~ 7250 1550
+Wire Wire Line
+	7250 1800 7250 2050
+Wire Wire Line
+	7250 2050 7200 2050
+Connection ~ 7250 1800
+Wire Wire Line
+	7250 2050 7250 2300
+Wire Wire Line
+	7250 2300 7200 2300
+Connection ~ 7250 2050
+Wire Wire Line
+	7250 2300 7250 2550
+Wire Wire Line
+	7250 2550 7200 2550
+Connection ~ 7250 2300
+Wire Wire Line
+	7250 2550 7250 2800
+Wire Wire Line
+	7250 2800 7200 2800
+Connection ~ 7250 2550
+Wire Wire Line
+	7050 1050 7100 1050
+Wire Wire Line
+	7100 1050 7100 1300
+Wire Wire Line
+	7100 1300 7050 1300
+Wire Wire Line
+	7100 1300 7100 1550
+Wire Wire Line
+	7100 1550 7050 1550
+Connection ~ 7100 1300
+Wire Wire Line
+	7100 1550 7100 1800
+Wire Wire Line
+	7100 1800 7050 1800
+Connection ~ 7100 1550
+Wire Wire Line
+	7100 1800 7100 2050
+Wire Wire Line
+	7100 2050 7050 2050
+Connection ~ 7100 1800
+Wire Wire Line
+	7100 2050 7100 2300
+Wire Wire Line
+	7100 2300 7050 2300
+Connection ~ 7100 2050
+Wire Wire Line
+	7100 2300 7100 2550
+Wire Wire Line
+	7100 2550 7050 2550
+Connection ~ 7100 2300
+Wire Wire Line
+	7100 2550 7100 2800
+Wire Wire Line
+	7100 2800 7050 2800
+Connection ~ 7100 2550
+Wire Wire Line
+	6900 1050 6950 1050
+Wire Wire Line
+	6950 1050 6950 1300
+Wire Wire Line
+	6950 1300 6900 1300
+Wire Wire Line
+	6950 1300 6950 1550
+Wire Wire Line
+	6950 1550 6900 1550
+Connection ~ 6950 1300
+Wire Wire Line
+	6950 1550 6950 1800
+Wire Wire Line
+	6950 1800 6900 1800
+Connection ~ 6950 1550
+Wire Wire Line
+	6950 1800 6950 2050
+Wire Wire Line
+	6950 2050 6900 2050
+Connection ~ 6950 1800
+Wire Wire Line
+	6950 2050 6950 2300
+Wire Wire Line
+	6950 2300 6900 2300
+Connection ~ 6950 2050
+Wire Wire Line
+	6950 2300 6950 2550
+Wire Wire Line
+	6950 2550 6900 2550
+Connection ~ 6950 2300
+Wire Wire Line
+	6950 2550 6950 2800
+Wire Wire Line
+	6950 2800 6900 2800
+Connection ~ 6950 2550
+Wire Wire Line
+	6750 1050 6800 1050
+Wire Wire Line
+	6800 1050 6800 1300
+Wire Wire Line
+	6800 1300 6750 1300
+Wire Wire Line
+	6800 1300 6800 1550
+Wire Wire Line
+	6800 1550 6750 1550
+Connection ~ 6800 1300
+Wire Wire Line
+	6800 1550 6800 1800
+Wire Wire Line
+	6800 1800 6750 1800
+Connection ~ 6800 1550
+Wire Wire Line
+	6800 1800 6800 2050
+Wire Wire Line
+	6800 2050 6750 2050
+Connection ~ 6800 1800
+Wire Wire Line
+	6800 2050 6800 2300
+Wire Wire Line
+	6800 2300 6750 2300
+Connection ~ 6800 2050
+Wire Wire Line
+	6800 2300 6800 2550
+Wire Wire Line
+	6800 2550 6750 2550
+Connection ~ 6800 2300
+Wire Wire Line
+	6800 2550 6800 2800
+Wire Wire Line
+	6800 2800 6750 2800
+Connection ~ 6800 2550
+Wire Wire Line
+	6600 1050 6650 1050
+Wire Wire Line
+	6650 1050 6650 1300
+Wire Wire Line
+	6650 1300 6600 1300
+Wire Wire Line
+	6650 1300 6650 1550
+Wire Wire Line
+	6650 1550 6600 1550
+Connection ~ 6650 1300
+Wire Wire Line
+	6650 1550 6650 1800
+Wire Wire Line
+	6650 1800 6600 1800
+Connection ~ 6650 1550
+Wire Wire Line
+	6650 1800 6650 2050
+Wire Wire Line
+	6650 2050 6600 2050
+Connection ~ 6650 1800
+Wire Wire Line
+	6650 2050 6650 2300
+Wire Wire Line
+	6650 2300 6600 2300
+Connection ~ 6650 2050
+Wire Wire Line
+	6650 2300 6650 2550
+Wire Wire Line
+	6650 2550 6600 2550
+Connection ~ 6650 2300
+Wire Wire Line
+	6650 2550 6650 2800
+Wire Wire Line
+	6650 2800 6600 2800
+Connection ~ 6650 2550
+Wire Wire Line
+	6450 1050 6500 1050
+Wire Wire Line
+	6500 1050 6500 1300
+Wire Wire Line
+	6500 1300 6450 1300
+Wire Wire Line
+	6500 1300 6500 1550
+Wire Wire Line
+	6500 1550 6450 1550
+Connection ~ 6500 1300
+Wire Wire Line
+	6500 1550 6500 1800
+Wire Wire Line
+	6500 1800 6450 1800
+Connection ~ 6500 1550
+Wire Wire Line
+	6500 1800 6500 2050
+Wire Wire Line
+	6500 2050 6450 2050
+Connection ~ 6500 1800
+Wire Wire Line
+	6500 2050 6500 2300
+Wire Wire Line
+	6500 2300 6450 2300
+Connection ~ 6500 2050
+Wire Wire Line
+	6500 2300 6500 2550
+Wire Wire Line
+	6500 2550 6450 2550
+Connection ~ 6500 2300
+Wire Wire Line
+	6500 2550 6500 2800
+Wire Wire Line
+	6500 2800 6450 2800
+Connection ~ 6500 2550
+Wire Wire Line
+	6300 1050 6350 1050
+Wire Wire Line
+	6350 1050 6350 1300
+Wire Wire Line
+	6350 1300 6300 1300
+Wire Wire Line
+	6350 1300 6350 1550
+Wire Wire Line
+	6350 1550 6300 1550
+Connection ~ 6350 1300
+Wire Wire Line
+	6350 1550 6350 1800
+Wire Wire Line
+	6350 1800 6300 1800
+Connection ~ 6350 1550
+Wire Wire Line
+	6350 1800 6350 2050
+Wire Wire Line
+	6350 2050 6300 2050
+Connection ~ 6350 1800
+Wire Wire Line
+	6350 2050 6350 2300
+Wire Wire Line
+	6350 2300 6300 2300
+Connection ~ 6350 2050
+Wire Wire Line
+	6350 2300 6350 2550
+Wire Wire Line
+	6350 2550 6300 2550
+Connection ~ 6350 2300
+Wire Wire Line
+	6350 2550 6350 2800
+Wire Wire Line
+	6350 2800 6300 2800
+Connection ~ 6350 2550
+Wire Wire Line
+	6150 1050 6200 1050
+Wire Wire Line
+	6200 1050 6200 1300
+Wire Wire Line
+	6200 1300 6150 1300
+Wire Wire Line
+	6200 1300 6200 1550
+Wire Wire Line
+	6200 1550 6150 1550
+Connection ~ 6200 1300
+Wire Wire Line
+	6200 1550 6200 1800
+Wire Wire Line
+	6200 1800 6150 1800
+Connection ~ 6200 1550
+Wire Wire Line
+	6200 1800 6200 2050
+Wire Wire Line
+	6200 2050 6150 2050
+Connection ~ 6200 1800
+Wire Wire Line
+	6200 2050 6200 2300
+Wire Wire Line
+	6200 2300 6150 2300
+Connection ~ 6200 2050
+Wire Wire Line
+	6200 2300 6200 2550
+Wire Wire Line
+	6200 2550 6150 2550
+Connection ~ 6200 2300
+Wire Wire Line
+	6200 2550 6200 2800
+Wire Wire Line
+	6200 2800 6150 2800
+Connection ~ 6200 2550
+Wire Wire Line
+	6000 1050 6050 1050
+Wire Wire Line
+	6050 1050 6050 1300
+Wire Wire Line
+	6050 1300 6000 1300
+Wire Wire Line
+	6050 1300 6050 1550
+Wire Wire Line
+	6050 1550 6000 1550
+Connection ~ 6050 1300
+Wire Wire Line
+	6050 1550 6050 1800
+Wire Wire Line
+	6050 1800 6000 1800
+Connection ~ 6050 1550
+Wire Wire Line
+	6050 1800 6050 2050
+Wire Wire Line
+	6050 2050 6000 2050
+Connection ~ 6050 1800
+Wire Wire Line
+	6050 2050 6050 2300
+Wire Wire Line
+	6050 2300 6000 2300
+Connection ~ 6050 2050
+Wire Wire Line
+	6050 2300 6050 2550
+Wire Wire Line
+	6050 2550 6000 2550
+Connection ~ 6050 2300
+Wire Wire Line
+	6050 2550 6050 2800
+Wire Wire Line
+	6050 2800 6000 2800
+Connection ~ 6050 2550
+Wire Wire Line
+	5850 1050 5900 1050
+Wire Wire Line
+	5900 1050 5900 1300
+Wire Wire Line
+	5900 1300 5850 1300
+Wire Wire Line
+	5900 1300 5900 1550
+Wire Wire Line
+	5900 1550 5850 1550
+Connection ~ 5900 1300
+Wire Wire Line
+	5900 1550 5900 1800
+Wire Wire Line
+	5900 1800 5850 1800
+Connection ~ 5900 1550
+Wire Wire Line
+	5900 1800 5900 2050
+Wire Wire Line
+	5900 2050 5850 2050
+Connection ~ 5900 1800
+Wire Wire Line
+	5900 2050 5900 2300
+Wire Wire Line
+	5900 2300 5850 2300
+Connection ~ 5900 2050
+Wire Wire Line
+	5900 2300 5900 2550
+Wire Wire Line
+	5900 2550 5850 2550
+Connection ~ 5900 2300
+Wire Wire Line
+	5900 2550 5900 2800
+Wire Wire Line
+	5900 2800 5850 2800
+Connection ~ 5900 2550
+Wire Wire Line
+	5700 1050 5750 1050
+Wire Wire Line
+	5750 1050 5750 1300
+Wire Wire Line
+	5750 1300 5700 1300
+Wire Wire Line
+	5750 1300 5750 1550
+Wire Wire Line
+	5750 1550 5700 1550
+Connection ~ 5750 1300
+Wire Wire Line
+	5750 1550 5750 1800
+Wire Wire Line
+	5750 1800 5700 1800
+Connection ~ 5750 1550
+Wire Wire Line
+	5750 1800 5750 2050
+Wire Wire Line
+	5750 2050 5700 2050
+Connection ~ 5750 1800
+Wire Wire Line
+	5750 2050 5750 2300
+Wire Wire Line
+	5750 2300 5700 2300
+Connection ~ 5750 2050
+Wire Wire Line
+	5750 2300 5750 2550
+Wire Wire Line
+	5750 2550 5700 2550
+Connection ~ 5750 2300
+Wire Wire Line
+	5750 2550 5750 2800
+Wire Wire Line
+	5750 2800 5700 2800
+Connection ~ 5750 2550
+Wire Wire Line
+	5550 1050 5600 1050
+Wire Wire Line
+	5600 1050 5600 1300
+Wire Wire Line
+	5600 1300 5550 1300
+Wire Wire Line
+	5600 1300 5600 1550
+Wire Wire Line
+	5600 1550 5550 1550
+Connection ~ 5600 1300
+Wire Wire Line
+	5600 1550 5600 1800
+Wire Wire Line
+	5600 1800 5550 1800
+Connection ~ 5600 1550
+Wire Wire Line
+	5600 1800 5600 2050
+Wire Wire Line
+	5600 2050 5550 2050
+Connection ~ 5600 1800
+Wire Wire Line
+	5600 2050 5600 2300
+Wire Wire Line
+	5600 2300 5550 2300
+Connection ~ 5600 2050
+Wire Wire Line
+	5600 2300 5600 2550
+Wire Wire Line
+	5600 2550 5550 2550
+Connection ~ 5600 2300
+Wire Wire Line
+	5600 2550 5600 2800
+Wire Wire Line
+	5600 2800 5550 2800
+Connection ~ 5600 2550
+Wire Wire Line
+	5400 1050 5450 1050
+Wire Wire Line
+	5450 1050 5450 1300
+Wire Wire Line
+	5450 1300 5400 1300
+Wire Wire Line
+	5450 1300 5450 1550
+Wire Wire Line
+	5450 1550 5400 1550
+Connection ~ 5450 1300
+Wire Wire Line
+	5450 1550 5450 1800
+Wire Wire Line
+	5450 1800 5400 1800
+Connection ~ 5450 1550
+Wire Wire Line
+	5450 1800 5450 2050
+Wire Wire Line
+	5450 2050 5400 2050
+Connection ~ 5450 1800
+Wire Wire Line
+	5450 2050 5450 2300
+Wire Wire Line
+	5450 2300 5400 2300
+Connection ~ 5450 2050
+Wire Wire Line
+	5450 2300 5450 2550
+Wire Wire Line
+	5450 2550 5400 2550
+Connection ~ 5450 2300
+Wire Wire Line
+	5450 2550 5450 2800
+Wire Wire Line
+	5450 2800 5400 2800
+Connection ~ 5450 2550
+Wire Wire Line
+	5250 1050 5300 1050
+Wire Wire Line
+	5300 1050 5300 1300
+Wire Wire Line
+	5300 1300 5250 1300
+Wire Wire Line
+	5300 1300 5300 1550
+Wire Wire Line
+	5300 1550 5250 1550
+Connection ~ 5300 1300
+Wire Wire Line
+	5300 1550 5300 1800
+Wire Wire Line
+	5300 1800 5250 1800
+Connection ~ 5300 1550
+Wire Wire Line
+	5300 1800 5300 2050
+Wire Wire Line
+	5300 2050 5250 2050
+Connection ~ 5300 1800
+Wire Wire Line
+	5300 2050 5300 2300
+Wire Wire Line
+	5300 2300 5250 2300
+Connection ~ 5300 2050
+Wire Wire Line
+	5300 2300 5300 2550
+Wire Wire Line
+	5300 2550 5250 2550
+Connection ~ 5300 2300
+Wire Wire Line
+	5300 2550 5300 2800
+Wire Wire Line
+	5300 2800 5250 2800
+Connection ~ 5300 2550
+Wire Wire Line
+	5100 1050 5150 1050
+Wire Wire Line
+	5150 1050 5150 1300
+Wire Wire Line
+	5150 1300 5100 1300
+Wire Wire Line
+	5150 1300 5150 1550
+Wire Wire Line
+	5150 1550 5100 1550
+Connection ~ 5150 1300
+Wire Wire Line
+	5150 1550 5150 1800
+Wire Wire Line
+	5150 1800 5100 1800
+Connection ~ 5150 1550
+Wire Wire Line
+	5150 1800 5150 2050
+Wire Wire Line
+	5150 2050 5100 2050
+Connection ~ 5150 1800
+Wire Wire Line
+	5150 2050 5150 2300
+Wire Wire Line
+	5150 2300 5100 2300
+Connection ~ 5150 2050
+Wire Wire Line
+	5150 2300 5150 2550
+Wire Wire Line
+	5150 2550 5100 2550
+Connection ~ 5150 2300
+Wire Wire Line
+	5150 2550 5150 2800
+Wire Wire Line
+	5150 2800 5100 2800
+Connection ~ 5150 2550
+Wire Wire Line
+	4950 1050 5000 1050
+Wire Wire Line
+	5000 1050 5000 1300
+Wire Wire Line
+	5000 1300 4950 1300
+Wire Wire Line
+	5000 1300 5000 1550
+Wire Wire Line
+	5000 1550 4950 1550
+Connection ~ 5000 1300
+Wire Wire Line
+	5000 1550 5000 1800
+Wire Wire Line
+	5000 1800 4950 1800
+Connection ~ 5000 1550
+Wire Wire Line
+	5000 1800 5000 2050
+Wire Wire Line
+	5000 2050 4950 2050
+Connection ~ 5000 1800
+Wire Wire Line
+	5000 2050 5000 2300
+Wire Wire Line
+	5000 2300 4950 2300
+Connection ~ 5000 2050
+Wire Wire Line
+	5000 2300 5000 2550
+Wire Wire Line
+	5000 2550 4950 2550
+Connection ~ 5000 2300
+Wire Wire Line
+	5000 2550 5000 2800
+Wire Wire Line
+	5000 2800 4950 2800
+Connection ~ 5000 2550
+Wire Wire Line
+	4800 1050 4850 1050
+Wire Wire Line
+	4850 1050 4850 1300
+Wire Wire Line
+	4850 1300 4800 1300
+Wire Wire Line
+	4850 1300 4850 1550
+Wire Wire Line
+	4850 1550 4800 1550
+Connection ~ 4850 1300
+Wire Wire Line
+	4850 1550 4850 1800
+Wire Wire Line
+	4850 1800 4800 1800
+Connection ~ 4850 1550
+Wire Wire Line
+	4850 1800 4850 2050
+Wire Wire Line
+	4850 2050 4800 2050
+Connection ~ 4850 1800
+Wire Wire Line
+	4850 2050 4850 2300
+Wire Wire Line
+	4850 2300 4800 2300
+Connection ~ 4850 2050
+Wire Wire Line
+	4850 2300 4850 2550
+Wire Wire Line
+	4850 2550 4800 2550
+Connection ~ 4850 2300
+Wire Wire Line
+	4850 2550 4850 2800
+Wire Wire Line
+	4850 2800 4800 2800
+Connection ~ 4850 2550
+Wire Wire Line
+	4650 1050 4700 1050
+Wire Wire Line
+	4700 1050 4700 1300
+Wire Wire Line
+	4700 1300 4650 1300
+Wire Wire Line
+	4700 1300 4700 1550
+Wire Wire Line
+	4700 1550 4650 1550
+Connection ~ 4700 1300
+Wire Wire Line
+	4700 1550 4700 1800
+Wire Wire Line
+	4700 1800 4650 1800
+Connection ~ 4700 1550
+Wire Wire Line
+	4700 1800 4700 2050
+Wire Wire Line
+	4700 2050 4650 2050
+Connection ~ 4700 1800
+Wire Wire Line
+	4700 2050 4700 2300
+Wire Wire Line
+	4700 2300 4650 2300
+Connection ~ 4700 2050
+Wire Wire Line
+	4700 2300 4700 2550
+Wire Wire Line
+	4700 2550 4650 2550
+Connection ~ 4700 2300
+Wire Wire Line
+	4700 2550 4700 2800
+Wire Wire Line
+	4700 2800 4650 2800
+Connection ~ 4700 2550
+Wire Wire Line
+	4500 1050 4550 1050
+Wire Wire Line
+	4550 1050 4550 1300
+Wire Wire Line
+	4550 1300 4500 1300
+Wire Wire Line
+	4550 1300 4550 1550
+Wire Wire Line
+	4550 1550 4500 1550
+Connection ~ 4550 1300
+Wire Wire Line
+	4550 1550 4550 1800
+Wire Wire Line
+	4550 1800 4500 1800
+Connection ~ 4550 1550
+Wire Wire Line
+	4550 1800 4550 2050
+Wire Wire Line
+	4550 2050 4500 2050
+Connection ~ 4550 1800
+Wire Wire Line
+	4550 2050 4550 2300
+Wire Wire Line
+	4550 2300 4500 2300
+Connection ~ 4550 2050
+Wire Wire Line
+	4550 2300 4550 2550
+Wire Wire Line
+	4550 2550 4500 2550
+Connection ~ 4550 2300
+Wire Wire Line
+	4550 2550 4550 2800
+Wire Wire Line
+	4550 2800 4500 2800
+Connection ~ 4550 2550
+Wire Wire Line
+	4350 1050 4400 1050
+Wire Wire Line
+	4400 1050 4400 1300
+Wire Wire Line
+	4400 1300 4350 1300
+Wire Wire Line
+	4400 1300 4400 1550
+Wire Wire Line
+	4400 1550 4350 1550
+Connection ~ 4400 1300
+Wire Wire Line
+	4400 1550 4400 1800
+Wire Wire Line
+	4400 1800 4350 1800
+Connection ~ 4400 1550
+Wire Wire Line
+	4400 1800 4400 2050
+Wire Wire Line
+	4400 2050 4350 2050
+Connection ~ 4400 1800
+Wire Wire Line
+	4400 2050 4400 2300
+Wire Wire Line
+	4400 2300 4350 2300
+Connection ~ 4400 2050
+Wire Wire Line
+	4400 2300 4400 2550
+Wire Wire Line
+	4400 2550 4350 2550
+Connection ~ 4400 2300
+Wire Wire Line
+	4400 2550 4400 2800
+Wire Wire Line
+	4400 2800 4350 2800
+Connection ~ 4400 2550
+Wire Wire Line
+	4200 1050 4250 1050
+Wire Wire Line
+	4250 1050 4250 1300
+Wire Wire Line
+	4250 1300 4200 1300
+Wire Wire Line
+	4250 1300 4250 1550
+Wire Wire Line
+	4250 1550 4200 1550
+Connection ~ 4250 1300
+Wire Wire Line
+	4250 1550 4250 1800
+Wire Wire Line
+	4250 1800 4200 1800
+Connection ~ 4250 1550
+Wire Wire Line
+	4250 1800 4250 2050
+Wire Wire Line
+	4250 2050 4200 2050
+Connection ~ 4250 1800
+Wire Wire Line
+	4250 2050 4250 2300
+Wire Wire Line
+	4250 2300 4200 2300
+Connection ~ 4250 2050
+Wire Wire Line
+	4250 2300 4250 2550
+Wire Wire Line
+	4250 2550 4200 2550
+Connection ~ 4250 2300
+Wire Wire Line
+	4250 2550 4250 2800
+Wire Wire Line
+	4250 2800 4200 2800
+Connection ~ 4250 2550
+Wire Wire Line
+	4050 1050 4100 1050
+Wire Wire Line
+	4100 1050 4100 1300
+Wire Wire Line
+	4100 1300 4050 1300
+Wire Wire Line
+	4100 1300 4100 1550
+Wire Wire Line
+	4100 1550 4050 1550
+Connection ~ 4100 1300
+Wire Wire Line
+	4100 1550 4100 1800
+Wire Wire Line
+	4100 1800 4050 1800
+Connection ~ 4100 1550
+Wire Wire Line
+	4100 1800 4100 2050
+Wire Wire Line
+	4100 2050 4050 2050
+Connection ~ 4100 1800
+Wire Wire Line
+	4100 2050 4100 2300
+Wire Wire Line
+	4100 2300 4050 2300
+Connection ~ 4100 2050
+Wire Wire Line
+	4100 2300 4100 2550
+Wire Wire Line
+	4100 2550 4050 2550
+Connection ~ 4100 2300
+Wire Wire Line
+	4100 2550 4100 2800
+Wire Wire Line
+	4100 2800 4050 2800
+Connection ~ 4100 2550
+Wire Wire Line
+	3900 1050 3950 1050
+Wire Wire Line
+	3950 1050 3950 1300
+Wire Wire Line
+	3950 1300 3900 1300
+Wire Wire Line
+	3950 1300 3950 1550
+Wire Wire Line
+	3950 1550 3900 1550
+Connection ~ 3950 1300
+Wire Wire Line
+	3950 1550 3950 1800
+Wire Wire Line
+	3950 1800 3900 1800
+Connection ~ 3950 1550
+Wire Wire Line
+	3950 1800 3950 2050
+Wire Wire Line
+	3950 2050 3900 2050
+Connection ~ 3950 1800
+Wire Wire Line
+	3950 2050 3950 2300
+Wire Wire Line
+	3950 2300 3900 2300
+Connection ~ 3950 2050
+Wire Wire Line
+	3950 2300 3950 2550
+Wire Wire Line
+	3950 2550 3900 2550
+Connection ~ 3950 2300
+Wire Wire Line
+	3950 2550 3950 2800
+Connection ~ 3950 2550
+Wire Wire Line
+	3750 1050 3800 1050
+Wire Wire Line
+	3800 1050 3800 1300
+Wire Wire Line
+	3800 1300 3750 1300
+Wire Wire Line
+	3800 1300 3800 1550
+Wire Wire Line
+	3800 1550 3750 1550
+Connection ~ 3800 1300
+Wire Wire Line
+	3800 1550 3800 1800
+Wire Wire Line
+	3800 1800 3750 1800
+Connection ~ 3800 1550
+Wire Wire Line
+	3800 1800 3800 2050
+Wire Wire Line
+	3800 2050 3750 2050
+Connection ~ 3800 1800
+Wire Wire Line
+	3800 2050 3800 2300
+Wire Wire Line
+	3800 2300 3750 2300
+Connection ~ 3800 2050
+Wire Wire Line
+	3800 2300 3800 2550
+Wire Wire Line
+	3800 2550 3750 2550
+Connection ~ 3800 2300
+Wire Wire Line
+	3800 2550 3800 2800
+Wire Wire Line
+	3800 2800 3750 2800
+Connection ~ 3800 2550
+Wire Wire Line
+	3600 1050 3650 1050
+Wire Wire Line
+	3650 1050 3650 1300
+Wire Wire Line
+	3650 1300 3600 1300
+Wire Wire Line
+	3650 1300 3650 1550
+Wire Wire Line
+	3650 1550 3600 1550
+Connection ~ 3650 1300
+Wire Wire Line
+	3650 1550 3650 1800
+Wire Wire Line
+	3650 1800 3600 1800
+Connection ~ 3650 1550
+Wire Wire Line
+	3650 1800 3650 2050
+Wire Wire Line
+	3650 2050 3600 2050
+Connection ~ 3650 1800
+Wire Wire Line
+	3650 2050 3650 2300
+Wire Wire Line
+	3650 2300 3600 2300
+Connection ~ 3650 2050
+Wire Wire Line
+	3650 2300 3650 2550
+Wire Wire Line
+	3650 2550 3600 2550
+Connection ~ 3650 2300
+Wire Wire Line
+	3650 2550 3650 2800
+Wire Wire Line
+	3650 2800 3600 2800
+Connection ~ 3650 2550
+Wire Wire Line
+	3450 1050 3500 1050
+Wire Wire Line
+	3500 1050 3500 1300
+Wire Wire Line
+	3500 1300 3450 1300
+Wire Wire Line
+	3500 1300 3500 1550
+Wire Wire Line
+	3500 1550 3450 1550
+Connection ~ 3500 1300
+Wire Wire Line
+	3500 1550 3500 1800
+Wire Wire Line
+	3500 1800 3450 1800
+Connection ~ 3500 1550
+Wire Wire Line
+	3500 1800 3500 2050
+Wire Wire Line
+	3500 2050 3450 2050
+Connection ~ 3500 1800
+Wire Wire Line
+	3500 2050 3500 2300
+Wire Wire Line
+	3500 2300 3450 2300
+Connection ~ 3500 2050
+Wire Wire Line
+	3500 2300 3500 2550
+Wire Wire Line
+	3500 2550 3450 2550
+Connection ~ 3500 2300
+Wire Wire Line
+	3500 2550 3500 2800
+Wire Wire Line
+	3500 2800 3450 2800
+Connection ~ 3500 2550
+Wire Wire Line
+	3300 1050 3350 1050
+Wire Wire Line
+	3350 1050 3350 1300
+Wire Wire Line
+	3350 1300 3300 1300
+Wire Wire Line
+	3350 1300 3350 1550
+Wire Wire Line
+	3350 1550 3300 1550
+Connection ~ 3350 1300
+Wire Wire Line
+	3350 1550 3350 1800
+Wire Wire Line
+	3350 1800 3300 1800
+Connection ~ 3350 1550
+Wire Wire Line
+	3350 1800 3350 2050
+Wire Wire Line
+	3350 2050 3300 2050
+Connection ~ 3350 1800
+Wire Wire Line
+	3350 2050 3350 2300
+Wire Wire Line
+	3350 2300 3300 2300
+Connection ~ 3350 2050
+Wire Wire Line
+	3350 2300 3350 2550
+Wire Wire Line
+	3350 2550 3300 2550
+Connection ~ 3350 2300
+Wire Wire Line
+	3350 2550 3350 2800
+Wire Wire Line
+	3350 2800 3300 2800
+Connection ~ 3350 2550
+Wire Wire Line
+	3150 1050 3200 1050
+Wire Wire Line
+	3200 1050 3200 1300
+Wire Wire Line
+	3200 1300 3150 1300
+Wire Wire Line
+	3200 1300 3200 1550
+Wire Wire Line
+	3200 1550 3150 1550
+Connection ~ 3200 1300
+Wire Wire Line
+	3200 1550 3200 1800
+Wire Wire Line
+	3200 1800 3150 1800
+Connection ~ 3200 1550
+Wire Wire Line
+	3200 1800 3200 2050
+Wire Wire Line
+	3200 2050 3150 2050
+Connection ~ 3200 1800
+Wire Wire Line
+	3200 2050 3200 2300
+Wire Wire Line
+	3200 2300 3150 2300
+Connection ~ 3200 2050
+Wire Wire Line
+	3200 2300 3200 2550
+Wire Wire Line
+	3200 2550 3150 2550
+Connection ~ 3200 2300
+Wire Wire Line
+	3200 2550 3200 2800
+Wire Wire Line
+	3200 2800 3150 2800
+Connection ~ 3200 2550
+Wire Wire Line
+	3000 1050 3050 1050
+Wire Wire Line
+	3050 1050 3050 1300
+Wire Wire Line
+	3050 1300 3000 1300
+Wire Wire Line
+	3050 1300 3050 1550
+Wire Wire Line
+	3050 1550 3000 1550
+Connection ~ 3050 1300
+Wire Wire Line
+	3050 1550 3050 1800
+Wire Wire Line
+	3050 1800 3000 1800
+Connection ~ 3050 1550
+Wire Wire Line
+	3050 1800 3050 2050
+Wire Wire Line
+	3050 2050 3000 2050
+Connection ~ 3050 1800
+Wire Wire Line
+	3050 2050 3050 2300
+Wire Wire Line
+	3050 2300 3000 2300
+Connection ~ 3050 2050
+Wire Wire Line
+	3050 2300 3050 2550
+Wire Wire Line
+	3050 2550 3000 2550
+Connection ~ 3050 2300
+Wire Wire Line
+	3050 2550 3050 2800
+Wire Wire Line
+	3050 2800 3000 2800
+Connection ~ 3050 2550
+Wire Wire Line
+	2850 1050 2900 1050
+Wire Wire Line
+	2900 1050 2900 1300
+Wire Wire Line
+	2900 1300 2850 1300
+Wire Wire Line
+	2900 1300 2900 1550
+Wire Wire Line
+	2900 1550 2850 1550
+Connection ~ 2900 1300
+Wire Wire Line
+	2900 1550 2900 1800
+Wire Wire Line
+	2900 1800 2850 1800
+Connection ~ 2900 1550
+Wire Wire Line
+	2900 1800 2900 2050
+Wire Wire Line
+	2900 2050 2850 2050
+Connection ~ 2900 1800
+Wire Wire Line
+	2900 2050 2900 2300
+Wire Wire Line
+	2900 2300 2850 2300
+Connection ~ 2900 2050
+Wire Wire Line
+	2900 2300 2900 2550
+Wire Wire Line
+	2900 2550 2850 2550
+Connection ~ 2900 2300
+Wire Wire Line
+	2900 2550 2900 2800
+Wire Wire Line
+	2900 2800 2850 2800
+Connection ~ 2900 2550
+$Comp
+L Connector:Screw_Terminal_01x08 J7
+U 1 1 6670CCDF
+P 2050 1150
+F 0 "J7" H 1968 1667 50  0000 C CNN
+F 1 "Screw_Terminal_01x08" H 1968 1576 50  0000 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal" H 2050 1150 50  0001 C CNN
+F 3 "~" H 2050 1150 50  0001 C CNN
+	1    2050 1150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 950  2250 950 
+Wire Wire Line
+	2250 850  2550 850 
+Wire Wire Line
+	2500 1100 2500 1000
+Wire Wire Line
+	2500 1000 2450 1000
+Wire Wire Line
+	2450 1000 2450 950 
+Wire Wire Line
+	2550 1350 2500 1350
+Wire Wire Line
+	2500 1350 2500 1250
+Wire Wire Line
+	2500 1250 2450 1250
+Wire Wire Line
+	2450 1250 2450 1050
+Wire Wire Line
+	2250 1050 2450 1050
+Connection ~ 2550 1350
+Wire Wire Line
+	2550 1600 2500 1600
+Wire Wire Line
+	2500 1600 2500 1500
+Wire Wire Line
+	2500 1500 2450 1500
+Wire Wire Line
+	2450 1500 2450 1300
+Wire Wire Line
+	2450 1300 2400 1300
+Wire Wire Line
+	2400 1300 2400 1150
+Connection ~ 2550 1600
+Wire Wire Line
+	2550 1850 2500 1850
+Wire Wire Line
+	2500 1850 2500 1750
+Wire Wire Line
+	2500 1750 2450 1750
+Wire Wire Line
+	2450 1750 2450 1550
+Wire Wire Line
+	2450 1550 2400 1550
+Wire Wire Line
+	2400 1550 2400 1350
+Wire Wire Line
+	2400 1350 2350 1350
+Wire Wire Line
+	2350 1350 2350 1250
+Connection ~ 2550 1850
+Wire Wire Line
+	2550 2100 2500 2100
+Wire Wire Line
+	2500 2100 2500 2000
+Wire Wire Line
+	2500 2000 2450 2000
+Wire Wire Line
+	2450 2000 2450 1800
+Wire Wire Line
+	2450 1800 2400 1800
+Wire Wire Line
+	2400 1800 2400 1600
+Wire Wire Line
+	2400 1600 2350 1600
+Wire Wire Line
+	2350 1600 2350 1400
+Wire Wire Line
+	2350 1400 2300 1400
+Wire Wire Line
+	2300 1400 2300 1350
+Connection ~ 2550 2100
+Wire Wire Line
+	2550 2350 2500 2350
+Wire Wire Line
+	2500 2350 2500 2250
+Wire Wire Line
+	2500 2250 2450 2250
+Wire Wire Line
+	2450 2250 2450 2050
+Wire Wire Line
+	2450 2050 2400 2050
+Wire Wire Line
+	2400 2050 2400 1850
+Wire Wire Line
+	2400 1850 2350 1850
+Wire Wire Line
+	2350 1850 2350 1650
+Wire Wire Line
+	2350 1650 2300 1650
+Wire Wire Line
+	2300 1650 2300 1450
+Connection ~ 2550 2350
+Wire Wire Line
+	2550 2600 2500 2600
+Wire Wire Line
+	2500 2600 2500 2500
+Wire Wire Line
+	2500 2500 2450 2500
+Wire Wire Line
+	2450 2500 2450 2300
+Wire Wire Line
+	2450 2300 2400 2300
+Wire Wire Line
+	2400 2300 2400 2100
+Wire Wire Line
+	2400 2100 2350 2100
+Wire Wire Line
+	2350 2100 2350 1900
+Wire Wire Line
+	2350 1900 2300 1900
+Wire Wire Line
+	2300 1900 2300 1700
+Wire Wire Line
+	2300 1700 2250 1700
+Wire Wire Line
+	2250 1700 2250 1550
+Connection ~ 2550 2600
+Wire Wire Line
+	2300 1450 2250 1450
+Wire Wire Line
+	2300 1350 2250 1350
+Wire Wire Line
+	2350 1250 2250 1250
+Wire Wire Line
+	2400 1150 2250 1150
+Wire Wire Line
+	2700 1300 2750 1300
+Connection ~ 2750 1300
+Wire Wire Line
+	2750 1300 2750 1550
+Wire Wire Line
+	2700 1550 2750 1550
+Connection ~ 2750 1550
+Wire Wire Line
+	2750 1550 2750 1800
+Wire Wire Line
+	2700 1800 2750 1800
+Connection ~ 2750 1800
+Wire Wire Line
+	2750 1800 2750 2050
+Wire Wire Line
+	2700 2050 2750 2050
+Connection ~ 2750 2050
+Wire Wire Line
+	2750 2050 2750 2300
+Wire Wire Line
+	2700 2300 2750 2300
+Connection ~ 2750 2300
+Wire Wire Line
+	2750 2300 2750 2550
+Wire Wire Line
+	2700 2550 2750 2550
+Connection ~ 2750 2550
+Wire Wire Line
+	2750 2550 2750 2800
+Wire Wire Line
+	2700 2800 2750 2800
+Connection ~ 2600 2800
+Wire Wire Line
+	2750 2800 2750 2850
+Wire Wire Line
+	2750 2850 2700 2850
+Connection ~ 2750 2800
+Wire Wire Line
+	2900 2800 2900 2850
+Wire Wire Line
+	2900 2850 2800 2850
+Connection ~ 2900 2800
+Wire Wire Line
+	3050 2800 3050 2850
+Wire Wire Line
+	3050 2850 2950 2850
+Wire Wire Line
+	2950 2850 2950 2900
+Wire Wire Line
+	2950 2900 2900 2900
+Connection ~ 3050 2800
+Wire Wire Line
+	3200 2800 3200 2850
+Wire Wire Line
+	3200 2850 3100 2850
+Connection ~ 3200 2800
+Wire Wire Line
+	3100 2850 3100 2900
+Wire Wire Line
+	3100 2900 3000 2900
+Wire Wire Line
+	3350 2800 3350 2850
+Wire Wire Line
+	3350 2850 3250 2850
+Wire Wire Line
+	3250 2850 3250 2900
+Wire Wire Line
+	3250 2900 3150 2900
+Wire Wire Line
+	3150 2900 3150 2950
+Wire Wire Line
+	3150 2950 3100 2950
+Connection ~ 3350 2800
+Wire Wire Line
+	3500 2800 3500 2850
+Wire Wire Line
+	3500 2850 3400 2850
+Wire Wire Line
+	3400 2850 3400 2900
+Wire Wire Line
+	3400 2900 3300 2900
+Wire Wire Line
+	3300 2900 3300 2950
+Wire Wire Line
+	3300 2950 3200 2950
+Connection ~ 3500 2800
+$Comp
+L Connector:Screw_Terminal_01x08 J8
+U 1 1 68EAF101
+P 2900 3200
+F 0 "J8" V 2900 3650 50  0000 R CNN
+F 1 "Screw_Terminal_01x08" V 3000 3550 50  0000 R CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal" H 2900 3200 50  0001 C CNN
+F 3 "~" H 2900 3200 50  0001 C CNN
+	1    2900 3200
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2600 2800 2600 3000
+Wire Wire Line
+	2700 2850 2700 3000
+Wire Wire Line
+	2800 2850 2800 3000
+Wire Wire Line
+	2900 2900 2900 3000
+Wire Wire Line
+	3000 2900 3000 3000
+Wire Wire Line
+	3100 2950 3100 3000
+Wire Wire Line
+	3200 2950 3200 3000
+Wire Wire Line
+	3650 2800 3650 2850
+Wire Wire Line
+	3650 2850 3550 2850
+Wire Wire Line
+	3550 2850 3550 2900
+Wire Wire Line
+	3550 2900 3450 2900
+Wire Wire Line
+	3450 2900 3450 2950
+Wire Wire Line
+	3450 2950 3350 2950
+Wire Wire Line
+	3350 2950 3350 3000
+Wire Wire Line
+	3350 3000 3300 3000
+Connection ~ 3650 2800
+Wire Wire Line
+	3950 2800 3950 2850
+Wire Wire Line
+	3950 2850 3900 2850
+Wire Wire Line
+	4100 2800 4100 2850
+Wire Wire Line
+	4100 2850 4000 2850
+Wire Wire Line
+	4250 2800 4250 2850
+Wire Wire Line
+	4250 2850 4150 2850
+Wire Wire Line
+	4150 2850 4150 2900
+Wire Wire Line
+	4150 2900 4100 2900
+Wire Wire Line
+	4400 2800 4400 2850
+Wire Wire Line
+	4400 2850 4300 2850
+Wire Wire Line
+	4300 2850 4300 2900
+Wire Wire Line
+	4300 2900 4200 2900
+Wire Wire Line
+	4550 2800 4550 2850
+Wire Wire Line
+	4550 2850 4450 2850
+Wire Wire Line
+	4450 2850 4450 2900
+Wire Wire Line
+	4450 2900 4350 2900
+Wire Wire Line
+	4350 2900 4350 2950
+Wire Wire Line
+	4350 2950 4300 2950
+Wire Wire Line
+	4700 2800 4700 2850
+Wire Wire Line
+	4700 2850 4600 2850
+Wire Wire Line
+	4600 2850 4600 2900
+Wire Wire Line
+	4600 2900 4500 2900
+Wire Wire Line
+	4500 2900 4500 2950
+Wire Wire Line
+	4500 2950 4400 2950
+$Comp
+L Connector:Screw_Terminal_01x08 J9
+U 1 1 6B9D543C
+P 4100 3200
+F 0 "J9" V 4100 3650 50  0000 R CNN
+F 1 "Screw_Terminal_01x08" V 4200 3550 50  0000 R CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal" H 4100 3200 50  0001 C CNN
+F 3 "~" H 4100 3200 50  0001 C CNN
+	1    4100 3200
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3800 2800 3800 3000
+Wire Wire Line
+	3900 2850 3900 3000
+Wire Wire Line
+	4000 2850 4000 3000
+Wire Wire Line
+	4100 2900 4100 3000
+Wire Wire Line
+	4200 2900 4200 3000
+Wire Wire Line
+	4300 2950 4300 3000
+Wire Wire Line
+	4400 2950 4400 3000
+Wire Wire Line
+	4850 2800 4850 2850
+Wire Wire Line
+	4850 2850 4750 2850
+Wire Wire Line
+	4750 2850 4750 2900
+Wire Wire Line
+	4750 2900 4650 2900
+Wire Wire Line
+	4650 2900 4650 2950
+Wire Wire Line
+	4650 2950 4550 2950
+Wire Wire Line
+	4550 2950 4550 3000
+Wire Wire Line
+	4550 3000 4500 3000
+Wire Wire Line
+	5150 2800 5150 2850
+Wire Wire Line
+	5150 2850 5100 2850
+Wire Wire Line
+	5300 2800 5300 2850
+Wire Wire Line
+	5300 2850 5200 2850
+Wire Wire Line
+	5450 2800 5450 2850
+Wire Wire Line
+	5450 2850 5350 2850
+Wire Wire Line
+	5350 2850 5350 2900
+Wire Wire Line
+	5350 2900 5300 2900
+Wire Wire Line
+	5600 2800 5600 2850
+Wire Wire Line
+	5600 2850 5500 2850
+Wire Wire Line
+	5500 2850 5500 2900
+Wire Wire Line
+	5500 2900 5400 2900
+Wire Wire Line
+	5750 2800 5750 2850
+Wire Wire Line
+	5750 2850 5650 2850
+Wire Wire Line
+	5650 2850 5650 2900
+Wire Wire Line
+	5650 2900 5550 2900
+Wire Wire Line
+	5550 2900 5550 2950
+Wire Wire Line
+	5550 2950 5500 2950
+Wire Wire Line
+	5900 2800 5900 2850
+Wire Wire Line
+	5900 2850 5800 2850
+Wire Wire Line
+	5800 2850 5800 2900
+Wire Wire Line
+	5800 2900 5700 2900
+Wire Wire Line
+	5700 2900 5700 2950
+Wire Wire Line
+	5700 2950 5600 2950
+$Comp
+L Connector:Screw_Terminal_01x08 J10
+U 1 1 6BAD41D2
+P 5300 3200
+F 0 "J10" V 5300 3650 50  0000 R CNN
+F 1 "Screw_Terminal_01x08" V 5400 3550 50  0000 R CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal" H 5300 3200 50  0001 C CNN
+F 3 "~" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5000 2800 5000 3000
+Wire Wire Line
+	5100 2850 5100 3000
+Wire Wire Line
+	5200 2850 5200 3000
+Wire Wire Line
+	5300 2900 5300 3000
+Wire Wire Line
+	5400 2900 5400 3000
+Wire Wire Line
+	5500 2950 5500 3000
+Wire Wire Line
+	5600 2950 5600 3000
+Wire Wire Line
+	6050 2800 6050 2850
+Wire Wire Line
+	6050 2850 5950 2850
+Wire Wire Line
+	5950 2850 5950 2900
+Wire Wire Line
+	5950 2900 5850 2900
+Wire Wire Line
+	5850 2900 5850 2950
+Wire Wire Line
+	5850 2950 5750 2950
+Wire Wire Line
+	5750 2950 5750 3000
+Wire Wire Line
+	5750 3000 5700 3000
+Wire Wire Line
+	6350 2800 6350 2850
+Wire Wire Line
+	6350 2850 6300 2850
+Wire Wire Line
+	6500 2800 6500 2850
+Wire Wire Line
+	6500 2850 6400 2850
+Wire Wire Line
+	6650 2800 6650 2850
+Wire Wire Line
+	6650 2850 6550 2850
+Wire Wire Line
+	6550 2850 6550 2900
+Wire Wire Line
+	6550 2900 6500 2900
+Wire Wire Line
+	6800 2800 6800 2850
+Wire Wire Line
+	6800 2850 6700 2850
+Wire Wire Line
+	6700 2850 6700 2900
+Wire Wire Line
+	6700 2900 6600 2900
+Wire Wire Line
+	6950 2800 6950 2850
+Wire Wire Line
+	6950 2850 6850 2850
+Wire Wire Line
+	6850 2850 6850 2900
+Wire Wire Line
+	6850 2900 6750 2900
+Wire Wire Line
+	6750 2900 6750 2950
+Wire Wire Line
+	6750 2950 6700 2950
+Wire Wire Line
+	7100 2800 7100 2850
+Wire Wire Line
+	7100 2850 7000 2850
+Wire Wire Line
+	7000 2850 7000 2900
+Wire Wire Line
+	7000 2900 6900 2900
+Wire Wire Line
+	6900 2900 6900 2950
+Wire Wire Line
+	6900 2950 6800 2950
+$Comp
+L Connector:Screw_Terminal_01x08 J11
+U 1 1 6BBE4F86
+P 6500 3200
+F 0 "J11" V 6500 3650 50  0000 R CNN
+F 1 "Screw_Terminal_01x08" V 6600 3550 50  0000 R CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal" H 6500 3200 50  0001 C CNN
+F 3 "~" H 6500 3200 50  0001 C CNN
+	1    6500 3200
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6200 2800 6200 3000
+Wire Wire Line
+	6300 2850 6300 3000
+Wire Wire Line
+	6400 2850 6400 3000
+Wire Wire Line
+	6500 2900 6500 3000
+Wire Wire Line
+	6600 2900 6600 3000
+Wire Wire Line
+	6700 2950 6700 3000
+Wire Wire Line
+	6800 2950 6800 3000
+Wire Wire Line
+	7250 2800 7250 2850
+Wire Wire Line
+	7250 2850 7150 2850
+Wire Wire Line
+	7150 2850 7150 2900
+Wire Wire Line
+	7150 2900 7050 2900
+Wire Wire Line
+	7050 2900 7050 2950
+Wire Wire Line
+	7050 2950 6950 2950
+Wire Wire Line
+	6950 2950 6950 3000
+Wire Wire Line
+	6950 3000 6900 3000
+Wire Wire Line
+	3900 2800 3950 2800
+Connection ~ 3950 2800
+Connection ~ 3800 2800
+Connection ~ 4100 2800
+Connection ~ 4250 2800
+Connection ~ 4400 2800
+Connection ~ 4550 2800
+Connection ~ 4700 2800
+Connection ~ 4850 2800
+Connection ~ 5000 2800
+Connection ~ 5150 2800
+Connection ~ 5300 2800
+Connection ~ 5450 2800
+Connection ~ 5600 2800
+Connection ~ 5750 2800
+Connection ~ 5900 2800
+Connection ~ 6050 2800
+Connection ~ 6200 2800
+Connection ~ 6350 2800
+Connection ~ 6500 2800
+Connection ~ 6650 2800
+Connection ~ 6800 2800
+Connection ~ 6950 2800
+Connection ~ 7100 2800
+Connection ~ 7250 2800
+$EndSCHEMATC
