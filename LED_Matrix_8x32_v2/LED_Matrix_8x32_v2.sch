@@ -4688,10 +4688,10 @@ Wire Wire Line
 	2900 2800 2850 2800
 Connection ~ 2900 2550
 $Comp
-L Connector:Screw_Terminal_01x08 J7
+L Connector:Screw_Terminal_01x08 J1
 U 1 1 6670CCDF
 P 2050 1150
-F 0 "J7" H 1968 1667 50  0000 C CNN
+F 0 "J1" H 1968 1667 50  0000 C CNN
 F 1 "Screw_Terminal_01x08" H 1968 1576 50  0000 C CNN
 F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal" H 2050 1150 50  0001 C CNN
 F 3 "~" H 2050 1150 50  0001 C CNN
@@ -4912,10 +4912,10 @@ Wire Wire Line
 	3300 2950 3200 2950
 Connection ~ 3500 2800
 $Comp
-L Connector:Screw_Terminal_01x08 J8
+L Connector:Screw_Terminal_01x08 J2
 U 1 1 68EAF101
 P 2900 3200
-F 0 "J8" V 2900 3650 50  0000 R CNN
+F 0 "J2" V 2900 3650 50  0000 R CNN
 F 1 "Screw_Terminal_01x08" V 3000 3550 50  0000 R CNN
 F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal" H 2900 3200 50  0001 C CNN
 F 3 "~" H 2900 3200 50  0001 C CNN
@@ -5002,10 +5002,10 @@ Wire Wire Line
 Wire Wire Line
 	4500 2950 4400 2950
 $Comp
-L Connector:Screw_Terminal_01x08 J9
+L Connector:Screw_Terminal_01x08 J3
 U 1 1 6B9D543C
 P 4100 3200
-F 0 "J9" V 4100 3650 50  0000 R CNN
+F 0 "J3" V 4100 3650 50  0000 R CNN
 F 1 "Screw_Terminal_01x08" V 4200 3550 50  0000 R CNN
 F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal" H 4100 3200 50  0001 C CNN
 F 3 "~" H 4100 3200 50  0001 C CNN
@@ -5091,10 +5091,10 @@ Wire Wire Line
 Wire Wire Line
 	5700 2950 5600 2950
 $Comp
-L Connector:Screw_Terminal_01x08 J10
+L Connector:Screw_Terminal_01x08 J4
 U 1 1 6BAD41D2
 P 5300 3200
-F 0 "J10" V 5300 3650 50  0000 R CNN
+F 0 "J4" V 5300 3650 50  0000 R CNN
 F 1 "Screw_Terminal_01x08" V 5400 3550 50  0000 R CNN
 F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal" H 5300 3200 50  0001 C CNN
 F 3 "~" H 5300 3200 50  0001 C CNN
@@ -5180,10 +5180,10 @@ Wire Wire Line
 Wire Wire Line
 	6900 2950 6800 2950
 $Comp
-L Connector:Screw_Terminal_01x08 J11
+L Connector:Screw_Terminal_01x08 J5
 U 1 1 6BBE4F86
 P 6500 3200
-F 0 "J11" V 6500 3650 50  0000 R CNN
+F 0 "J5" V 6500 3650 50  0000 R CNN
 F 1 "Screw_Terminal_01x08" V 6600 3550 50  0000 R CNN
 F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x08_P3.50mm_Horizontal" H 6500 3200 50  0001 C CNN
 F 3 "~" H 6500 3200 50  0001 C CNN

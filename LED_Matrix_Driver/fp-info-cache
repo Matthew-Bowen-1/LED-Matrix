@@ -1,4 +1,4 @@
-19244942383462266
+19246644792307777
 Arduino
 Arduino_Micro
 Arduino Micro
@@ -32,8 +32,8 @@ Custom_Pin_Header_3
 
 
 0
-7
-7
+3
+3
 Arduino
 Custom_Pin_Header_7
 
@@ -48,6 +48,13 @@ ESP32-DevkitC
 0
 38
 38
+Arduino
+LED_D5.0mm_Silk_Moved
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
+0
+2
+2
 Arduino
 Sparkfun_Pro_Micro
 Sparkfun Pro Micro
